@@ -1,13 +1,86 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Jr6-Q4-PJU">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <scenes>
+        <!--Page View Controller-->
+        <scene sceneID="oW6-7d-Ptj">
+            <objects>
+                <pageViewController storyboardIdentifier="PageViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="qOF-lW-350" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r1c-sV-jHu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1610" y="-101"/>
+        </scene>
         <!--View Controller-->
+        <scene sceneID="kjp-ou-nY2">
+            <objects>
+                <viewController storyboardIdentifier="PageRootController" id="Jr6-Q4-PJU" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="oRG-Gd-cQz"/>
+                        <viewControllerLayoutGuide type="bottom" id="bbI-Za-Os4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="IaN-AF-LZB">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bl7-QL-Hf4">
+                                <rect key="frame" x="277" y="540" width="75" height="30"/>
+                                <state key="normal" title="Start again">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="startWalkThrough:" destination="Jr6-Q4-PJU" eventType="touchUpInside" id="v07-Ay-G89"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="startWalkThrough" destination="Bl7-QL-Hf4" id="1zq-E2-kaV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gkd-KE-MlO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1610" y="855"/>
+        </scene>
+        <!--Page Content View Controller-->
+        <scene sceneID="2Dt-St-6wB">
+            <objects>
+                <viewController storyboardIdentifier="PageContentController" id="wbu-2b-yG8" customClass="PageContentViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Dq0-mD-rTT"/>
+                        <viewControllerLayoutGuide type="bottom" id="a5n-6l-Wua"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="A4v-sT-G3R">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cSK-Cg-UCV">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Eb-WS-l9h">
+                                <rect key="frame" x="279" y="64" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="backgroundImageView" destination="cSK-Cg-UCV" id="7Jl-vg-EMh"/>
+                        <outlet property="titleLabel" destination="7Eb-WS-l9h" id="cS5-CC-Fmh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="F2h-h7-x7m" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-806" y="415"/>
+        </scene>
+        <!--Bluetooth Connecting View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="BluetoothConnectingViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -23,10 +96,10 @@
             </objects>
             <point key="canvasLocation" x="-48" y="553"/>
         </scene>
-        <!--View Controller-->
+        <!--Main View Controller-->
         <scene sceneID="OFn-ET-VcP">
             <objects>
-                <viewController id="bHJ-Cd-Xv9" sceneMemberID="viewController">
+                <viewController id="bHJ-Cd-Xv9" customClass="MainViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="JW9-fW-Bub"/>
                         <viewControllerLayoutGuide type="bottom" id="qNT-8z-rqU"/>
@@ -41,10 +114,10 @@
             </objects>
             <point key="canvasLocation" x="896" y="553"/>
         </scene>
-        <!--View Controller-->
+        <!--No Longer Connected View Controller-->
         <scene sceneID="YCf-Rx-g0I">
             <objects>
-                <viewController id="efe-ZL-kkn" sceneMemberID="viewController">
+                <viewController id="efe-ZL-kkn" customClass="NoLongerConnectedViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="kA3-Ft-fkc"/>
                         <viewControllerLayoutGuide type="bottom" id="wvf-EC-VCh"/>
@@ -59,10 +132,10 @@
             </objects>
             <point key="canvasLocation" x="-48" y="1451"/>
         </scene>
-        <!--View Controller-->
+        <!--Super Main View Controller-->
         <scene sceneID="kqg-j9-tVE">
             <objects>
-                <viewController id="Oyu-Bg-8IW" sceneMemberID="viewController">
+                <viewController id="Oyu-Bg-8IW" customClass="SuperMainViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="wcJ-IU-1jC"/>
                         <viewControllerLayoutGuide type="bottom" id="gEz-Co-k9w"/>
@@ -77,10 +150,10 @@
             </objects>
             <point key="canvasLocation" x="896" y="1321"/>
         </scene>
-        <!--View Controller-->
+        <!--Simple Info View Controller-->
         <scene sceneID="92x-xu-72b">
             <objects>
-                <viewController id="lPh-6O-Ccd" sceneMemberID="viewController">
+                <viewController id="lPh-6O-Ccd" customClass="SimpleInfoViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Tgk-1H-Ica"/>
                         <viewControllerLayoutGuide type="bottom" id="q8b-6I-IxJ"/>
@@ -95,10 +168,10 @@
             </objects>
             <point key="canvasLocation" x="56" y="2261"/>
         </scene>
-        <!--View Controller-->
+        <!--Gif View Controller-->
         <scene sceneID="i4G-UA-qaG">
             <objects>
-                <viewController id="lWX-tD-Uuj" sceneMemberID="viewController">
+                <viewController id="lWX-tD-Uuj" customClass="GifViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="D6P-gq-Kir"/>
                         <viewControllerLayoutGuide type="bottom" id="7GX-Zi-fZa"/>
@@ -113,10 +186,10 @@
             </objects>
             <point key="canvasLocation" x="56" y="3069"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Options Table View Controller-->
         <scene sceneID="7kJ-cI-RAu">
             <objects>
-                <tableViewController id="YZr-4y-Jue" sceneMemberID="viewController">
+                <tableViewController id="YZr-4y-Jue" customClass="CLOptionsTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="vsq-Ar-lTQ">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

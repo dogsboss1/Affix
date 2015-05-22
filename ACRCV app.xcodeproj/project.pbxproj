@@ -14,6 +14,15 @@
 		A4E184C81B0F50A600E0F420 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4E184C71B0F50A600E0F420 /* Images.xcassets */; };
 		A4E184CB1B0F50A600E0F420 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4E184C91B0F50A600E0F420 /* LaunchScreen.xib */; };
 		A4E184D71B0F50A600E0F420 /* ACRCV_appTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E184D61B0F50A600E0F420 /* ACRCV_appTests.m */; };
+		A4E184EC1B0F789800E0F420 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E184EB1B0F789800E0F420 /* MainViewController.m */; };
+		A4E184EF1B0F78B700E0F420 /* BluetoothConnectingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E184EE1B0F78B700E0F420 /* BluetoothConnectingViewController.m */; };
+		A4E184F21B0F78E500E0F420 /* CLOptionsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E184F11B0F78E500E0F420 /* CLOptionsTableViewController.m */; };
+		A4E184F51B0F790100E0F420 /* SuperMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E184F41B0F790100E0F420 /* SuperMainViewController.m */; };
+		A4E184F81B0F791000E0F420 /* GifViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E184F71B0F791000E0F420 /* GifViewController.m */; };
+		A4E184FB1B0F791F00E0F420 /* SimpleInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E184FA1B0F791F00E0F420 /* SimpleInfoViewController.m */; };
+		A4E184FF1B0F795700E0F420 /* NoLongerConnectedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E184FE1B0F795700E0F420 /* NoLongerConnectedViewController.m */; };
+		A4E185021B0F7CD400E0F420 /* PageContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E185011B0F7CD400E0F420 /* PageContentViewController.m */; };
+		A4E185041B0F7E7100E0F420 /* PageViewDemoImages in Resources */ = {isa = PBXBuildFile; fileRef = A4E185031B0F7E7100E0F420 /* PageViewDemoImages */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +49,23 @@
 		A4E184D01B0F50A600E0F420 /* ACRCV appTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ACRCV appTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4E184D51B0F50A600E0F420 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A4E184D61B0F50A600E0F420 /* ACRCV_appTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ACRCV_appTests.m; sourceTree = "<group>"; };
+		A4E184EA1B0F789800E0F420 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		A4E184EB1B0F789800E0F420 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		A4E184ED1B0F78B700E0F420 /* BluetoothConnectingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BluetoothConnectingViewController.h; sourceTree = "<group>"; };
+		A4E184EE1B0F78B700E0F420 /* BluetoothConnectingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BluetoothConnectingViewController.m; sourceTree = "<group>"; };
+		A4E184F01B0F78E500E0F420 /* CLOptionsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLOptionsTableViewController.h; sourceTree = "<group>"; };
+		A4E184F11B0F78E500E0F420 /* CLOptionsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLOptionsTableViewController.m; sourceTree = "<group>"; };
+		A4E184F31B0F790100E0F420 /* SuperMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuperMainViewController.h; sourceTree = "<group>"; };
+		A4E184F41B0F790100E0F420 /* SuperMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuperMainViewController.m; sourceTree = "<group>"; };
+		A4E184F61B0F791000E0F420 /* GifViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GifViewController.h; sourceTree = "<group>"; };
+		A4E184F71B0F791000E0F420 /* GifViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GifViewController.m; sourceTree = "<group>"; };
+		A4E184F91B0F791F00E0F420 /* SimpleInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleInfoViewController.h; sourceTree = "<group>"; };
+		A4E184FA1B0F791F00E0F420 /* SimpleInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleInfoViewController.m; sourceTree = "<group>"; };
+		A4E184FD1B0F795700E0F420 /* NoLongerConnectedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoLongerConnectedViewController.h; sourceTree = "<group>"; };
+		A4E184FE1B0F795700E0F420 /* NoLongerConnectedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoLongerConnectedViewController.m; sourceTree = "<group>"; };
+		A4E185001B0F7CD400E0F420 /* PageContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageContentViewController.h; sourceTree = "<group>"; };
+		A4E185011B0F7CD400E0F420 /* PageContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageContentViewController.m; sourceTree = "<group>"; };
+		A4E185031B0F7E7100E0F420 /* PageViewDemoImages */ = {isa = PBXFileReference; lastKnownFileType = folder; name = PageViewDemoImages; path = ../../../../../Downloads/PageViewDemoImages; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,8 +114,6 @@
 				A4E184E01B0F769000E0F420 /* Extras */,
 				A4E184BE1B0F50A600E0F420 /* AppDelegate.h */,
 				A4E184BF1B0F50A600E0F420 /* AppDelegate.m */,
-				A4E184C11B0F50A600E0F420 /* ViewController.h */,
-				A4E184C21B0F50A600E0F420 /* ViewController.m */,
 				A4E184C41B0F50A600E0F420 /* Main.storyboard */,
 				A4E184D41B0F50A600E0F420 /* Supporting Files */,
 			);
@@ -131,6 +155,7 @@
 		A4E184E01B0F769000E0F420 /* Extras */ = {
 			isa = PBXGroup;
 			children = (
+				A4E184FC1B0F794400E0F420 /* No Longer Connected */,
 				A4E184E81B0F772200E0F420 /* Info (baby) View */,
 				A4E184E71B0F770E00E0F420 /* Gif View */,
 			);
@@ -140,6 +165,10 @@
 		A4E184E11B0F769D00E0F420 /* Intro */ = {
 			isa = PBXGroup;
 			children = (
+				A4E184C11B0F50A600E0F420 /* ViewController.h */,
+				A4E184C21B0F50A600E0F420 /* ViewController.m */,
+				A4E185001B0F7CD400E0F420 /* PageContentViewController.h */,
+				A4E185011B0F7CD400E0F420 /* PageContentViewController.m */,
 			);
 			name = Intro;
 			sourceTree = "<group>";
@@ -147,6 +176,8 @@
 		A4E184E21B0F76A400E0F420 /* Bluetooth */ = {
 			isa = PBXGroup;
 			children = (
+				A4E184ED1B0F78B700E0F420 /* BluetoothConnectingViewController.h */,
+				A4E184EE1B0F78B700E0F420 /* BluetoothConnectingViewController.m */,
 			);
 			name = Bluetooth;
 			sourceTree = "<group>";
@@ -163,6 +194,8 @@
 		A4E184E41B0F76D600E0F420 /* Main View */ = {
 			isa = PBXGroup;
 			children = (
+				A4E184EA1B0F789800E0F420 /* MainViewController.h */,
+				A4E184EB1B0F789800E0F420 /* MainViewController.m */,
 			);
 			name = "Main View";
 			sourceTree = "<group>";
@@ -170,6 +203,8 @@
 		A4E184E51B0F76E900E0F420 /* Options */ = {
 			isa = PBXGroup;
 			children = (
+				A4E184F01B0F78E500E0F420 /* CLOptionsTableViewController.h */,
+				A4E184F11B0F78E500E0F420 /* CLOptionsTableViewController.m */,
 			);
 			name = Options;
 			sourceTree = "<group>";
@@ -177,6 +212,8 @@
 		A4E184E61B0F76F600E0F420 /* New Main View */ = {
 			isa = PBXGroup;
 			children = (
+				A4E184F31B0F790100E0F420 /* SuperMainViewController.h */,
+				A4E184F41B0F790100E0F420 /* SuperMainViewController.m */,
 			);
 			name = "New Main View";
 			sourceTree = "<group>";
@@ -184,6 +221,8 @@
 		A4E184E71B0F770E00E0F420 /* Gif View */ = {
 			isa = PBXGroup;
 			children = (
+				A4E184F61B0F791000E0F420 /* GifViewController.h */,
+				A4E184F71B0F791000E0F420 /* GifViewController.m */,
 			);
 			name = "Gif View";
 			sourceTree = "<group>";
@@ -191,6 +230,8 @@
 		A4E184E81B0F772200E0F420 /* Info (baby) View */ = {
 			isa = PBXGroup;
 			children = (
+				A4E184F91B0F791F00E0F420 /* SimpleInfoViewController.h */,
+				A4E184FA1B0F791F00E0F420 /* SimpleInfoViewController.m */,
 			);
 			name = "Info (baby) View";
 			sourceTree = "<group>";
@@ -198,8 +239,18 @@
 		A4E184E91B0F774600E0F420 /* Images/Music */ = {
 			isa = PBXGroup;
 			children = (
+				A4E185031B0F7E7100E0F420 /* PageViewDemoImages */,
 			);
 			name = Images/Music;
+			sourceTree = "<group>";
+		};
+		A4E184FC1B0F794400E0F420 /* No Longer Connected */ = {
+			isa = PBXGroup;
+			children = (
+				A4E184FD1B0F795700E0F420 /* NoLongerConnectedViewController.h */,
+				A4E184FE1B0F795700E0F420 /* NoLongerConnectedViewController.m */,
+			);
+			name = "No Longer Connected";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -283,6 +334,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A4E184C61B0F50A600E0F420 /* Main.storyboard in Resources */,
+				A4E185041B0F7E7100E0F420 /* PageViewDemoImages in Resources */,
 				A4E184CB1B0F50A600E0F420 /* LaunchScreen.xib in Resources */,
 				A4E184C81B0F50A600E0F420 /* Images.xcassets in Resources */,
 			);
@@ -302,9 +354,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4E184EF1B0F78B700E0F420 /* BluetoothConnectingViewController.m in Sources */,
 				A4E184C31B0F50A600E0F420 /* ViewController.m in Sources */,
+				A4E185021B0F7CD400E0F420 /* PageContentViewController.m in Sources */,
+				A4E184F51B0F790100E0F420 /* SuperMainViewController.m in Sources */,
+				A4E184F81B0F791000E0F420 /* GifViewController.m in Sources */,
 				A4E184C01B0F50A600E0F420 /* AppDelegate.m in Sources */,
 				A4E184BD1B0F50A600E0F420 /* main.m in Sources */,
+				A4E184EC1B0F789800E0F420 /* MainViewController.m in Sources */,
+				A4E184F21B0F78E500E0F420 /* CLOptionsTableViewController.m in Sources */,
+				A4E184FF1B0F795700E0F420 /* NoLongerConnectedViewController.m in Sources */,
+				A4E184FB1B0F791F00E0F420 /* SimpleInfoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
