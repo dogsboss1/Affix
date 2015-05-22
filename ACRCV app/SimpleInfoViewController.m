@@ -34,4 +34,9 @@
 }
 */
 
+- (IBAction)retryBluetoothButtonPressed:(UIButton *)sender {
+}
+
+- (IBAction)giveUpButtonPressed:(UIButton *)sender {
+}
 @end

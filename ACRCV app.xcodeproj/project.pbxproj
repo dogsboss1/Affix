@@ -28,6 +28,7 @@
 		A4E1850C1B0F82F800E0F420 /* page4.png in Resources */ = {isa = PBXBuildFile; fileRef = A4E185081B0F82F800E0F420 /* page4.png */; };
 		A4E185101B0F852500E0F420 /* dpad copy.png in Resources */ = {isa = PBXBuildFile; fileRef = A4E1850E1B0F852500E0F420 /* dpad copy.png */; };
 		A4E185111B0F852500E0F420 /* joystick copy.png in Resources */ = {isa = PBXBuildFile; fileRef = A4E1850F1B0F852500E0F420 /* joystick copy.png */; };
+		A4E185141B0F8B0600E0F420 /* CLOptionsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E185131B0F8B0600E0F420 /* CLOptionsCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +77,8 @@
 		A4E185081B0F82F800E0F420 /* page4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = page4.png; path = ../../../../../Downloads/PageViewDemoImages/page4.png; sourceTree = "<group>"; };
 		A4E1850E1B0F852500E0F420 /* dpad copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "dpad copy.png"; path = "Images/dpad copy.png"; sourceTree = "<group>"; };
 		A4E1850F1B0F852500E0F420 /* joystick copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "joystick copy.png"; path = "Images/joystick copy.png"; sourceTree = "<group>"; };
+		A4E185121B0F8B0600E0F420 /* CLOptionsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLOptionsCell.h; sourceTree = "<group>"; };
+		A4E185131B0F8B0600E0F420 /* CLOptionsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLOptionsCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -216,6 +219,8 @@
 			children = (
 				A4E184F01B0F78E500E0F420 /* CLOptionsTableViewController.h */,
 				A4E184F11B0F78E500E0F420 /* CLOptionsTableViewController.m */,
+				A4E185121B0F8B0600E0F420 /* CLOptionsCell.h */,
+				A4E185131B0F8B0600E0F420 /* CLOptionsCell.m */,
 			);
 			name = Options;
 			sourceTree = "<group>";
@@ -391,6 +396,7 @@
 				A4E184BD1B0F50A600E0F420 /* main.m in Sources */,
 				A4E184EC1B0F789800E0F420 /* MainViewController.m in Sources */,
 				A4E184F21B0F78E500E0F420 /* CLOptionsTableViewController.m in Sources */,
+				A4E185141B0F8B0600E0F420 /* CLOptionsCell.m in Sources */,
 				A4E184FF1B0F795700E0F420 /* NoLongerConnectedViewController.m in Sources */,
 				A4E184FB1B0F791F00E0F420 /* SimpleInfoViewController.m in Sources */,
 			);
@@ -592,6 +598,7 @@
 				A4E184DC1B0F50A600E0F420 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A4E184DD1B0F50A600E0F420 /* Build configuration list for PBXNativeTarget "ACRCV appTests" */ = {
 			isa = XCConfigurationList;
@@ -600,6 +607,7 @@
 				A4E184DF1B0F50A600E0F420 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

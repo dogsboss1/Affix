@@ -9,5 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface SimpleInfoViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UILabel *simpleInfoTitleLabel;
+@property (weak, nonatomic) IBOutlet UITextView *simpleInfoTextView;
+- (IBAction)retryBluetoothButtonPressed:(UIButton *)sender;
+- (IBAction)giveUpButtonPressed:(UIButton *)sender;
+
 
 @end

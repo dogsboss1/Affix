@@ -34,4 +34,22 @@
 }
 */
 
+- (IBAction)autoActivateButtonPressed:(UIButton *)sender {
+}
+- (IBAction)upButtonPressed:(UIButton *)sender {
+}
+
+- (IBAction)downButtonPressed:(UIButton *)sender {
+}
+
+- (IBAction)fdButtonPressed:(UIButton *)sender {
+}
+
+- (IBAction)rightButtonPressed:(UIButton *)sender {
+}
+
+- (IBAction)backButtonPressed:(UIButton *)sender {
+}
+- (IBAction)leftButtonPressed:(UIButton *)sender {
+}
 @end
