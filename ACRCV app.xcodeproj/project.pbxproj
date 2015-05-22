@@ -22,7 +22,12 @@
 		A4E184FB1B0F791F00E0F420 /* SimpleInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E184FA1B0F791F00E0F420 /* SimpleInfoViewController.m */; };
 		A4E184FF1B0F795700E0F420 /* NoLongerConnectedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E184FE1B0F795700E0F420 /* NoLongerConnectedViewController.m */; };
 		A4E185021B0F7CD400E0F420 /* PageContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E185011B0F7CD400E0F420 /* PageContentViewController.m */; };
-		A4E185041B0F7E7100E0F420 /* PageViewDemoImages in Resources */ = {isa = PBXBuildFile; fileRef = A4E185031B0F7E7100E0F420 /* PageViewDemoImages */; };
+		A4E185091B0F82F800E0F420 /* page1.png in Resources */ = {isa = PBXBuildFile; fileRef = A4E185051B0F82F800E0F420 /* page1.png */; };
+		A4E1850A1B0F82F800E0F420 /* page2.png in Resources */ = {isa = PBXBuildFile; fileRef = A4E185061B0F82F800E0F420 /* page2.png */; };
+		A4E1850B1B0F82F800E0F420 /* page3.png in Resources */ = {isa = PBXBuildFile; fileRef = A4E185071B0F82F800E0F420 /* page3.png */; };
+		A4E1850C1B0F82F800E0F420 /* page4.png in Resources */ = {isa = PBXBuildFile; fileRef = A4E185081B0F82F800E0F420 /* page4.png */; };
+		A4E185101B0F852500E0F420 /* dpad copy.png in Resources */ = {isa = PBXBuildFile; fileRef = A4E1850E1B0F852500E0F420 /* dpad copy.png */; };
+		A4E185111B0F852500E0F420 /* joystick copy.png in Resources */ = {isa = PBXBuildFile; fileRef = A4E1850F1B0F852500E0F420 /* joystick copy.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,7 +70,12 @@
 		A4E184FE1B0F795700E0F420 /* NoLongerConnectedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoLongerConnectedViewController.m; sourceTree = "<group>"; };
 		A4E185001B0F7CD400E0F420 /* PageContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageContentViewController.h; sourceTree = "<group>"; };
 		A4E185011B0F7CD400E0F420 /* PageContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageContentViewController.m; sourceTree = "<group>"; };
-		A4E185031B0F7E7100E0F420 /* PageViewDemoImages */ = {isa = PBXFileReference; lastKnownFileType = folder; name = PageViewDemoImages; path = ../../../../../Downloads/PageViewDemoImages; sourceTree = "<group>"; };
+		A4E185051B0F82F800E0F420 /* page1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = page1.png; path = ../../../../../Downloads/PageViewDemoImages/page1.png; sourceTree = "<group>"; };
+		A4E185061B0F82F800E0F420 /* page2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = page2.png; path = ../../../../../Downloads/PageViewDemoImages/page2.png; sourceTree = "<group>"; };
+		A4E185071B0F82F800E0F420 /* page3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = page3.png; path = ../../../../../Downloads/PageViewDemoImages/page3.png; sourceTree = "<group>"; };
+		A4E185081B0F82F800E0F420 /* page4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = page4.png; path = ../../../../../Downloads/PageViewDemoImages/page4.png; sourceTree = "<group>"; };
+		A4E1850E1B0F852500E0F420 /* dpad copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "dpad copy.png"; path = "Images/dpad copy.png"; sourceTree = "<group>"; };
+		A4E1850F1B0F852500E0F420 /* joystick copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "joystick copy.png"; path = "Images/joystick copy.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +116,7 @@
 		A4E184B91B0F50A600E0F420 /* ACRCV app */ = {
 			isa = PBXGroup;
 			children = (
+				A4E1850D1B0F839F00E0F420 /* Joystick */,
 				A4E184E91B0F774600E0F420 /* Images/Music */,
 				A4E184E41B0F76D600E0F420 /* Main View */,
 				A4E184E31B0F76B000E0F420 /* Command Line */,
@@ -239,7 +250,12 @@
 		A4E184E91B0F774600E0F420 /* Images/Music */ = {
 			isa = PBXGroup;
 			children = (
-				A4E185031B0F7E7100E0F420 /* PageViewDemoImages */,
+				A4E1850E1B0F852500E0F420 /* dpad copy.png */,
+				A4E1850F1B0F852500E0F420 /* joystick copy.png */,
+				A4E185051B0F82F800E0F420 /* page1.png */,
+				A4E185061B0F82F800E0F420 /* page2.png */,
+				A4E185071B0F82F800E0F420 /* page3.png */,
+				A4E185081B0F82F800E0F420 /* page4.png */,
 			);
 			name = Images/Music;
 			sourceTree = "<group>";
@@ -251,6 +267,13 @@
 				A4E184FE1B0F795700E0F420 /* NoLongerConnectedViewController.m */,
 			);
 			name = "No Longer Connected";
+			sourceTree = "<group>";
+		};
+		A4E1850D1B0F839F00E0F420 /* Joystick */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Joystick;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -334,9 +357,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				A4E184C61B0F50A600E0F420 /* Main.storyboard in Resources */,
-				A4E185041B0F7E7100E0F420 /* PageViewDemoImages in Resources */,
+				A4E185091B0F82F800E0F420 /* page1.png in Resources */,
 				A4E184CB1B0F50A600E0F420 /* LaunchScreen.xib in Resources */,
 				A4E184C81B0F50A600E0F420 /* Images.xcassets in Resources */,
+				A4E185101B0F852500E0F420 /* dpad copy.png in Resources */,
+				A4E1850C1B0F82F800E0F420 /* page4.png in Resources */,
+				A4E1850A1B0F82F800E0F420 /* page2.png in Resources */,
+				A4E185111B0F852500E0F420 /* joystick copy.png in Resources */,
+				A4E1850B1B0F82F800E0F420 /* page3.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -493,6 +521,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "ACRCV app/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -503,6 +532,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "ACRCV app/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
