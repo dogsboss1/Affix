@@ -9,5 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface BluetoothConnectingViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UILabel *pairDevicesTitleLabel;
+
+- (IBAction)mainVCButtonPressed:(UIButton *)sender;
 
 @end

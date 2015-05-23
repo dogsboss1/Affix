@@ -29,6 +29,8 @@
 		A4E185101B0F852500E0F420 /* dpad copy.png in Resources */ = {isa = PBXBuildFile; fileRef = A4E1850E1B0F852500E0F420 /* dpad copy.png */; };
 		A4E185111B0F852500E0F420 /* joystick copy.png in Resources */ = {isa = PBXBuildFile; fileRef = A4E1850F1B0F852500E0F420 /* joystick copy.png */; };
 		A4E185141B0F8B0600E0F420 /* CLOptionsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E185131B0F8B0600E0F420 /* CLOptionsCell.m */; };
+		A4E185171B1023CE00E0F420 /* CLOption.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E185161B1023CE00E0F420 /* CLOption.m */; };
+		A4E1851A1B1023DA00E0F420 /* CLOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E185191B1023DA00E0F420 /* CLOptions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +81,10 @@
 		A4E1850F1B0F852500E0F420 /* joystick copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "joystick copy.png"; path = "Images/joystick copy.png"; sourceTree = "<group>"; };
 		A4E185121B0F8B0600E0F420 /* CLOptionsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLOptionsCell.h; sourceTree = "<group>"; };
 		A4E185131B0F8B0600E0F420 /* CLOptionsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLOptionsCell.m; sourceTree = "<group>"; };
+		A4E185151B1023CE00E0F420 /* CLOption.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLOption.h; sourceTree = "<group>"; };
+		A4E185161B1023CE00E0F420 /* CLOption.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLOption.m; sourceTree = "<group>"; };
+		A4E185181B1023DA00E0F420 /* CLOptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLOptions.h; sourceTree = "<group>"; };
+		A4E185191B1023DA00E0F420 /* CLOptions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLOptions.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -221,6 +227,10 @@
 				A4E184F11B0F78E500E0F420 /* CLOptionsTableViewController.m */,
 				A4E185121B0F8B0600E0F420 /* CLOptionsCell.h */,
 				A4E185131B0F8B0600E0F420 /* CLOptionsCell.m */,
+				A4E185151B1023CE00E0F420 /* CLOption.h */,
+				A4E185161B1023CE00E0F420 /* CLOption.m */,
+				A4E185181B1023DA00E0F420 /* CLOptions.h */,
+				A4E185191B1023DA00E0F420 /* CLOptions.m */,
 			);
 			name = Options;
 			sourceTree = "<group>";
@@ -388,6 +398,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A4E184EF1B0F78B700E0F420 /* BluetoothConnectingViewController.m in Sources */,
+				A4E1851A1B1023DA00E0F420 /* CLOptions.m in Sources */,
 				A4E184C31B0F50A600E0F420 /* ViewController.m in Sources */,
 				A4E185021B0F7CD400E0F420 /* PageContentViewController.m in Sources */,
 				A4E184F51B0F790100E0F420 /* SuperMainViewController.m in Sources */,
@@ -395,6 +406,7 @@
 				A4E184C01B0F50A600E0F420 /* AppDelegate.m in Sources */,
 				A4E184BD1B0F50A600E0F420 /* main.m in Sources */,
 				A4E184EC1B0F789800E0F420 /* MainViewController.m in Sources */,
+				A4E185171B1023CE00E0F420 /* CLOption.m in Sources */,
 				A4E184F21B0F78E500E0F420 /* CLOptionsTableViewController.m in Sources */,
 				A4E185141B0F8B0600E0F420 /* CLOptionsCell.m in Sources */,
 				A4E184FF1B0F795700E0F420 /* NoLongerConnectedViewController.m in Sources */,

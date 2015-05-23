@@ -7,6 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "NoLongerConnectedViewController.h"
+#import "CLOptionsTableViewController.h"
+#import "SuperMainViewController.h"
 
 @interface MainViewController : UIViewController
 - (IBAction)autoActivateButtonPressed:(UIButton *)sender;
@@ -21,5 +24,11 @@
 - (IBAction)rightButtonPressed:(UIButton *)sender;
 - (IBAction)backButtonPressed:(UIButton *)sender;
 - (IBAction)leftButtonPressed:(UIButton *)sender;
+
+- (IBAction)actionsButtonPressed:(UIButton *)sender;
+- (IBAction)superMainButtonPressed:(UIButton *)sender;
+- (IBAction)disconnectButtonPressed:(UIButton *)sender;
+
+@property NSDictionary* commands;
 
 @end

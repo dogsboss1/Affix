@@ -17,4 +17,7 @@
 @property NSString *titleText;
 @property NSString *imageFile;
 
+- (IBAction)bluetoothButtonPressed:(UIButton *)sender;
+
+
 @end

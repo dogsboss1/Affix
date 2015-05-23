@@ -34,4 +34,12 @@
 }
 */
 
+- (IBAction)retryButtonPressed:(UIButton *)sender {
+}
+
+- (IBAction)whyDidThisHappenButtonPressed:(UIButton *)sender {
+}
+
+- (IBAction)iKnowButtonPressed:(UIButton *)sender {
+}
 @end

@@ -9,5 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface GifViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UILabel *gifTitleLabel;
+@property (weak, nonatomic) IBOutlet UIImageView *backgroundImage;
+- (IBAction)retryButtonPressed:(UIButton *)sender;
 
 @end

@@ -34,4 +34,6 @@
 }
 */
 
+- (IBAction)retryButtonPressed:(UIButton *)sender {
+}
 @end

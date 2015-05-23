@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface SuperMainViewController : UIViewController
+- (IBAction)backButtonPressed:(UIButton *)sender;
 
 @end

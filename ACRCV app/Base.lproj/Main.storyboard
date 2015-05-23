@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="efe-ZL-kkn">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Jr6-Q4-PJU">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
@@ -69,6 +69,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="bluetoothButtonPressed:" destination="wbu-2b-yG8" eventType="touchUpInside" id="7YM-Vr-4cx"/>
                                     <segue destination="BYZ-38-t0r" kind="presentation" id="CnQ-T2-Rbb"/>
                                 </connections>
                             </button>
@@ -97,25 +98,35 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C6l-uW-O9Z">
-                                <rect key="frame" x="508" y="233" width="59" height="30"/>
-                                <state key="normal" title="Main VC">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="bHJ-Cd-Xv9" kind="presentation" id="pka-qW-L4L"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pair Devices" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u5b-US-j3u">
                                 <rect key="frame" x="252" y="70" width="96" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="352" y="69" width="96" height="22"/>
+                                </variation>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C6l-uW-O9Z">
+                                <rect key="frame" x="508" y="233" width="59" height="30"/>
+                                <state key="normal" title="Main VC">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="693" y="250" width="60" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="mainVCButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fEM-xj-XTN"/>
+                                    <segue destination="bHJ-Cd-Xv9" kind="presentation" id="pka-qW-L4L"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="pairDevicesTitleLabel" destination="u5b-US-j3u" id="pLt-hL-Ixj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -144,25 +155,27 @@
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="26x-Bh-ULa">
                                 <rect key="frame" x="428" y="28" width="171" height="128"/>
+                                <variation key="widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="596" y="46" width="172" height="128"/>
+                                </variation>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pvK-zh-KhF">
                                 <rect key="frame" x="279" y="175" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="379" y="174" width="42" height="22"/>
+                                </variation>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OFQ-9Q-xXe">
                                 <rect key="frame" x="178" y="204" width="245" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <variation key="widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="277" y="204" width="246" height="30"/>
+                                </variation>
                             </textField>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8oT-Iy-3op">
-                                <rect key="frame" x="180" y="28" width="240" height="128"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WK1-sF-3EL">
                                 <rect key="frame" x="64" y="446" width="30" height="30"/>
                                 <state key="normal" title="FD">
@@ -195,6 +208,9 @@
                                 <state key="normal" title="UP">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <variation key="widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="688" y="452" width="30" height="30"/>
+                                </variation>
                                 <connections>
                                     <action selector="upButtonPressed:" destination="bHJ-Cd-Xv9" eventType="touchUpInside" id="KPQ-9Q-I97"/>
                                 </connections>
@@ -204,6 +220,9 @@
                                 <state key="normal" title="DOWN">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <variation key="widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="679" y="550" width="48" height="30"/>
+                                </variation>
                                 <connections>
                                     <action selector="downButtonPressed:" destination="bHJ-Cd-Xv9" eventType="touchUpInside" id="cAH-u4-iLd"/>
                                 </connections>
@@ -213,8 +232,12 @@
                                 <state key="normal" title="actions">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <variation key="widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="679" y="248" width="50" height="30"/>
+                                </variation>
                                 <connections>
-                                    <segue destination="YZr-4y-Jue" kind="presentation" id="WXL-HY-xF3"/>
+                                    <action selector="actionsButtonPressed:" destination="bHJ-Cd-Xv9" eventType="touchUpInside" id="gGB-Pr-O66"/>
+                                    <segue destination="YZr-4y-Jue" kind="presentation" identifier="optionsSegue" id="WXL-HY-xF3"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TAw-Jh-PdY">
@@ -222,8 +245,22 @@
                                 <state key="normal" title="super main">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <variation key="widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="666" y="337" width="76" height="30"/>
+                                </variation>
                                 <connections>
-                                    <segue destination="Oyu-Bg-8IW" kind="presentation" id="jUK-Sa-xLs"/>
+                                    <action selector="superMainButtonPressed:" destination="bHJ-Cd-Xv9" eventType="touchUpInside" id="5bE-CV-Ay4"/>
+                                    <segue destination="Oyu-Bg-8IW" kind="presentation" identifier="superSegue" id="jUK-Sa-xLs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nj4-Hj-R2K">
+                                <rect key="frame" x="48" y="285" width="78" height="30"/>
+                                <state key="normal" title="Disconnect">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="disconnectButtonPressed:" destination="bHJ-Cd-Xv9" eventType="touchUpInside" id="JEu-yY-lyV"/>
+                                    <segue destination="efe-ZL-kkn" kind="presentation" identifier="disconnectedSegue" id="T5D-kT-3T5"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MhV-EH-QlW">
@@ -235,6 +272,16 @@
                                     <action selector="backButtonPressed:" destination="bHJ-Cd-Xv9" eventType="touchUpInside" id="yQo-pE-8Oy"/>
                                 </connections>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8oT-Iy-3op">
+                                <rect key="frame" x="180" y="28" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <variation key="widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="280" y="28" width="240" height="128"/>
+                                </variation>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -268,6 +315,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="retryButtonPressed:" destination="efe-ZL-kkn" eventType="touchUpInside" id="j3F-lF-Rzn"/>
                                     <segue destination="BYZ-38-t0r" kind="presentation" id="bLc-Z2-FCa"/>
                                 </connections>
                             </button>
@@ -277,6 +325,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="iKnowButtonPressed:" destination="efe-ZL-kkn" eventType="touchUpInside" id="Zrw-lZ-3Yz"/>
                                     <segue destination="lWX-tD-Uuj" kind="presentation" id="HVW-us-35d"/>
                                 </connections>
                             </button>
@@ -286,6 +335,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="whyDidThisHappenButtonPressed:" destination="efe-ZL-kkn" eventType="touchUpInside" id="5UZ-1V-p8Q"/>
                                     <segue destination="lPh-6O-Ccd" kind="presentation" id="0C7-bI-Quh"/>
                                 </connections>
                             </button>
@@ -299,6 +349,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="noLongerConnectedTitleLabel" destination="lFs-5j-Qsz" id="2ZB-Cv-WFd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NwI-1r-2gu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -322,7 +375,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="bHJ-Cd-Xv9" kind="presentation" id="a4Z-Yz-GVF"/>
+                                    <action selector="backButtonPressed:" destination="Oyu-Bg-8IW" eventType="touchUpInside" id="agr-8b-B5z"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -391,7 +444,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vNZ-Cm-bap" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-30" y="2141"/>
+            <point key="canvasLocation" x="-417" y="2145"/>
         </scene>
         <!--Gif View Controller-->
         <scene sceneID="i4G-UA-qaG">
@@ -414,6 +467,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="retryButtonPressed:" destination="lWX-tD-Uuj" eventType="touchUpInside" id="WQy-B4-ZKc"/>
                                     <segue destination="BYZ-38-t0r" kind="presentation" id="AfP-2G-59Q"/>
                                 </connections>
                             </button>
@@ -426,10 +480,14 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="backgroundImage" destination="HD3-wM-PMS" id="5PA-TV-hmf"/>
+                        <outlet property="gifTitleLabel" destination="u81-Jz-5OR" id="AAp-sK-vvF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N3I-hE-SCL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-744" y="2149"/>
+            <point key="canvasLocation" x="-738" y="2931"/>
         </scene>
         <!--Options Table View Controller-->
         <scene sceneID="7kJ-cI-RAu">
@@ -446,7 +504,7 @@
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
                             <connections>
-                                <segue destination="bHJ-Cd-Xv9" kind="presentation" id="gfH-Np-eRx"/>
+                                <action selector="backButtonPressed:" destination="YZr-4y-Jue" eventType="touchUpInside" id="rTI-Qh-CHo"/>
                             </connections>
                         </button>
                         <prototypes>
@@ -501,7 +559,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MoS-o3-C9b" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="216" y="1363"/>
+            <point key="canvasLocation" x="1698" y="1363"/>
         </scene>
     </scenes>
     <resources>
@@ -510,6 +568,5 @@
     <inferredMetricsTieBreakers>
         <segue reference="Noz-3S-EEU"/>
         <segue reference="Dtc-GG-3Yh"/>
-        <segue reference="a4Z-Yz-GVF"/>
     </inferredMetricsTieBreakers>
 </document>

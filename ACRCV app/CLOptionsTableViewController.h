@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface CLOptionsTableViewController : UITableViewController
+- (IBAction)backButtonPressed:(UIButton *)sender;
 
 @end

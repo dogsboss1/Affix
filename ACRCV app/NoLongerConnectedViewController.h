@@ -9,5 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface NoLongerConnectedViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UILabel *noLongerConnectedTitleLabel;
+
+- (IBAction)retryButtonPressed:(UIButton *)sender;
+- (IBAction)whyDidThisHappenButtonPressed:(UIButton *)sender;
+- (IBAction)iKnowButtonPressed:(UIButton *)sender;
 
 @end
