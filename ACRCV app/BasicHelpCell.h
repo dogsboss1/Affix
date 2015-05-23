@@ -12,6 +12,5 @@
 @property (weak, nonatomic) IBOutlet UILabel *BHTitleLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *BHBackgroundImage;
 @property (weak, nonatomic) IBOutlet UITextView *BHTextView;
-- (IBAction)backButtonPressed:(UIButton *)sender;
 
 @end

@@ -33,6 +33,7 @@
 
 - (IBAction)commandLinePressed:(UITextField *)sender;
 - (IBAction)commandLineGoButtonPressed:(UIButton *)sender;
+- (IBAction)basicHelpButtonPressed:(UIButton *)sender;
 
 
 @property NSDictionary *commands;

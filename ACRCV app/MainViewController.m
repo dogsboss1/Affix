@@ -66,6 +66,11 @@
         CLOptionsTableViewController *optionsVC = [segue destinationViewController];
         // Pass the selected object to the new view controller.
     }
+    else if ([[segue identifier] isEqualToString:(@"basicHelpSegue")]) {
+        // Get the new view controller using [segue destinationViewController].
+        BasicHelpViewController *basicHelpVC = [segue destinationViewController];
+        // Pass the selected object to the new view controller.
+    }
 
     
 }
@@ -157,6 +162,10 @@
     self.commandLineTextField.text = @"";
     
     
+}
+
+- (IBAction)basicHelpButtonPressed:(UIButton *)sender {
+    [self performSegueWithIdentifier:@"BasicHelpSegue" sender:self];
 }
 
 @end

@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface BasicHelpViewController : UICollectionViewController
+- (IBAction)backButtonPressed:(UIButton *)sender;
 
 @end
