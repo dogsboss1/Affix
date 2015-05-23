@@ -10,21 +10,34 @@
 
 @implementation CLOption
 
-- (id)init {
-    self = [super init];
-    if (self) {
-        self.optionName = @"";
-        self.completionProgress = arc4random_uniform(100)/100.0;
-        self.priority = 0;
-        self.type = optionType1;
++ (instancetype)makeOptionOfType:(optionType)type {
+    CLOption *option = [[CLOption alloc] init];
+    
+    if (type == optionType1) {
+        option.optionName = @"360";
+        option.completionProgress = arc4random_uniform(100)/100.0;
+        option.priority = 0;
     }
-    return self;
-}
-
-+ (CLOption *)optionWithName:(NSString *)name type:(optionType)type {
-    CLOption* option = [[CLOption alloc] init];
-    option.optionName = name;
-    option.type = type;
+    else if (type == optionType2) {
+        option.optionName = @"360";
+        option.completionProgress = arc4random_uniform(100)/100.0;
+        option.priority = 0;
+    }
+    else if (type == optionType3) {
+        option.optionName = @"360";
+        option.completionProgress = arc4random_uniform(100)/100.0;
+        option.priority = 0;
+    }
+    else if (type == optionType4) {
+        option.optionName = @"360";
+        option.completionProgress = arc4random_uniform(100)/100.0;
+        option.priority = 0;
+    }
+    else if (type == optionType5) {
+        option.optionName = @"360";
+        option.completionProgress = arc4random_uniform(100)/100.0;
+        option.priority = 0;
+    }
     return option;
 }
 

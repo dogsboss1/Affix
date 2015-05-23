@@ -17,16 +17,32 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-        _commands = [[NSDictionary alloc] initWithObjects:[NSArray arrayWithObjects:@"superSegue", @"optionsSegue", nil] forKeys:[NSArray arrayWithObjects:@"super", @"options", nil]];
+   // self.commandLineTextField.delegate = self;
+    
+        self.commands = [[NSDictionary alloc] initWithObjects:[NSArray arrayWithObjects:@"superSegue", @"optionsSegue", nil] forKeys:[NSArray arrayWithObjects:@"super", @"options", nil]];
     
     // Do any additional setup after loading the view.
 }
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+/*
+- (BOOL)textView:(UITextView *)textView shouldChangeTextInRange:(NSRange)range replacementText:(NSString *)text {
+    if ([text isEqualToString:@"\n"]) {
+        //NSString *commandText = [components lastObject];
+        NSLog(@"return pressed");
+#warning check for what command was pressed
 
+        //textView.text = @"";
+        [textView resignFirstResponder];
+        return NO;
+    }
+    return YES;
+}*/
 
 #pragma mark - Navigation
 
@@ -99,6 +115,19 @@
 - (IBAction)disconnectButtonPressed:(UIButton *)sender {
     [self performSegueWithIdentifier:@"disconnectedSegue" sender:self];
 
+}
+
+- (IBAction)commandLinePressed:(UITextField *)sender {
+    NSLog(@"command line actovity");
+}
+
+- (IBAction)commandLineGoButtonPressed:(UIButton *)sender {
+    
+    NSString* input = self.commandLineTextField.text;
+    
+    self.commandLineLabel.text = input;
+    
+    
 }
 
 @end

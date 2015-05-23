@@ -14,6 +14,7 @@
 @interface CLOptionsTableViewController ()
 
 @property (nonatomic)CLOptions *options;
+@property (nonatomic)CLOptionsCell *cell;
 
 @end
 
@@ -21,7 +22,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -31,10 +31,7 @@
 }
 
 - (CLOptions *)options {
-    if (!_options) {
-        _options =[[CLOptions alloc] init];
-        [_options optionOfType:[CLOption optionWithName:@"360" type:optionType1]];
-    }
+    if (!_options) _options =[[CLOptions alloc] init];
     return _options;
 }
 
@@ -52,20 +49,22 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     // Return the number of rows in the section.
-    return [self.options optionOfType:section].count;
+    NSArray* tempArray = self.options.allOptions;
+    return [tempArray count];
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    NSArray *optionOfType = [self.options optionOfType:[indexPath indexAtPosition:0]];
-    CLOption *option = [optionOfType objectAtIndex:[indexPath indexAtPosition:1]];
+    NSArray *tempArray = self.options.allOptions;
+    CLOption *option = [tempArray objectAtIndex:indexPath.row];
     
-    CLOptionsCell *cell = [tableView dequeueReusableCellWithIdentifier:@"actionCell"];
+    CLOptionsCell *cell = [tableView dequeueReusableCellWithIdentifier:@"actionCell" forIndexPath:indexPath];
     cell.actionNameLabel.text = option.optionName;
-    cell.actionProgressProgressView.progress = option.completionProgress;
+    cell.actionProgressProgressView.progress = 0;
     cell.priotityStepperLabel.text = [NSString stringWithFormat:@"%d", (int)option.priority];
-    
+    cell.activatedLabel.text = @"";
+    cell.completeLabel.text = @"";
     return cell;
 }
 

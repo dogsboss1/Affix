@@ -1,5 +1,5 @@
 //
-//  CLOptions.h
+//  commmands.h
 //  ACRCV app
 //
 //  Created by felix king on 23/05/2015.
@@ -7,10 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "CLOption.h"
 
-@interface CLOptions : NSObject
-
-@property (nonatomic) NSMutableArray* allOptions;
+@interface commmands : NSObject
 
 @end

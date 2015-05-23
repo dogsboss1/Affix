@@ -165,7 +165,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="379" y="174" width="42" height="22"/>
+                                    <rect key="frame" x="277" y="174" width="246" height="22"/>
                                 </variation>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OFQ-9Q-xXe">
@@ -175,7 +175,21 @@
                                 <variation key="widthClass=regular" fixedFrame="YES">
                                     <rect key="frame" x="277" y="204" width="246" height="30"/>
                                 </variation>
+                                <connections>
+                                    <action selector="commandLinePressed:" destination="bHJ-Cd-Xv9" eventType="editingDidEnd" id="ZjW-nZ-ucx"/>
+                                    <outlet property="delegate" destination="Yfx-ut-alK" id="JeG-UC-a50"/>
+                                </connections>
                             </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8oT-Iy-3op">
+                                <rect key="frame" x="180" y="28" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <variation key="widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="280" y="28" width="240" height="128"/>
+                                </variation>
+                            </textView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WK1-sF-3EL">
                                 <rect key="frame" x="64" y="446" width="30" height="30"/>
                                 <state key="normal" title="FD">
@@ -272,18 +286,30 @@
                                     <action selector="backButtonPressed:" destination="bHJ-Cd-Xv9" eventType="touchUpInside" id="yQo-pE-8Oy"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8oT-Iy-3op">
-                                <rect key="frame" x="180" y="28" width="240" height="128"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vLR-LG-Omw">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Go">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <variation key="widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="280" y="28" width="240" height="128"/>
+                                    <rect key="frame" x="523" y="204" width="30" height="30"/>
                                 </variation>
-                            </textView>
+                                <connections>
+                                    <action selector="commandLineGoButtonPressed:" destination="bHJ-Cd-Xv9" eventType="touchUpInside" id="Ubx-KD-Tqt"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="vLR-LG-Omw"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=regular">
+                            <mask key="subviews">
+                                <include reference="vLR-LG-Omw"/>
+                            </mask>
+                        </variation>
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
@@ -528,24 +554,65 @@
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="q3I-PA-zOj">
+                                            <rect key="frame" x="314" y="7" width="94" height="29"/>
+                                            <variation key="widthClass=regular" fixedFrame="YES">
+                                                <rect key="frame" x="314" y="7" width="94" height="29"/>
+                                            </variation>
+                                            <connections>
+                                                <action selector="actionPriorityStepperPressed:" destination="7Ic-jE-pUx" eventType="valueChanged" id="Cbd-pQ-brM"/>
+                                            </connections>
+                                        </stepper>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f56-ll-Zrv">
+                                            <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                            <variation key="widthClass=regular" fixedFrame="YES">
+                                                <rect key="frame" x="555" y="11" width="85" height="21"/>
+                                            </variation>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z28-OR-gmW">
+                                            <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.0044645800201198686" green="0.91063104281767959" blue="0.012464608714558397" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                            <variation key="widthClass=regular" fixedFrame="YES">
+                                                <rect key="frame" x="618" y="11" width="91" height="21"/>
+                                            </variation>
+                                        </label>
                                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v2k-4S-daU">
                                             <rect key="frame" x="546" y="6" width="46" height="30"/>
-                                            <state key="normal" title="Button">
+                                            <state key="normal" title="Activate">
                                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                             </state>
+                                            <variation key="widthClass=regular" fixedFrame="YES">
+                                                <rect key="frame" x="491" y="7" width="56" height="30"/>
+                                            </variation>
                                             <connections>
                                                 <action selector="activateActionButtonPressed:" destination="7Ic-jE-pUx" eventType="touchUpInside" id="vlk-pr-jsw"/>
                                             </connections>
                                         </button>
-                                        <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="q3I-PA-zOj">
-                                            <rect key="frame" x="314" y="7" width="94" height="29"/>
-                                        </stepper>
                                     </subviews>
+                                    <variation key="default">
+                                        <mask key="subviews">
+                                            <exclude reference="f56-ll-Zrv"/>
+                                            <exclude reference="Z28-OR-gmW"/>
+                                        </mask>
+                                    </variation>
+                                    <variation key="widthClass=regular">
+                                        <mask key="subviews">
+                                            <include reference="f56-ll-Zrv"/>
+                                            <include reference="Z28-OR-gmW"/>
+                                        </mask>
+                                    </variation>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="actiavteButtonLabel" destination="v2k-4S-daU" id="uPj-j0-nuX"/>
                                     <outlet property="actionNameLabel" destination="tCL-0T-DgF" id="qUo-pF-Rcp"/>
                                     <outlet property="actionProgressProgressView" destination="cUW-Cp-iuL" id="oyD-by-4cD"/>
-                                    <outlet property="priorityStepper" destination="q3I-PA-zOj" id="CxI-K1-g39"/>
+                                    <outlet property="activatedLabel" destination="f56-ll-Zrv" id="zO9-Sy-ua4"/>
+                                    <outlet property="completeLabel" destination="Z28-OR-gmW" id="fkN-4i-X67"/>
                                     <outlet property="priotityStepperLabel" destination="dYt-Tw-C4j" id="5hP-4S-OzU"/>
                                 </connections>
                             </tableViewCell>

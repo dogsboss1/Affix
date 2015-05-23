@@ -11,7 +11,7 @@
 #import "CLOptionsTableViewController.h"
 #import "SuperMainViewController.h"
 
-@interface MainViewController : UIViewController
+@interface MainViewController : UIViewController //<UITextViewDelegate>
 - (IBAction)autoActivateButtonPressed:(UIButton *)sender;
 @property (weak, nonatomic) IBOutlet UILabel *commandLineLabel;
 @property (weak, nonatomic) IBOutlet UITextView *activityLogTextView;
@@ -28,6 +28,9 @@
 - (IBAction)actionsButtonPressed:(UIButton *)sender;
 - (IBAction)superMainButtonPressed:(UIButton *)sender;
 - (IBAction)disconnectButtonPressed:(UIButton *)sender;
+
+- (IBAction)commandLinePressed:(UITextField *)sender;
+- (IBAction)commandLineGoButtonPressed:(UIButton *)sender;
 
 @property NSDictionary* commands;
 

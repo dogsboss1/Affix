@@ -10,21 +10,17 @@
 
 @implementation CLOptions
 
-- (instancetype) init {
-    self = [super init];
-    if (self) {
-        self.allOptions = [[NSMutableArray alloc] init];
-    }
-    return self;
-}
+- (NSMutableArray *)allOptions {
+    if (!_allOptions) {
+        _allOptions = [[NSMutableArray alloc] init];
+        
+        [_allOptions addObject:[CLOption makeOptionOfType:optionType1]];
+        [_allOptions addObject:[CLOption makeOptionOfType:optionType2]];
+        [_allOptions addObject:[CLOption makeOptionOfType:optionType3]];
+        [_allOptions addObject:[CLOption makeOptionOfType:optionType4]];
+        [_allOptions addObject:[CLOption makeOptionOfType:optionType5]];
 
-- (NSArray *)optionOfType:(optionType)type {
-    NSMutableArray *optionsOfType = [[NSMutableArray alloc] init];
-    for (CLOption *option in self.allOptions) {
-        if (option.type == type) {
-            [optionsOfType addObject:option];
-        }
     }
-    return optionsOfType;
+    return _allOptions;
 }
 @end

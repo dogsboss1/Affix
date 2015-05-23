@@ -11,8 +11,15 @@
 @interface CLOptionsCell : UITableViewCell
 - (IBAction)activateActionButtonPressed:(UIButton *)sender;
 @property (weak, nonatomic) IBOutlet UILabel *priotityStepperLabel;
-@property (weak, nonatomic) IBOutlet UIStepper *priorityStepper;
+- (IBAction)actionPriorityStepperPressed:(UIStepper *)sender;
 @property (weak, nonatomic) IBOutlet UIProgressView *actionProgressProgressView;
 @property (weak, nonatomic) IBOutlet UILabel *actionNameLabel;
+@property (weak, nonatomic) IBOutlet UILabel *activatedLabel;
+@property (weak, nonatomic) IBOutlet UIButton *actiavteButtonLabel;
+@property (weak, nonatomic) IBOutlet UILabel *completeLabel;
+
+
+@property NSInteger num;
+@property NSTimer* progressNum;
 
 @end

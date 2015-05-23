@@ -12,14 +12,16 @@
 typedef NS_ENUM(NSInteger, optionType) {
     optionType1,
     optionType2,
+    optionType3,
+    optionType4,
+    optionType5,
     
 };
 
 @interface CLOption : NSObject
 
-+ (CLOption *)optionWithName:(NSString *)name type:(optionType)type;
++ (instancetype)makeOptionOfType:(optionType)type;
 
-@property optionType type;
 @property NSString* optionName;
 @property CGFloat completionProgress;
 @property NSInteger priority;

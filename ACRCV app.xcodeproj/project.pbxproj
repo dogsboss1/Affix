@@ -31,6 +31,7 @@
 		A4E185141B0F8B0600E0F420 /* CLOptionsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E185131B0F8B0600E0F420 /* CLOptionsCell.m */; };
 		A4E185171B1023CE00E0F420 /* CLOption.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E185161B1023CE00E0F420 /* CLOption.m */; };
 		A4E1851A1B1023DA00E0F420 /* CLOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E185191B1023DA00E0F420 /* CLOptions.m */; };
+		A4E1851D1B106D4D00E0F420 /* commmands.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E1851C1B106D4D00E0F420 /* commmands.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +86,8 @@
 		A4E185161B1023CE00E0F420 /* CLOption.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLOption.m; sourceTree = "<group>"; };
 		A4E185181B1023DA00E0F420 /* CLOptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLOptions.h; sourceTree = "<group>"; };
 		A4E185191B1023DA00E0F420 /* CLOptions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLOptions.m; sourceTree = "<group>"; };
+		A4E1851B1B106D4D00E0F420 /* commmands.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = commmands.h; sourceTree = "<group>"; };
+		A4E1851C1B106D4D00E0F420 /* commmands.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = commmands.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -240,6 +243,8 @@
 			children = (
 				A4E184F31B0F790100E0F420 /* SuperMainViewController.h */,
 				A4E184F41B0F790100E0F420 /* SuperMainViewController.m */,
+				A4E1851B1B106D4D00E0F420 /* commmands.h */,
+				A4E1851C1B106D4D00E0F420 /* commmands.m */,
 			);
 			name = "New Main View";
 			sourceTree = "<group>";
@@ -407,6 +412,7 @@
 				A4E184BD1B0F50A600E0F420 /* main.m in Sources */,
 				A4E184EC1B0F789800E0F420 /* MainViewController.m in Sources */,
 				A4E185171B1023CE00E0F420 /* CLOption.m in Sources */,
+				A4E1851D1B106D4D00E0F420 /* commmands.m in Sources */,
 				A4E184F21B0F78E500E0F420 /* CLOptionsTableViewController.m in Sources */,
 				A4E185141B0F8B0600E0F420 /* CLOptionsCell.m in Sources */,
 				A4E184FF1B0F795700E0F420 /* NoLongerConnectedViewController.m in Sources */,
