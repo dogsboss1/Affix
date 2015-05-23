@@ -14,7 +14,7 @@
     self = [super init];
     if (self) {
         self.optionName = @"";
-        self.completionProgress = 0.0;
+        self.completionProgress = arc4random_uniform(100)/100.0;
         self.priority = 0;
         self.type = optionType1;
     }

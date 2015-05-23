@@ -508,7 +508,7 @@
                             </connections>
                         </button>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="actionCell" id="7Ic-jE-pUx" customClass="CLOptionsCell">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="actionCell" id="7Ic-jE-pUx" customClass="CLOptionsCell">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7Ic-jE-pUx" id="bhi-sW-Y8h">
                                     <autoresizingMask key="autoresizingMask"/>

@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 typedef NS_ENUM(NSInteger, optionType) {
     optionType1,
@@ -19,7 +20,7 @@ typedef NS_ENUM(NSInteger, optionType) {
 + (CLOption *)optionWithName:(NSString *)name type:(optionType)type;
 
 @property optionType type;
-@property NSString *optionName;
+@property NSString* optionName;
 @property CGFloat completionProgress;
 @property NSInteger priority;
 
