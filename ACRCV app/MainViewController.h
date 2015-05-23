@@ -13,6 +13,8 @@
 #import "BasicHelpViewController.h"
 #import "commmands.h"
 
+#import <SpriteKit/SpriteKit.h>
+
 @interface MainViewController : UIViewController //<CommandLineWhichSegueDelegate> //<UITextViewDelegate>
 - (IBAction)autoActivateButtonPressed:(UIButton *)sender;
 @property (weak, nonatomic) IBOutlet UILabel *commandLineLabel;

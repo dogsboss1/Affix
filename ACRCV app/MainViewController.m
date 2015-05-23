@@ -7,6 +7,7 @@
 //
 
 #import "MainViewController.h"
+#import "MyScene.h"
 
 @interface MainViewController ()
 
@@ -16,8 +17,18 @@
 
 @implementation MainViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
+- (void)viewDidLayoutSubviews {
+    [super viewDidLayoutSubviews];
+    
+    
+    SKView *sKView = (SKView *)self.view;
+    sKView.showsFPS = YES;
+    sKView.showsNodeCount = YES;
+    
+    SKScene *scene = [MyScene sceneWithSize:sKView.bounds.size];
+    scene.scaleMode = SKSceneScaleModeAspectFill;
+    
+    [sKView presentScene:scene];
     
    // self.commandLineTextField.delegate = self;
     

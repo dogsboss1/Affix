@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A41B70DA1B10CAD300438250 /* green-tick.png in Resources */ = {isa = PBXBuildFile; fileRef = A41B70D61B10CAD300438250 /* green-tick.png */; };
+		A41B70DB1B10CAD300438250 /* red-cross.png in Resources */ = {isa = PBXBuildFile; fileRef = A41B70D71B10CAD300438250 /* red-cross.png */; };
+		A41B70DC1B10CAD300438250 /* restart-256.png in Resources */ = {isa = PBXBuildFile; fileRef = A41B70D81B10CAD300438250 /* restart-256.png */; };
+		A41B70DD1B10CAD300438250 /* rodentia-icons_system-reboot.png in Resources */ = {isa = PBXBuildFile; fileRef = A41B70D91B10CAD300438250 /* rodentia-icons_system-reboot.png */; };
+		A41B70DF1B10CED900438250 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A41B70DE1B10CED900438250 /* SpriteKit.framework */; };
+		A41B70E11B10CEE500438250 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A41B70E01B10CEE500438250 /* CoreBluetooth.framework */; };
+		A41B70E41B10D15E00438250 /* Joystick.m in Sources */ = {isa = PBXBuildFile; fileRef = A41B70E31B10D15D00438250 /* Joystick.m */; };
+		A41B70EC1B10DA3400438250 /* MyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = A41B70EB1B10DA3400438250 /* MyScene.m */; };
 		A4E184BD1B0F50A600E0F420 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E184BC1B0F50A600E0F420 /* main.m */; };
 		A4E184C01B0F50A600E0F420 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E184BF1B0F50A600E0F420 /* AppDelegate.m */; };
 		A4E184C31B0F50A600E0F420 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E184C21B0F50A600E0F420 /* ViewController.m */; };
@@ -22,8 +30,8 @@
 		A4E184FB1B0F791F00E0F420 /* SimpleInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E184FA1B0F791F00E0F420 /* SimpleInfoViewController.m */; };
 		A4E184FF1B0F795700E0F420 /* NoLongerConnectedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E184FE1B0F795700E0F420 /* NoLongerConnectedViewController.m */; };
 		A4E185021B0F7CD400E0F420 /* PageContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E185011B0F7CD400E0F420 /* PageContentViewController.m */; };
-		A4E185101B0F852500E0F420 /* dpad copy.png in Resources */ = {isa = PBXBuildFile; fileRef = A4E1850E1B0F852500E0F420 /* dpad copy.png */; };
-		A4E185111B0F852500E0F420 /* joystick copy.png in Resources */ = {isa = PBXBuildFile; fileRef = A4E1850F1B0F852500E0F420 /* joystick copy.png */; };
+		A4E185101B0F852500E0F420 /* dpad.png in Resources */ = {isa = PBXBuildFile; fileRef = A4E1850E1B0F852500E0F420 /* dpad.png */; };
+		A4E185111B0F852500E0F420 /* joystick.png in Resources */ = {isa = PBXBuildFile; fileRef = A4E1850F1B0F852500E0F420 /* joystick.png */; };
 		A4E185141B0F8B0600E0F420 /* CLOptionsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E185131B0F8B0600E0F420 /* CLOptionsCell.m */; };
 		A4E185171B1023CE00E0F420 /* CLOption.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E185161B1023CE00E0F420 /* CLOption.m */; };
 		A4E1851A1B1023DA00E0F420 /* CLOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E185191B1023DA00E0F420 /* CLOptions.m */; };
@@ -51,6 +59,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A41B70D61B10CAD300438250 /* green-tick.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "green-tick.png"; path = "Images/green-tick.png"; sourceTree = "<group>"; };
+		A41B70D71B10CAD300438250 /* red-cross.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "red-cross.png"; path = "Images/red-cross.png"; sourceTree = "<group>"; };
+		A41B70D81B10CAD300438250 /* restart-256.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "restart-256.png"; path = "Images/restart-256.png"; sourceTree = "<group>"; };
+		A41B70D91B10CAD300438250 /* rodentia-icons_system-reboot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "rodentia-icons_system-reboot.png"; path = "Images/rodentia-icons_system-reboot.png"; sourceTree = "<group>"; };
+		A41B70DE1B10CED900438250 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		A41B70E01B10CEE500438250 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		A41B70E21B10D15D00438250 /* Joystick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Joystick.h; sourceTree = "<group>"; };
+		A41B70E31B10D15D00438250 /* Joystick.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Joystick.m; sourceTree = "<group>"; };
+		A41B70EA1B10DA3400438250 /* MyScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyScene.h; path = "ACRCV app/MyScene.h"; sourceTree = "<group>"; };
+		A41B70EB1B10DA3400438250 /* MyScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyScene.m; path = "ACRCV app/MyScene.m"; sourceTree = "<group>"; };
 		A4E184B71B0F50A600E0F420 /* ACRCV app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ACRCV app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4E184BB1B0F50A600E0F420 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A4E184BC1B0F50A600E0F420 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -80,8 +98,8 @@
 		A4E184FE1B0F795700E0F420 /* NoLongerConnectedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoLongerConnectedViewController.m; sourceTree = "<group>"; };
 		A4E185001B0F7CD400E0F420 /* PageContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageContentViewController.h; sourceTree = "<group>"; };
 		A4E185011B0F7CD400E0F420 /* PageContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageContentViewController.m; sourceTree = "<group>"; };
-		A4E1850E1B0F852500E0F420 /* dpad copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "dpad copy.png"; path = "Images/dpad copy.png"; sourceTree = "<group>"; };
-		A4E1850F1B0F852500E0F420 /* joystick copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "joystick copy.png"; path = "Images/joystick copy.png"; sourceTree = "<group>"; };
+		A4E1850E1B0F852500E0F420 /* dpad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = dpad.png; path = Images/dpad.png; sourceTree = "<group>"; };
+		A4E1850F1B0F852500E0F420 /* joystick.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = joystick.png; path = Images/joystick.png; sourceTree = "<group>"; };
 		A4E185121B0F8B0600E0F420 /* CLOptionsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLOptionsCell.h; sourceTree = "<group>"; };
 		A4E185131B0F8B0600E0F420 /* CLOptionsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLOptionsCell.m; sourceTree = "<group>"; };
 		A4E185151B1023CE00E0F420 /* CLOption.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLOption.h; sourceTree = "<group>"; };
@@ -110,6 +128,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A41B70E11B10CEE500438250 /* CoreBluetooth.framework in Frameworks */,
+				A41B70DF1B10CED900438250 /* SpriteKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,9 +143,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A41B70E51B10D9E400438250 /* SpriteKit */ = {
+			isa = PBXGroup;
+			children = (
+				A41B70E61B10D9FD00438250 /* Main Scene */,
+				A4E1850D1B0F839F00E0F420 /* Joystick */,
+			);
+			name = SpriteKit;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		A41B70E61B10D9FD00438250 /* Main Scene */ = {
+			isa = PBXGroup;
+			children = (
+				A41B70EA1B10DA3400438250 /* MyScene.h */,
+				A41B70EB1B10DA3400438250 /* MyScene.m */,
+			);
+			name = "Main Scene";
+			sourceTree = "<group>";
+		};
 		A4E184AE1B0F50A500E0F420 = {
 			isa = PBXGroup;
 			children = (
+				A41B70E01B10CEE500438250 /* CoreBluetooth.framework */,
+				A41B70DE1B10CED900438250 /* SpriteKit.framework */,
 				A4E184B91B0F50A600E0F420 /* ACRCV app */,
 			);
 			sourceTree = "<group>";
@@ -143,7 +184,7 @@
 		A4E184B91B0F50A600E0F420 /* ACRCV app */ = {
 			isa = PBXGroup;
 			children = (
-				A4E1850D1B0F839F00E0F420 /* Joystick */,
+				A41B70E51B10D9E400438250 /* SpriteKit */,
 				A4E184E91B0F774600E0F420 /* Images/Music */,
 				A4E184E41B0F76D600E0F420 /* Main View */,
 				A4E184E31B0F76B000E0F420 /* Command Line */,
@@ -285,11 +326,15 @@
 		A4E184E91B0F774600E0F420 /* Images/Music */ = {
 			isa = PBXGroup;
 			children = (
+				A41B70D61B10CAD300438250 /* green-tick.png */,
+				A41B70D71B10CAD300438250 /* red-cross.png */,
+				A41B70D81B10CAD300438250 /* restart-256.png */,
+				A41B70D91B10CAD300438250 /* rodentia-icons_system-reboot.png */,
 				A4E1851F1B10A33A00E0F420 /* chocolate-640.jpg */,
 				A4E185201B10A33A00E0F420 /* popsicle-640.png */,
 				A4E185211B10A33A00E0F420 /* Red_button.png */,
-				A4E1850E1B0F852500E0F420 /* dpad copy.png */,
-				A4E1850F1B0F852500E0F420 /* joystick copy.png */,
+				A4E1850E1B0F852500E0F420 /* dpad.png */,
+				A4E1850F1B0F852500E0F420 /* joystick.png */,
 				A4E185251B10A38100E0F420 /* page1.png */,
 				A4E185261B10A38100E0F420 /* page2.png */,
 				A4E185271B10A38100E0F420 /* page3.png */,
@@ -310,8 +355,11 @@
 		A4E1850D1B0F839F00E0F420 /* Joystick */ = {
 			isa = PBXGroup;
 			children = (
+				A41B70E21B10D15D00438250 /* Joystick.h */,
+				A41B70E31B10D15D00438250 /* Joystick.m */,
 			);
 			name = Joystick;
+			path = "ACRCV app";
 			sourceTree = "<group>";
 		};
 		A4E1851E1B107E2E00E0F420 /* commands */ = {
@@ -418,15 +466,19 @@
 			files = (
 				A4E184C61B0F50A600E0F420 /* Main.storyboard in Resources */,
 				A4E1852B1B10A38100E0F420 /* page3.png in Resources */,
+				A41B70DA1B10CAD300438250 /* green-tick.png in Resources */,
 				A4E185221B10A33A00E0F420 /* chocolate-640.jpg in Resources */,
+				A41B70DC1B10CAD300438250 /* restart-256.png in Resources */,
+				A41B70DB1B10CAD300438250 /* red-cross.png in Resources */,
 				A4E185241B10A33A00E0F420 /* Red_button.png in Resources */,
 				A4E184CB1B0F50A600E0F420 /* LaunchScreen.xib in Resources */,
 				A4E1852C1B10A38100E0F420 /* page4.png in Resources */,
 				A4E184C81B0F50A600E0F420 /* Images.xcassets in Resources */,
 				A4E185291B10A38100E0F420 /* page1.png in Resources */,
-				A4E185101B0F852500E0F420 /* dpad copy.png in Resources */,
+				A4E185101B0F852500E0F420 /* dpad.png in Resources */,
+				A41B70DD1B10CAD300438250 /* rodentia-icons_system-reboot.png in Resources */,
 				A4E185231B10A33A00E0F420 /* popsicle-640.png in Resources */,
-				A4E185111B0F852500E0F420 /* joystick copy.png in Resources */,
+				A4E185111B0F852500E0F420 /* joystick.png in Resources */,
 				A4E1852A1B10A38100E0F420 /* page2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -445,6 +497,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A41B70E41B10D15E00438250 /* Joystick.m in Sources */,
 				A4E184EF1B0F78B700E0F420 /* BluetoothConnectingViewController.m in Sources */,
 				A4E1851A1B1023DA00E0F420 /* CLOptions.m in Sources */,
 				A4E184C31B0F50A600E0F420 /* ViewController.m in Sources */,
@@ -460,6 +513,7 @@
 				A4E184F21B0F78E500E0F420 /* CLOptionsTableViewController.m in Sources */,
 				A4E185141B0F8B0600E0F420 /* CLOptionsCell.m in Sources */,
 				A4E184FF1B0F795700E0F420 /* NoLongerConnectedViewController.m in Sources */,
+				A41B70EC1B10DA3400438250 /* MyScene.m in Sources */,
 				A4E185301B10B6CF00E0F420 /* BasicHelpViewController.m in Sources */,
 				A4E184FB1B0F791F00E0F420 /* SimpleInfoViewController.m in Sources */,
 				A4E185331B10B6EA00E0F420 /* BasicHelpCell.m in Sources */,
