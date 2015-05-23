@@ -71,7 +71,34 @@
     
 }
 
+- (NSString*) commandsAction:(NSString *)string {
+    
+    self.commands = [[NSDictionary alloc] initWithObjects:[NSArray arrayWithObjects:@"superSegue", @"optionsSegue", nil] forKeys:[NSArray arrayWithObjects:@"super", @"options", nil]];
+    
+    for (NSString *keys in [self.commands allKeys]) {
+        if ([string isEqualToString:keys]) {
+            self.segueIdentifier = [self.commands valueForKey:keys];
+            [self performSegue];
+            return self.segueIdentifier;
+        }
+    }
+    if ([self.segueIdentifier isEqualToString:@""]) {
+        return nil;
+    }
+    else {
+        return nil;
+    }
+    
+}
 
+- (void) performSegue {
+    [self performSelector:@selector(welcomeBack) withObject:self afterDelay:0.3];
+    [self performSegueWithIdentifier:self.segueIdentifier sender:self];
+}
+
+- (void) welcomeBack {
+    self.commandLineLabel.text = @"Welcome Back!";
+}
 
 - (IBAction)autoActivateButtonPressed:(UIButton *)sender {
     
@@ -129,8 +156,9 @@
     
     self.commandLineLabel.text = input;
     
-    NSLog(@"%@", [self.command commandsAction:input]);
-    NSLog(@"%@", self.command.segueIdentifier);
+    [self commandsAction:input];
+    
+    self.commandLineTextField.text = @"";
     
     
 }

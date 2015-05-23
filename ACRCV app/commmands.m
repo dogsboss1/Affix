@@ -9,7 +9,7 @@
 #import "commmands.h"
 
 @implementation commmands
-
+/*
 - (NSString*) commandsAction:(NSString *)string {
     
     self.commands = [[NSDictionary alloc] initWithObjects:[NSArray arrayWithObjects:@"superSegue", @"optionsSegue", nil] forKeys:[NSArray arrayWithObjects:@"super", @"options", nil]];
@@ -23,5 +23,5 @@
         }
     }
     return self.segueIdentifier;
-}
+}*/
 @end

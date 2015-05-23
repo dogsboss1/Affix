@@ -12,7 +12,7 @@
 #import "SuperMainViewController.h"
 #import "commmands.h"
 
-@interface MainViewController : UIViewController <CommandLineWhichSegueDelegate> //<UITextViewDelegate>
+@interface MainViewController : UIViewController //<CommandLineWhichSegueDelegate> //<UITextViewDelegate>
 - (IBAction)autoActivateButtonPressed:(UIButton *)sender;
 @property (weak, nonatomic) IBOutlet UILabel *commandLineLabel;
 @property (weak, nonatomic) IBOutlet UITextView *activityLogTextView;
@@ -32,5 +32,10 @@
 
 - (IBAction)commandLinePressed:(UITextField *)sender;
 - (IBAction)commandLineGoButtonPressed:(UIButton *)sender;
+
+
+@property NSDictionary *commands;
+@property NSString *segueIdentifier;
+- (NSString*)commandsAction:(NSString *)string;
 
 @end
