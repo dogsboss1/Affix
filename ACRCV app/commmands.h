@@ -8,6 +8,17 @@
 
 #import <Foundation/Foundation.h>
 
+@protocol CommandLineWhichSegueDelegate <NSObject>
+
+@property NSString* segueName;
+
+@end
+
 @interface commmands : NSObject
+
+@property NSDictionary *commands;
+@property NSString *segueIdentifier;
+
+- (NSString*)commandsAction:(NSString *)string;
 
 @end

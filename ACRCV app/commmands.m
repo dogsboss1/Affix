@@ -10,4 +10,18 @@
 
 @implementation commmands
 
+- (NSString*) commandsAction:(NSString *)string {
+    
+    self.commands = [[NSDictionary alloc] initWithObjects:[NSArray arrayWithObjects:@"superSegue", @"optionsSegue", nil] forKeys:[NSArray arrayWithObjects:@"super", @"options", nil]];
+    
+    NSLog(@"%@", self.commands);
+    
+    for (NSString *keys in [self.commands allKeys]) {
+        NSLog(@"%@", keys);
+        if (string == keys) {
+            self.segueIdentifier = [self.commands valueForKey:keys];
+        }
+    }
+    return self.segueIdentifier;
+}
 @end

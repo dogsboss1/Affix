@@ -10,6 +10,8 @@
 
 @interface MainViewController ()
 
+@property (nonatomic) commmands *command;
+
 @end
 
 @implementation MainViewController
@@ -19,7 +21,7 @@
     
    // self.commandLineTextField.delegate = self;
     
-        self.commands = [[NSDictionary alloc] initWithObjects:[NSArray arrayWithObjects:@"superSegue", @"optionsSegue", nil] forKeys:[NSArray arrayWithObjects:@"super", @"options", nil]];
+
     
     // Do any additional setup after loading the view.
 }
@@ -126,6 +128,9 @@
     NSString* input = self.commandLineTextField.text;
     
     self.commandLineLabel.text = input;
+    
+    NSLog(@"%@", [self.command commandsAction:input]);
+    NSLog(@"%@", self.command.segueIdentifier);
     
     
 }

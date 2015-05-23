@@ -208,6 +208,7 @@
 		A4E184E31B0F76B000E0F420 /* Command Line */ = {
 			isa = PBXGroup;
 			children = (
+				A4E1851E1B107E2E00E0F420 /* commands */,
 				A4E184E61B0F76F600E0F420 /* New Main View */,
 				A4E184E51B0F76E900E0F420 /* Options */,
 			);
@@ -243,8 +244,6 @@
 			children = (
 				A4E184F31B0F790100E0F420 /* SuperMainViewController.h */,
 				A4E184F41B0F790100E0F420 /* SuperMainViewController.m */,
-				A4E1851B1B106D4D00E0F420 /* commmands.h */,
-				A4E1851C1B106D4D00E0F420 /* commmands.m */,
 			);
 			name = "New Main View";
 			sourceTree = "<group>";
@@ -294,6 +293,15 @@
 			children = (
 			);
 			name = Joystick;
+			sourceTree = "<group>";
+		};
+		A4E1851E1B107E2E00E0F420 /* commands */ = {
+			isa = PBXGroup;
+			children = (
+				A4E1851B1B106D4D00E0F420 /* commmands.h */,
+				A4E1851C1B106D4D00E0F420 /* commmands.m */,
+			);
+			name = commands;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
