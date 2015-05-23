@@ -15,6 +15,9 @@
 		A41B70E11B10CEE500438250 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A41B70E01B10CEE500438250 /* CoreBluetooth.framework */; };
 		A41B70E41B10D15E00438250 /* Joystick.m in Sources */ = {isa = PBXBuildFile; fileRef = A41B70E31B10D15D00438250 /* Joystick.m */; };
 		A41B70EC1B10DA3400438250 /* MyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = A41B70EB1B10DA3400438250 /* MyScene.m */; };
+		A41B70EE1B10FBC000438250 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A41B70ED1B10FBC000438250 /* CoreGraphics.framework */; };
+		A41B70F01B10FBCA00438250 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A41B70EF1B10FBCA00438250 /* UIKit.framework */; };
+		A41B70F21B10FBD400438250 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A41B70F11B10FBD400438250 /* Foundation.framework */; };
 		A4E184BD1B0F50A600E0F420 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E184BC1B0F50A600E0F420 /* main.m */; };
 		A4E184C01B0F50A600E0F420 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E184BF1B0F50A600E0F420 /* AppDelegate.m */; };
 		A4E184C31B0F50A600E0F420 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E184C21B0F50A600E0F420 /* ViewController.m */; };
@@ -69,6 +72,9 @@
 		A41B70E31B10D15D00438250 /* Joystick.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Joystick.m; sourceTree = "<group>"; };
 		A41B70EA1B10DA3400438250 /* MyScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyScene.h; path = "ACRCV app/MyScene.h"; sourceTree = "<group>"; };
 		A41B70EB1B10DA3400438250 /* MyScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyScene.m; path = "ACRCV app/MyScene.m"; sourceTree = "<group>"; };
+		A41B70ED1B10FBC000438250 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A41B70EF1B10FBCA00438250 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A41B70F11B10FBD400438250 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A4E184B71B0F50A600E0F420 /* ACRCV app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ACRCV app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4E184BB1B0F50A600E0F420 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A4E184BC1B0F50A600E0F420 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -128,6 +134,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A41B70F21B10FBD400438250 /* Foundation.framework in Frameworks */,
+				A41B70F01B10FBCA00438250 /* UIKit.framework in Frameworks */,
+				A41B70EE1B10FBC000438250 /* CoreGraphics.framework in Frameworks */,
 				A41B70E11B10CEE500438250 /* CoreBluetooth.framework in Frameworks */,
 				A41B70DF1B10CED900438250 /* SpriteKit.framework in Frameworks */,
 			);
@@ -162,11 +171,21 @@
 			name = "Main Scene";
 			sourceTree = "<group>";
 		};
+		A41B70F31B10FBDF00438250 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A41B70F11B10FBD400438250 /* Foundation.framework */,
+				A41B70EF1B10FBCA00438250 /* UIKit.framework */,
+				A41B70ED1B10FBC000438250 /* CoreGraphics.framework */,
+				A41B70E01B10CEE500438250 /* CoreBluetooth.framework */,
+				A41B70DE1B10CED900438250 /* SpriteKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A4E184AE1B0F50A500E0F420 = {
 			isa = PBXGroup;
 			children = (
-				A41B70E01B10CEE500438250 /* CoreBluetooth.framework */,
-				A41B70DE1B10CED900438250 /* SpriteKit.framework */,
 				A4E184B91B0F50A600E0F420 /* ACRCV app */,
 			);
 			sourceTree = "<group>";
@@ -220,6 +239,7 @@
 		A4E184D41B0F50A600E0F420 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A41B70F31B10FBDF00438250 /* Frameworks */,
 				A4E184C71B0F50A600E0F420 /* Images.xcassets */,
 				A4E184C91B0F50A600E0F420 /* LaunchScreen.xib */,
 				A4E184D31B0F50A600E0F420 /* ACRCV appTests */,

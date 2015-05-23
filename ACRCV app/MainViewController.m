@@ -115,6 +115,7 @@
 }
 
 - (void) performSegue {
+    self.commandLineLabel.text = @"";
     [self performSelector:@selector(welcomeBack) withObject:self afterDelay:0.3];
     [self performSegueWithIdentifier:self.segueIdentifier sender:self];
 }
