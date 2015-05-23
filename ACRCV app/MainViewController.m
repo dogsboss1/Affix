@@ -16,20 +16,29 @@
 @end
 
 @implementation MainViewController
+/*
+- (void)loadView {
+    CGRect applicationFrame = [[UIScreen mainScreen] applicationFrame];
+    SKView *skView = [[SKView alloc] initWithFrame:applicationFrame];
+   // self.view = skView;
+}*/
 
-- (void)viewDidLayoutSubviews {
-    [super viewDidLayoutSubviews];
+- (void)viewDidLoad {
+    [super viewDidLoad];
     
+    /*
     
     SKView *sKView = (SKView *)self.view;
     sKView.showsFPS = YES;
     sKView.showsNodeCount = YES;
     
-    SKScene *scene = [MyScene sceneWithSize:sKView.bounds.size];
+    SKScene *scene = [[MyScene alloc] initWithSize:CGSizeMake(sKView.bounds.size.width, sKView.bounds.size.height)];
     scene.scaleMode = SKSceneScaleModeAspectFill;
+    scene.backgroundColor = [UIColor clearColor];
+    sKView.allowsTransparency = YES;
     
-    [sKView presentScene:scene];
-    
+    [sKView presentScene:scene]; */
+#warning I can't have a scene on top of view (UIKIt) - transparency not working
    // self.commandLineTextField.delegate = self;
     
 
