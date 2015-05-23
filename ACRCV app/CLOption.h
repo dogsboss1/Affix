@@ -11,17 +11,17 @@
 typedef NS_ENUM(NSInteger, optionType) {
     optionType1,
     optionType2,
-    optionType3,
-    optionType4,
     
 };
 
 @interface CLOption : NSObject
 
-+ (instancetype) makeOptionOfType:(optionType)type;
++ (CLOption *)optionWithName:(NSString *)name type:(optionType)type;
 
+@property optionType type;
 @property NSString *optionName;
+@property CGFloat completionProgress;
+@property NSInteger priority;
 
-@property NSString *whoGotCredit;
 
 @end
