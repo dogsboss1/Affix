@@ -22,16 +22,22 @@
 		A4E184FB1B0F791F00E0F420 /* SimpleInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E184FA1B0F791F00E0F420 /* SimpleInfoViewController.m */; };
 		A4E184FF1B0F795700E0F420 /* NoLongerConnectedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E184FE1B0F795700E0F420 /* NoLongerConnectedViewController.m */; };
 		A4E185021B0F7CD400E0F420 /* PageContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E185011B0F7CD400E0F420 /* PageContentViewController.m */; };
-		A4E185091B0F82F800E0F420 /* page1.png in Resources */ = {isa = PBXBuildFile; fileRef = A4E185051B0F82F800E0F420 /* page1.png */; };
-		A4E1850A1B0F82F800E0F420 /* page2.png in Resources */ = {isa = PBXBuildFile; fileRef = A4E185061B0F82F800E0F420 /* page2.png */; };
-		A4E1850B1B0F82F800E0F420 /* page3.png in Resources */ = {isa = PBXBuildFile; fileRef = A4E185071B0F82F800E0F420 /* page3.png */; };
-		A4E1850C1B0F82F800E0F420 /* page4.png in Resources */ = {isa = PBXBuildFile; fileRef = A4E185081B0F82F800E0F420 /* page4.png */; };
 		A4E185101B0F852500E0F420 /* dpad copy.png in Resources */ = {isa = PBXBuildFile; fileRef = A4E1850E1B0F852500E0F420 /* dpad copy.png */; };
 		A4E185111B0F852500E0F420 /* joystick copy.png in Resources */ = {isa = PBXBuildFile; fileRef = A4E1850F1B0F852500E0F420 /* joystick copy.png */; };
 		A4E185141B0F8B0600E0F420 /* CLOptionsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E185131B0F8B0600E0F420 /* CLOptionsCell.m */; };
 		A4E185171B1023CE00E0F420 /* CLOption.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E185161B1023CE00E0F420 /* CLOption.m */; };
 		A4E1851A1B1023DA00E0F420 /* CLOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E185191B1023DA00E0F420 /* CLOptions.m */; };
 		A4E1851D1B106D4D00E0F420 /* commmands.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E1851C1B106D4D00E0F420 /* commmands.m */; };
+		A4E185221B10A33A00E0F420 /* chocolate-640.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A4E1851F1B10A33A00E0F420 /* chocolate-640.jpg */; };
+		A4E185231B10A33A00E0F420 /* popsicle-640.png in Resources */ = {isa = PBXBuildFile; fileRef = A4E185201B10A33A00E0F420 /* popsicle-640.png */; };
+		A4E185241B10A33A00E0F420 /* Red_button.png in Resources */ = {isa = PBXBuildFile; fileRef = A4E185211B10A33A00E0F420 /* Red_button.png */; };
+		A4E185291B10A38100E0F420 /* page1.png in Resources */ = {isa = PBXBuildFile; fileRef = A4E185251B10A38100E0F420 /* page1.png */; };
+		A4E1852A1B10A38100E0F420 /* page2.png in Resources */ = {isa = PBXBuildFile; fileRef = A4E185261B10A38100E0F420 /* page2.png */; };
+		A4E1852B1B10A38100E0F420 /* page3.png in Resources */ = {isa = PBXBuildFile; fileRef = A4E185271B10A38100E0F420 /* page3.png */; };
+		A4E1852C1B10A38100E0F420 /* page4.png in Resources */ = {isa = PBXBuildFile; fileRef = A4E185281B10A38100E0F420 /* page4.png */; };
+		A4E185301B10B6CF00E0F420 /* BasicHelpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E1852F1B10B6CF00E0F420 /* BasicHelpViewController.m */; };
+		A4E185331B10B6EA00E0F420 /* BasicHelpCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E185321B10B6EA00E0F420 /* BasicHelpCell.m */; };
+		A4E185361B10B6FD00E0F420 /* BasicHelp.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E185351B10B6FD00E0F420 /* BasicHelp.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,10 +80,6 @@
 		A4E184FE1B0F795700E0F420 /* NoLongerConnectedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoLongerConnectedViewController.m; sourceTree = "<group>"; };
 		A4E185001B0F7CD400E0F420 /* PageContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageContentViewController.h; sourceTree = "<group>"; };
 		A4E185011B0F7CD400E0F420 /* PageContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageContentViewController.m; sourceTree = "<group>"; };
-		A4E185051B0F82F800E0F420 /* page1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = page1.png; path = ../../../../../Downloads/PageViewDemoImages/page1.png; sourceTree = "<group>"; };
-		A4E185061B0F82F800E0F420 /* page2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = page2.png; path = ../../../../../Downloads/PageViewDemoImages/page2.png; sourceTree = "<group>"; };
-		A4E185071B0F82F800E0F420 /* page3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = page3.png; path = ../../../../../Downloads/PageViewDemoImages/page3.png; sourceTree = "<group>"; };
-		A4E185081B0F82F800E0F420 /* page4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = page4.png; path = ../../../../../Downloads/PageViewDemoImages/page4.png; sourceTree = "<group>"; };
 		A4E1850E1B0F852500E0F420 /* dpad copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "dpad copy.png"; path = "Images/dpad copy.png"; sourceTree = "<group>"; };
 		A4E1850F1B0F852500E0F420 /* joystick copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "joystick copy.png"; path = "Images/joystick copy.png"; sourceTree = "<group>"; };
 		A4E185121B0F8B0600E0F420 /* CLOptionsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLOptionsCell.h; sourceTree = "<group>"; };
@@ -88,6 +90,19 @@
 		A4E185191B1023DA00E0F420 /* CLOptions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLOptions.m; sourceTree = "<group>"; };
 		A4E1851B1B106D4D00E0F420 /* commmands.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = commmands.h; sourceTree = "<group>"; };
 		A4E1851C1B106D4D00E0F420 /* commmands.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = commmands.m; sourceTree = "<group>"; };
+		A4E1851F1B10A33A00E0F420 /* chocolate-640.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "chocolate-640.jpg"; path = "Images/chocolate-640.jpg"; sourceTree = "<group>"; };
+		A4E185201B10A33A00E0F420 /* popsicle-640.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "popsicle-640.png"; path = "Images/popsicle-640.png"; sourceTree = "<group>"; };
+		A4E185211B10A33A00E0F420 /* Red_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Red_button.png; path = Images/Red_button.png; sourceTree = "<group>"; };
+		A4E185251B10A38100E0F420 /* page1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = page1.png; path = Images/PageViewDemoImages/page1.png; sourceTree = "<group>"; };
+		A4E185261B10A38100E0F420 /* page2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = page2.png; path = Images/PageViewDemoImages/page2.png; sourceTree = "<group>"; };
+		A4E185271B10A38100E0F420 /* page3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = page3.png; path = Images/PageViewDemoImages/page3.png; sourceTree = "<group>"; };
+		A4E185281B10A38100E0F420 /* page4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = page4.png; path = Images/PageViewDemoImages/page4.png; sourceTree = "<group>"; };
+		A4E1852E1B10B6CF00E0F420 /* BasicHelpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicHelpViewController.h; sourceTree = "<group>"; };
+		A4E1852F1B10B6CF00E0F420 /* BasicHelpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicHelpViewController.m; sourceTree = "<group>"; };
+		A4E185311B10B6EA00E0F420 /* BasicHelpCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicHelpCell.h; sourceTree = "<group>"; };
+		A4E185321B10B6EA00E0F420 /* BasicHelpCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicHelpCell.m; sourceTree = "<group>"; };
+		A4E185341B10B6FD00E0F420 /* BasicHelp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicHelp.h; sourceTree = "<group>"; };
+		A4E185351B10B6FD00E0F420 /* BasicHelp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicHelp.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -208,6 +223,7 @@
 		A4E184E31B0F76B000E0F420 /* Command Line */ = {
 			isa = PBXGroup;
 			children = (
+				A4E1852D1B10B69800E0F420 /* Basic User Help */,
 				A4E1851E1B107E2E00E0F420 /* commands */,
 				A4E184E61B0F76F600E0F420 /* New Main View */,
 				A4E184E51B0F76E900E0F420 /* Options */,
@@ -269,12 +285,15 @@
 		A4E184E91B0F774600E0F420 /* Images/Music */ = {
 			isa = PBXGroup;
 			children = (
+				A4E1851F1B10A33A00E0F420 /* chocolate-640.jpg */,
+				A4E185201B10A33A00E0F420 /* popsicle-640.png */,
+				A4E185211B10A33A00E0F420 /* Red_button.png */,
 				A4E1850E1B0F852500E0F420 /* dpad copy.png */,
 				A4E1850F1B0F852500E0F420 /* joystick copy.png */,
-				A4E185051B0F82F800E0F420 /* page1.png */,
-				A4E185061B0F82F800E0F420 /* page2.png */,
-				A4E185071B0F82F800E0F420 /* page3.png */,
-				A4E185081B0F82F800E0F420 /* page4.png */,
+				A4E185251B10A38100E0F420 /* page1.png */,
+				A4E185261B10A38100E0F420 /* page2.png */,
+				A4E185271B10A38100E0F420 /* page3.png */,
+				A4E185281B10A38100E0F420 /* page4.png */,
 			);
 			name = Images/Music;
 			sourceTree = "<group>";
@@ -302,6 +321,19 @@
 				A4E1851C1B106D4D00E0F420 /* commmands.m */,
 			);
 			name = commands;
+			sourceTree = "<group>";
+		};
+		A4E1852D1B10B69800E0F420 /* Basic User Help */ = {
+			isa = PBXGroup;
+			children = (
+				A4E1852E1B10B6CF00E0F420 /* BasicHelpViewController.h */,
+				A4E1852F1B10B6CF00E0F420 /* BasicHelpViewController.m */,
+				A4E185311B10B6EA00E0F420 /* BasicHelpCell.h */,
+				A4E185321B10B6EA00E0F420 /* BasicHelpCell.m */,
+				A4E185341B10B6FD00E0F420 /* BasicHelp.h */,
+				A4E185351B10B6FD00E0F420 /* BasicHelp.m */,
+			);
+			name = "Basic User Help";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -385,14 +417,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				A4E184C61B0F50A600E0F420 /* Main.storyboard in Resources */,
-				A4E185091B0F82F800E0F420 /* page1.png in Resources */,
+				A4E1852B1B10A38100E0F420 /* page3.png in Resources */,
+				A4E185221B10A33A00E0F420 /* chocolate-640.jpg in Resources */,
+				A4E185241B10A33A00E0F420 /* Red_button.png in Resources */,
 				A4E184CB1B0F50A600E0F420 /* LaunchScreen.xib in Resources */,
+				A4E1852C1B10A38100E0F420 /* page4.png in Resources */,
 				A4E184C81B0F50A600E0F420 /* Images.xcassets in Resources */,
+				A4E185291B10A38100E0F420 /* page1.png in Resources */,
 				A4E185101B0F852500E0F420 /* dpad copy.png in Resources */,
-				A4E1850C1B0F82F800E0F420 /* page4.png in Resources */,
-				A4E1850A1B0F82F800E0F420 /* page2.png in Resources */,
+				A4E185231B10A33A00E0F420 /* popsicle-640.png in Resources */,
 				A4E185111B0F852500E0F420 /* joystick copy.png in Resources */,
-				A4E1850B1B0F82F800E0F420 /* page3.png in Resources */,
+				A4E1852A1B10A38100E0F420 /* page2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,6 +450,7 @@
 				A4E184C31B0F50A600E0F420 /* ViewController.m in Sources */,
 				A4E185021B0F7CD400E0F420 /* PageContentViewController.m in Sources */,
 				A4E184F51B0F790100E0F420 /* SuperMainViewController.m in Sources */,
+				A4E185361B10B6FD00E0F420 /* BasicHelp.m in Sources */,
 				A4E184F81B0F791000E0F420 /* GifViewController.m in Sources */,
 				A4E184C01B0F50A600E0F420 /* AppDelegate.m in Sources */,
 				A4E184BD1B0F50A600E0F420 /* main.m in Sources */,
@@ -424,7 +460,9 @@
 				A4E184F21B0F78E500E0F420 /* CLOptionsTableViewController.m in Sources */,
 				A4E185141B0F8B0600E0F420 /* CLOptionsCell.m in Sources */,
 				A4E184FF1B0F795700E0F420 /* NoLongerConnectedViewController.m in Sources */,
+				A4E185301B10B6CF00E0F420 /* BasicHelpViewController.m in Sources */,
 				A4E184FB1B0F791F00E0F420 /* SimpleInfoViewController.m in Sources */,
+				A4E185331B10B6EA00E0F420 /* BasicHelpCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

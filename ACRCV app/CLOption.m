@@ -19,22 +19,22 @@
         option.priority = 0;
     }
     else if (type == optionType2) {
-        option.optionName = @"360";
+        option.optionName = @"720";
         option.completionProgress = arc4random_uniform(100)/100.0;
         option.priority = 0;
     }
     else if (type == optionType3) {
-        option.optionName = @"360";
+        option.optionName = @"Fd Fast";
         option.completionProgress = arc4random_uniform(100)/100.0;
         option.priority = 0;
     }
     else if (type == optionType4) {
-        option.optionName = @"360";
+        option.optionName = @"Reverse Now";
         option.completionProgress = arc4random_uniform(100)/100.0;
         option.priority = 0;
     }
     else if (type == optionType5) {
-        option.optionName = @"360";
+        option.optionName = @"Test";
         option.completionProgress = arc4random_uniform(100)/100.0;
         option.priority = 0;
     }

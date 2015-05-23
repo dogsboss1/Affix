@@ -17,6 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.backgroundImage.image = [UIImage imageNamed:@"popsicle-640.png"];
 }
 
 - (void)didReceiveMemoryWarning {

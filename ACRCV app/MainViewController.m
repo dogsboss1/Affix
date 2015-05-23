@@ -22,7 +22,6 @@
    // self.commandLineTextField.delegate = self;
     
 
-    
     // Do any additional setup after loading the view.
 }
 
@@ -88,7 +87,6 @@
     else {
         return nil;
     }
-    
 }
 
 - (void) performSegue {
@@ -101,6 +99,7 @@
 }
 
 - (IBAction)autoActivateButtonPressed:(UIButton *)sender {
+    NSLog(@"Auto activated");
     
 }
 - (IBAction)upButtonPressed:(UIButton *)sender {
@@ -151,13 +150,10 @@
 }
 
 - (IBAction)commandLineGoButtonPressed:(UIButton *)sender {
-    
     NSString* input = self.commandLineTextField.text;
     
     self.commandLineLabel.text = input;
-    
     [self commandsAction:input];
-    
     self.commandLineTextField.text = @"";
     
     

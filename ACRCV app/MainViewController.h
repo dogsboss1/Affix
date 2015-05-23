@@ -10,6 +10,7 @@
 #import "NoLongerConnectedViewController.h"
 #import "CLOptionsTableViewController.h"
 #import "SuperMainViewController.h"
+#import "BasicHelpViewController.h"
 #import "commmands.h"
 
 @interface MainViewController : UIViewController //<CommandLineWhichSegueDelegate> //<UITextViewDelegate>
