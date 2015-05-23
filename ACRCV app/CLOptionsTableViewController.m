@@ -70,7 +70,8 @@
 
 - (UITableView *)tableView:(UITableView*)tableView titleForHeaderInSection:(NSInteger)section {
     if (section == 0) {
-        return @"Available Actions";
+        NSString * word1 = @"Available Actions";
+        return word1;
     }
     else {
         return @"No Longer Available Actions";

@@ -10,6 +10,14 @@
 
 @implementation BasicHelpCell
 
+- (instancetype)initWithFrame:(CGRect)frame {
+    self = [super initWithFrame:frame];
+    if (self) {
+        // Initialization of code
+    }
+    return self;
+}
+
 - (IBAction)backButtonPressed:(UIButton *)sender {
 }
 @end
