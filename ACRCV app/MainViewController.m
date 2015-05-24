@@ -20,14 +20,15 @@
 - (void)loadView {
     CGRect applicationFrame = [[UIScreen mainScreen] applicationFrame];
     SKView *skView = [[SKView alloc] initWithFrame:applicationFrame];
-   // self.view = skView;
+    self.view = skView;
 }*/
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
     /*
     
+    //    SKView *sKView = [[SKView alloc] initWithFrame:CGRectMake(0,0,600,600)];
+
     SKView *sKView = (SKView *)self.view;
     sKView.showsFPS = YES;
     sKView.showsNodeCount = YES;
@@ -37,7 +38,7 @@
     scene.backgroundColor = [UIColor clearColor];
     sKView.allowsTransparency = YES;
     
-    [sKView presentScene:scene]; */
+    [sKView presentScene:scene];*/
 #warning I can't have a scene on top of view (UIKIt) - transparency not working
    // self.commandLineTextField.delegate = self;
     
@@ -97,7 +98,7 @@
 
 - (NSString*) commandsAction:(NSString *)string {
     
-    self.commands = [[NSDictionary alloc] initWithObjects:[NSArray arrayWithObjects:@"superSegue", @"optionsSegue", nil] forKeys:[NSArray arrayWithObjects:@"super", @"options", nil]];
+    self.commands = [[NSDictionary alloc] initWithObjects:[NSArray arrayWithObjects:@"superSegue", @"optionsSegue", @"BasicHelpSegue", nil] forKeys:[NSArray arrayWithObjects:@"super", @"options", @"help", nil]];
     
     for (NSString *keys in [self.commands allKeys]) {
         if ([string isEqualToString:keys]) {
@@ -182,11 +183,13 @@
     [self commandsAction:input];
     self.commandLineTextField.text = @"";
     
-    
 }
 
 - (IBAction)basicHelpButtonPressed:(UIButton *)sender {
     [self performSegueWithIdentifier:@"BasicHelpSegue" sender:self];
+}
+
+- (IBAction)gestureButtonPressed:(UIButton *)sender {
 }
 
 @end

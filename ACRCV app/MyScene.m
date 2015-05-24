@@ -18,7 +18,7 @@
 @property CGFloat zRoation;
 
 @property SKSpriteNode* carNode;
-
+@property SKSpriteNode* background;
 
 @property CGPoint middlePoint;
 
@@ -29,8 +29,7 @@
 - (instancetype)initWithSize:(CGSize)size {
     if (self = [super initWithSize:size]) {
         
-        [self addJoystick];
-        [self addCar];
+
         
         CADisplayLink *velocityTick = [CADisplayLink displayLinkWithTarget:self selector:@selector(joystickMovement)];
         [velocityTick addToRunLoop:[NSRunLoop currentRunLoop] forMode:NSRunLoopCommonModes];
@@ -38,6 +37,17 @@
         self.scene.backgroundColor = [UIColor clearColor];
         
         self.middlePoint = CGPointMake(CGRectGetMidX(self.frame), CGRectGetMidY(self.frame));
+        
+        self.background = [SKSpriteNode spriteNodeWithImageNamed:@"red-cross.png"];
+        self.background.position = self.middlePoint;
+        self.background.size = CGSizeMake(CGRectGetWidth(self.frame), CGRectGetHeight(self.frame));
+        self.background.alpha = 0.1;
+        [self addChild:self.background];
+        
+        
+        
+        [self addJoystick];
+        [self addCar];
         
     }
     return self;

@@ -18,6 +18,7 @@
 		A41B70EE1B10FBC000438250 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A41B70ED1B10FBC000438250 /* CoreGraphics.framework */; };
 		A41B70F01B10FBCA00438250 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A41B70EF1B10FBCA00438250 /* UIKit.framework */; };
 		A41B70F21B10FBD400438250 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A41B70F11B10FBD400438250 /* Foundation.framework */; };
+		A41B70F71B11960F00438250 /* GestureRecogniserTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A41B70F61B11960F00438250 /* GestureRecogniserTestViewController.m */; };
 		A4E184BD1B0F50A600E0F420 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E184BC1B0F50A600E0F420 /* main.m */; };
 		A4E184C01B0F50A600E0F420 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E184BF1B0F50A600E0F420 /* AppDelegate.m */; };
 		A4E184C31B0F50A600E0F420 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E184C21B0F50A600E0F420 /* ViewController.m */; };
@@ -75,6 +76,8 @@
 		A41B70ED1B10FBC000438250 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		A41B70EF1B10FBCA00438250 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A41B70F11B10FBD400438250 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A41B70F51B11960F00438250 /* GestureRecogniserTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GestureRecogniserTestViewController.h; sourceTree = "<group>"; };
+		A41B70F61B11960F00438250 /* GestureRecogniserTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GestureRecogniserTestViewController.m; sourceTree = "<group>"; };
 		A4E184B71B0F50A600E0F420 /* ACRCV app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ACRCV app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4E184BB1B0F50A600E0F420 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A4E184BC1B0F50A600E0F420 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -181,6 +184,15 @@
 				A41B70DE1B10CED900438250 /* SpriteKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A41B70F41B1195D600438250 /* Testing out controls */ = {
+			isa = PBXGroup;
+			children = (
+				A41B70F51B11960F00438250 /* GestureRecogniserTestViewController.h */,
+				A41B70F61B11960F00438250 /* GestureRecogniserTestViewController.m */,
+			);
+			name = "Testing out controls";
 			sourceTree = "<group>";
 		};
 		A4E184AE1B0F50A500E0F420 = {
@@ -319,6 +331,7 @@
 		A4E184E61B0F76F600E0F420 /* New Main View */ = {
 			isa = PBXGroup;
 			children = (
+				A41B70F41B1195D600438250 /* Testing out controls */,
 				A4E184F31B0F790100E0F420 /* SuperMainViewController.h */,
 				A4E184F41B0F790100E0F420 /* SuperMainViewController.m */,
 			);
@@ -536,6 +549,7 @@
 				A41B70EC1B10DA3400438250 /* MyScene.m in Sources */,
 				A4E185301B10B6CF00E0F420 /* BasicHelpViewController.m in Sources */,
 				A4E184FB1B0F791F00E0F420 /* SimpleInfoViewController.m in Sources */,
+				A41B70F71B11960F00438250 /* GestureRecogniserTestViewController.m in Sources */,
 				A4E185331B10B6EA00E0F420 /* BasicHelpCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

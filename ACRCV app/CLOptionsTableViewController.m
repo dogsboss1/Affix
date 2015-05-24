@@ -68,10 +68,9 @@
     return cell;
 }
 
-- (UITableView *)tableView:(UITableView*)tableView titleForHeaderInSection:(NSInteger)section {
+- (NSString *)tableView:(UITableView*)tableView titleForHeaderInSection:(NSInteger)section {
     if (section == 0) {
-        NSString * word1 = @"Available Actions";
-        return word1;
+        return @"Available Actions";
     }
     else {
         return @"No Longer Available Actions";
