@@ -546,44 +546,44 @@
                                 <exclude reference="Hjp-bg-MZc"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="LdS-TT-3hX"/>
+                                <exclude reference="smJ-2q-53T"/>
+                                <exclude reference="091-sc-889"/>
+                                <exclude reference="3WR-cr-sLZ"/>
+                                <exclude reference="wZU-Rd-qIN"/>
+                                <exclude reference="4Jy-sb-U7e"/>
+                                <exclude reference="MMs-Ra-KG0"/>
+                                <exclude reference="oWo-dU-c1F"/>
                                 <exclude reference="Bu8-nR-Nr7"/>
                                 <exclude reference="cGi-zB-wAr"/>
                                 <exclude reference="coG-nN-lRd"/>
                                 <exclude reference="k2L-jV-fG1"/>
                                 <exclude reference="qce-Ws-pgH"/>
+                                <exclude reference="V82-dY-F38"/>
                                 <exclude reference="Lr0-rO-bxg"/>
                                 <exclude reference="Yht-tH-2cA"/>
                                 <exclude reference="fik-f7-toL"/>
                                 <exclude reference="aoL-OQ-5xx"/>
                                 <exclude reference="qbB-we-QQ1"/>
                                 <exclude reference="sm6-PN-rK1"/>
-                                <exclude reference="V82-dY-F38"/>
-                                <exclude reference="OFQ-LJ-nDg"/>
+                                <exclude reference="3y3-P4-Bgw"/>
+                                <exclude reference="Mnx-hB-tk6"/>
+                                <exclude reference="RhA-ci-Pii"/>
                                 <exclude reference="PIL-ri-jR2"/>
+                                <exclude reference="OFQ-LJ-nDg"/>
                                 <exclude reference="tD4-Ww-2u7"/>
                                 <exclude reference="Ecz-Nn-9pM"/>
                                 <exclude reference="nUI-gP-uOj"/>
                                 <exclude reference="fVt-zh-c76"/>
                                 <exclude reference="fzD-yO-L50"/>
                                 <exclude reference="uPf-7T-5uq"/>
-                                <exclude reference="4Jy-sb-U7e"/>
-                                <exclude reference="MMs-Ra-KG0"/>
-                                <exclude reference="oWo-dU-c1F"/>
-                                <exclude reference="3y3-P4-Bgw"/>
-                                <exclude reference="Mnx-hB-tk6"/>
-                                <exclude reference="RhA-ci-Pii"/>
-                                <exclude reference="W5z-Yh-Jzt"/>
                                 <exclude reference="0fd-Lt-gU8"/>
                                 <exclude reference="Hzs-M9-SrR"/>
                                 <exclude reference="Osy-ZA-McB"/>
-                                <exclude reference="091-sc-889"/>
-                                <exclude reference="3WR-cr-sLZ"/>
-                                <exclude reference="wZU-Rd-qIN"/>
-                                <exclude reference="LdS-TT-3hX"/>
-                                <exclude reference="smJ-2q-53T"/>
                                 <exclude reference="5wG-0v-qgi"/>
                                 <exclude reference="J4K-n2-5xR"/>
                                 <exclude reference="P7f-al-epC"/>
+                                <exclude reference="W5z-Yh-Jzt"/>
                                 <exclude reference="4A8-UT-4yc"/>
                                 <exclude reference="n1E-Ev-Dek"/>
                                 <exclude reference="6T8-C9-qyy"/>
@@ -597,44 +597,44 @@
                                 <include reference="Hjp-bg-MZc"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="LdS-TT-3hX"/>
+                                <include reference="smJ-2q-53T"/>
+                                <include reference="091-sc-889"/>
+                                <include reference="3WR-cr-sLZ"/>
+                                <include reference="wZU-Rd-qIN"/>
+                                <include reference="4Jy-sb-U7e"/>
+                                <include reference="MMs-Ra-KG0"/>
+                                <include reference="oWo-dU-c1F"/>
                                 <include reference="Bu8-nR-Nr7"/>
                                 <include reference="cGi-zB-wAr"/>
                                 <include reference="coG-nN-lRd"/>
                                 <include reference="k2L-jV-fG1"/>
                                 <include reference="qce-Ws-pgH"/>
+                                <include reference="V82-dY-F38"/>
                                 <include reference="Lr0-rO-bxg"/>
                                 <include reference="Yht-tH-2cA"/>
                                 <include reference="fik-f7-toL"/>
                                 <include reference="aoL-OQ-5xx"/>
                                 <include reference="qbB-we-QQ1"/>
                                 <include reference="sm6-PN-rK1"/>
-                                <include reference="V82-dY-F38"/>
-                                <include reference="OFQ-LJ-nDg"/>
+                                <include reference="3y3-P4-Bgw"/>
+                                <include reference="Mnx-hB-tk6"/>
+                                <include reference="RhA-ci-Pii"/>
                                 <include reference="PIL-ri-jR2"/>
+                                <include reference="OFQ-LJ-nDg"/>
                                 <include reference="tD4-Ww-2u7"/>
                                 <include reference="Ecz-Nn-9pM"/>
                                 <include reference="nUI-gP-uOj"/>
                                 <include reference="fVt-zh-c76"/>
                                 <include reference="fzD-yO-L50"/>
                                 <include reference="uPf-7T-5uq"/>
-                                <include reference="4Jy-sb-U7e"/>
-                                <include reference="MMs-Ra-KG0"/>
-                                <include reference="oWo-dU-c1F"/>
-                                <include reference="3y3-P4-Bgw"/>
-                                <include reference="Mnx-hB-tk6"/>
-                                <include reference="RhA-ci-Pii"/>
-                                <include reference="W5z-Yh-Jzt"/>
                                 <include reference="0fd-Lt-gU8"/>
                                 <include reference="Hzs-M9-SrR"/>
                                 <include reference="Osy-ZA-McB"/>
-                                <include reference="091-sc-889"/>
-                                <include reference="3WR-cr-sLZ"/>
-                                <include reference="wZU-Rd-qIN"/>
-                                <include reference="LdS-TT-3hX"/>
-                                <include reference="smJ-2q-53T"/>
                                 <include reference="5wG-0v-qgi"/>
                                 <include reference="J4K-n2-5xR"/>
                                 <include reference="P7f-al-epC"/>
+                                <include reference="W5z-Yh-Jzt"/>
                                 <include reference="4A8-UT-4yc"/>
                                 <include reference="n1E-Ev-Dek"/>
                                 <include reference="6T8-C9-qyy"/>
@@ -645,9 +645,15 @@
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
                         <outlet property="activityLogTextView" destination="8oT-Iy-3op" id="VFD-Mb-Kmy"/>
+                        <outlet property="backButtonLabel" destination="MhV-EH-QlW" id="Tgs-Xo-7LT"/>
                         <outlet property="commandLineLabel" destination="pvK-zh-KhF" id="v1K-qb-wFO"/>
                         <outlet property="commandLineTextField" destination="OFQ-9Q-xXe" id="58X-ha-D1a"/>
+                        <outlet property="downButtonLabel" destination="HjF-12-IVl" id="ICX-jK-x5N"/>
+                        <outlet property="fdButtonLabel" destination="WK1-sF-3EL" id="M8U-SG-Hnn"/>
+                        <outlet property="leftButtonLabel" destination="uDT-rc-SVg" id="wOs-K1-8UP"/>
+                        <outlet property="rightButtonLabel" destination="wCO-Pk-8AV" id="EsV-8F-zXs"/>
                         <outlet property="rightSideBarImage" destination="26x-Bh-ULa" id="nBD-eH-WcC"/>
+                        <outlet property="upButtonLabel" destination="crg-HJ-aIF" id="dIk-nW-LKd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s25-1b-gy2" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1095,15 +1101,16 @@
                         <viewControllerLayoutGuide type="bottom" id="cY9-nP-OIG"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Vaw-qL-TU7">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Auu-u7-wPD">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Auu-u7-wPD">
                                 <rect key="frame" x="277" y="386" width="42" height="30"/>
                                 <state key="normal" image="Red_button.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uZo-Uj-iZU">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uZo-Uj-iZU">
                                 <rect key="frame" x="428" y="28" width="171" height="128"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="172" id="yAz-C3-7hr"/>
@@ -1119,7 +1126,7 @@
                                     </mask>
                                 </variation>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1LB-G3-qsG">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1LB-G3-qsG">
                                 <rect key="frame" x="279" y="175" width="42" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="246" id="xV1-cq-6pq"/>
@@ -1141,12 +1148,12 @@
                                     </mask>
                                 </variation>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="koR-Ic-bpV">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="koR-Ic-bpV">
                                 <rect key="frame" x="178" y="204" width="245" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uhS-nn-rqN">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uhS-nn-rqN">
                                 <rect key="frame" x="180" y="28" width="240" height="128"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -1166,7 +1173,7 @@
                                     </mask>
                                 </variation>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Lt-WF-VkU">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Lt-WF-VkU">
                                 <rect key="frame" x="64" y="446" width="30" height="30"/>
                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="15"/>
                                 <state key="normal" title="FD">
@@ -1176,7 +1183,7 @@
                                     <action selector="fdButtonPressed:" destination="f4g-Bd-avx" eventType="touchUpInside" id="EIQ-Qi-NCs"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UHc-7q-Qrc">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UHc-7q-Qrc">
                                 <rect key="frame" x="111" y="501" width="46" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="51" id="3Qf-WM-zSj"/>
@@ -1199,7 +1206,7 @@
                                     <action selector="rightButtonPressed:" destination="f4g-Bd-avx" eventType="touchUpInside" id="HLV-6S-lic"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ydK-bs-nPy">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ydK-bs-nPy">
                                 <rect key="frame" x="16" y="501" width="36" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="44" id="afD-Hl-uIr"/>
@@ -1222,7 +1229,7 @@
                                     <action selector="leftButtonPressed:" destination="f4g-Bd-avx" eventType="touchUpInside" id="tGF-27-ldg"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f85-HH-3NQ">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f85-HH-3NQ">
                                 <rect key="frame" x="511" y="459" width="30" height="30"/>
                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="15"/>
                                 <state key="normal" title="UP">
@@ -1232,7 +1239,7 @@
                                     <action selector="upButtonPressed:" destination="f4g-Bd-avx" eventType="touchUpInside" id="dnr-cH-Qcb"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1lU-qs-qXP">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1lU-qs-qXP">
                                 <rect key="frame" x="511" y="550" width="48" height="30"/>
                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="15"/>
                                 <state key="normal" title="DOWN">
@@ -1242,28 +1249,28 @@
                                     <action selector="downButtonPressed:" destination="f4g-Bd-avx" eventType="touchUpInside" id="2ZG-Sp-Z4U"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Zi-hA-4D1">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Zi-hA-4D1">
                                 <rect key="frame" x="503" y="253" width="50" height="30"/>
                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="15"/>
                                 <state key="normal" title="actions">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="emW-Rd-rle">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="emW-Rd-rle">
                                 <rect key="frame" x="503" y="327" width="76" height="30"/>
                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="15"/>
                                 <state key="normal" title="super main">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UvE-QI-8U5">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UvE-QI-8U5">
                                 <rect key="frame" x="48" y="285" width="78" height="30"/>
                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="15"/>
                                 <state key="normal" title="Disconnect">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B8W-EZ-rdn">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B8W-EZ-rdn">
                                 <rect key="frame" x="64" y="550" width="42" height="30"/>
                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="15"/>
                                 <state key="normal" title="BACK">

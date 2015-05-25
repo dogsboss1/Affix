@@ -15,7 +15,8 @@
 
 #import <SpriteKit/SpriteKit.h>
 
-@interface MainViewController : UIViewController //<CommandLineWhichSegueDelegate> //<UITextViewDelegate>
+@interface MainViewController : UIViewController <UITextFieldDelegate>
+
 - (IBAction)autoActivateButtonPressed:(UIButton *)sender;
 @property (weak, nonatomic) IBOutlet UILabel *commandLineLabel;
 @property (weak, nonatomic) IBOutlet UITextView *activityLogTextView;
@@ -37,6 +38,13 @@
 - (IBAction)commandLineGoButtonPressed:(UIButton *)sender;
 - (IBAction)basicHelpButtonPressed:(UIButton *)sender;
 - (IBAction)gestureButtonPressed:(UIButton *)sender;
+@property (weak, nonatomic) IBOutlet UIButton *rightButtonLabel;
+@property (weak, nonatomic) IBOutlet UIButton *backButtonLabel;
+@property (weak, nonatomic) IBOutlet UIButton *leftButtonLabel;
+@property (weak, nonatomic) IBOutlet UIButton *upButtonLabel;
+@property (weak, nonatomic) IBOutlet UIButton *downButtonLabel;
+@property (weak, nonatomic) IBOutlet UIButton *fdButtonLabel;
+
 
 
 @property NSDictionary *commands;

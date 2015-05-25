@@ -36,15 +36,13 @@
         
         self.scene.backgroundColor = [UIColor clearColor];
         
-        self.middlePoint = CGPointMake(CGRectGetMidX(self.frame), CGRectGetMidY(self.frame));
+     //   self.middlePoint = CGPointMake(CGRectGetMidX(self.frame), CGRectGetMidY(self.frame));
         
-        self.background = [SKSpriteNode spriteNodeWithImageNamed:@"red-cross.png"];
+      /*  self.background = [SKSpriteNode spriteNodeWithImageNamed:@"red-cross.png"];
         self.background.position = self.middlePoint;
         self.background.size = CGSizeMake(CGRectGetWidth(self.frame), CGRectGetHeight(self.frame));
         self.background.alpha = 0.1;
-        [self addChild:self.background];
-        
-        
+        [self addChild:self.background];*/
         
         [self addJoystick];
         [self addCar];

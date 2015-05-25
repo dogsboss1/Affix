@@ -39,7 +39,6 @@
 		A4E185141B0F8B0600E0F420 /* CLOptionsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E185131B0F8B0600E0F420 /* CLOptionsCell.m */; };
 		A4E185171B1023CE00E0F420 /* CLOption.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E185161B1023CE00E0F420 /* CLOption.m */; };
 		A4E1851A1B1023DA00E0F420 /* CLOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E185191B1023DA00E0F420 /* CLOptions.m */; };
-		A4E1851D1B106D4D00E0F420 /* commmands.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E1851C1B106D4D00E0F420 /* commmands.m */; };
 		A4E185221B10A33A00E0F420 /* chocolate-640.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A4E1851F1B10A33A00E0F420 /* chocolate-640.jpg */; };
 		A4E185231B10A33A00E0F420 /* popsicle-640.png in Resources */ = {isa = PBXBuildFile; fileRef = A4E185201B10A33A00E0F420 /* popsicle-640.png */; };
 		A4E185241B10A33A00E0F420 /* Red_button.png in Resources */ = {isa = PBXBuildFile; fileRef = A4E185211B10A33A00E0F420 /* Red_button.png */; };
@@ -115,8 +114,6 @@
 		A4E185161B1023CE00E0F420 /* CLOption.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLOption.m; sourceTree = "<group>"; };
 		A4E185181B1023DA00E0F420 /* CLOptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLOptions.h; sourceTree = "<group>"; };
 		A4E185191B1023DA00E0F420 /* CLOptions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLOptions.m; sourceTree = "<group>"; };
-		A4E1851B1B106D4D00E0F420 /* commmands.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = commmands.h; sourceTree = "<group>"; };
-		A4E1851C1B106D4D00E0F420 /* commmands.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = commmands.m; sourceTree = "<group>"; };
 		A4E1851F1B10A33A00E0F420 /* chocolate-640.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "chocolate-640.jpg"; path = "Images/chocolate-640.jpg"; sourceTree = "<group>"; };
 		A4E185201B10A33A00E0F420 /* popsicle-640.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "popsicle-640.png"; path = "Images/popsicle-640.png"; sourceTree = "<group>"; };
 		A4E185211B10A33A00E0F420 /* Red_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Red_button.png; path = Images/Red_button.png; sourceTree = "<group>"; };
@@ -297,7 +294,6 @@
 			isa = PBXGroup;
 			children = (
 				A4E1852D1B10B69800E0F420 /* Basic User Help */,
-				A4E1851E1B107E2E00E0F420 /* commands */,
 				A4E184E61B0F76F600E0F420 /* New Main View */,
 				A4E184E51B0F76E900E0F420 /* Options */,
 			);
@@ -393,15 +389,6 @@
 			);
 			name = Joystick;
 			path = "ACRCV app";
-			sourceTree = "<group>";
-		};
-		A4E1851E1B107E2E00E0F420 /* commands */ = {
-			isa = PBXGroup;
-			children = (
-				A4E1851B1B106D4D00E0F420 /* commmands.h */,
-				A4E1851C1B106D4D00E0F420 /* commmands.m */,
-			);
-			name = commands;
 			sourceTree = "<group>";
 		};
 		A4E1852D1B10B69800E0F420 /* Basic User Help */ = {
@@ -542,7 +529,6 @@
 				A4E184BD1B0F50A600E0F420 /* main.m in Sources */,
 				A4E184EC1B0F789800E0F420 /* MainViewController.m in Sources */,
 				A4E185171B1023CE00E0F420 /* CLOption.m in Sources */,
-				A4E1851D1B106D4D00E0F420 /* commmands.m in Sources */,
 				A4E184F21B0F78E500E0F420 /* CLOptionsTableViewController.m in Sources */,
 				A4E185141B0F8B0600E0F420 /* CLOptionsCell.m in Sources */,
 				A4E184FF1B0F795700E0F420 /* NoLongerConnectedViewController.m in Sources */,

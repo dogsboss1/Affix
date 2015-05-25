@@ -16,41 +16,48 @@
 @end
 
 @implementation MainViewController
-/*
-- (void)loadView {
-    CGRect applicationFrame = [[UIScreen mainScreen] applicationFrame];
-    SKView *skView = [[SKView alloc] initWithFrame:applicationFrame];
-    self.view = skView;
-}*/
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    /*
     
-    //    SKView *sKView = [[SKView alloc] initWithFrame:CGRectMake(0,0,600,600)];
+    [self.rightButtonLabel setTitle:@"" forState:UIControlStateNormal];
+    [self.backButtonLabel setTitle:@"" forState:UIControlStateNormal];
+    [self.leftButtonLabel setTitle:@"" forState:UIControlStateNormal];
+    [self.upButtonLabel setTitle:@"" forState:UIControlStateNormal];
+    [self.downButtonLabel setTitle:@"" forState:UIControlStateNormal];
+    [self.fdButtonLabel setTitle:@"" forState:UIControlStateNormal];
 
-    SKView *sKView = (SKView *)self.view;
-    sKView.showsFPS = YES;
-    sKView.showsNodeCount = YES;
     
-    SKScene *scene = [[MyScene alloc] initWithSize:CGSizeMake(sKView.bounds.size.width, sKView.bounds.size.height)];
+    self.commandLineTextField.delegate = self;
+    self.commandLineTextField.clearsOnBeginEditing = YES;
+    
+    int size = (self.view.frame.size.height) / 3;
+    
+    SKView *spView = [[SKView alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(self.view.frame) - size, size, size)];
+    [self.view addSubview:spView];
+    
+    SKScene *scene = [[MyScene alloc] initWithSize:CGSizeMake(spView.bounds.size.width, spView.bounds.size.height)];
     scene.scaleMode = SKSceneScaleModeAspectFill;
-    scene.backgroundColor = [UIColor clearColor];
-    sKView.allowsTransparency = YES;
+    spView.allowsTransparency = YES;
     
-    [sKView presentScene:scene];*/
-#warning I can't have a scene on top of view (UIKIt) - transparency not working
-   // self.commandLineTextField.delegate = self;
-    
+    [spView presentScene:scene];
+#warning This is where you can activate the joystick
 
     // Do any additional setup after loading the view.
 }
 
-
-
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    [self commandsAction:self.commandLineTextField.text];
+    
+    if (textField == self.commandLineTextField) {
+        [textField resignFirstResponder];
+        return NO;
+    }
+    return YES;
 }
 /*
 - (BOOL)textView:(UITextView *)textView shouldChangeTextInRange:(NSRange)range replacementText:(NSString *)text {
@@ -92,11 +99,11 @@
         BasicHelpViewController *basicHelpVC = [segue destinationViewController];
         // Pass the selected object to the new view controller.
     }
-
-    
 }
 
+
 - (NSString*) commandsAction:(NSString *)string {
+    self.commandLineLabel.text = self.commandLineTextField.text;
     
     self.commands = [[NSDictionary alloc] initWithObjects:[NSArray arrayWithObjects:@"superSegue", @"optionsSegue", @"BasicHelpSegue", nil] forKeys:[NSArray arrayWithObjects:@"super", @"options", @"help", nil]];
     
@@ -107,12 +114,14 @@
             return self.segueIdentifier;
         }
     }
+    self.commandLineTextField.text = @"";
     if ([self.segueIdentifier isEqualToString:@""]) {
         return nil;
     }
     else {
         return nil;
     }
+    
 }
 
 - (void) performSegue {
@@ -123,6 +132,7 @@
 
 - (void) welcomeBack {
     self.commandLineLabel.text = @"Welcome Back!";
+    self.commandLineTextField.text = @"";
 }
 
 - (IBAction)autoActivateButtonPressed:(UIButton *)sender {
@@ -177,12 +187,8 @@
 }
 
 - (IBAction)commandLineGoButtonPressed:(UIButton *)sender {
-    NSString* input = self.commandLineTextField.text;
-    
-    self.commandLineLabel.text = input;
-    [self commandsAction:input];
-    self.commandLineTextField.text = @"";
-    
+    [self commandsAction:self.commandLineTextField.text];
+    [self.commandLineTextField resignFirstResponder];
 }
 
 - (IBAction)basicHelpButtonPressed:(UIButton *)sender {
