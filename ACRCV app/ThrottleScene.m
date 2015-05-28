@@ -54,7 +54,7 @@
     SKSpriteNode *thThumb = [SKSpriteNode spriteNodeWithImageNamed:@"Throttle nob"];
     SKSpriteNode *thBackdrop = [SKSpriteNode spriteNodeWithImageNamed:@"Throttle"];
     
-    self.throttle = [Throttle throttleWithThumb:thThumb andBackDrop:thBackdrop];
+    self.throttle = [Throttle throttleWithThumb:thThumb andNode:thBackdrop];
     self.throttle.position = CGPointMake(thBackdrop.size.width, thBackdrop.size.height);
     [self addChild:self.throttle];
 }
