@@ -27,8 +27,20 @@
     [self.upButtonLabel setTitle:@"" forState:UIControlStateNormal];
     [self.downButtonLabel setTitle:@"" forState:UIControlStateNormal];
     [self.fdButtonLabel setTitle:@"" forState:UIControlStateNormal];
-
     
+    [self.actionsButtonLabel setTitle:@"" forState:UIControlStateNormal];
+    [self.basicHelpButtonLabel setTitle:@"" forState:UIControlStateNormal];
+    [self.superMainButtonLabel setTitle:@"" forState:UIControlStateNormal];
+    [self.gestureButtonLabel setTitle:@"" forState:UIControlStateNormal];
+    [self.disconnectButtonLabel setTitle:@"" forState:UIControlStateNormal];
+    
+    self.rightWheelImage.image = [UIImage imageNamed:@"wheelCartoon"];
+    self.leftWheelImage.image = [UIImage imageNamed:@"wheelCartoon"];
+    self.rightIRSensorImage.image = [UIImage imageNamed:@"IRSensor"];
+    self.middleIRSensorImage.image = [UIImage imageNamed:@"IRSensor"];
+    self.leftIRSensorImage.image = [UIImage imageNamed:@"IRSensor"];
+    self.carBodyImage.image = [UIImage imageNamed:@"carCartoon"];
+
     self.commandLineTextField.delegate = self;
     self.commandLineTextField.clearsOnBeginEditing = YES;
     
@@ -41,7 +53,7 @@
     
     SKScene *scene = [[MyScene alloc] initWithSize:CGSizeMake(spView.bounds.size.width, spView.bounds.size.height)];
     scene.scaleMode = SKSceneScaleModeAspectFill;
-    spView.allowsTransparency = NO;
+    spView.allowsTransparency = YES;
     
     [spView presentScene:scene];
     
@@ -53,7 +65,7 @@
     
     SKScene *tScene = [[ThrottleScene alloc] initWithSize:CGSizeMake(tView.bounds.size.width, tView.bounds.size.height)];
     tScene.scaleMode = SKSceneScaleModeAspectFill;
-    tView.allowsTransparency = NO;
+    tView.allowsTransparency = YES;
     
     [tView presentScene:tScene];
 
@@ -119,7 +131,7 @@
 - (NSString*) commandsAction:(NSString *)string {
     self.commandLineLabel.text = self.commandLineTextField.text;
     
-    self.commands = [[NSDictionary alloc] initWithObjects:[NSArray arrayWithObjects:@"superSegue", @"optionsSegue", @"BasicHelpSegue", nil] forKeys:[NSArray arrayWithObjects:@"super", @"options", @"help", nil]];
+    self.commands = [[NSDictionary alloc] initWithObjects:[NSArray arrayWithObjects:@"superSegue", @"optionsSegue", @"BasicHelpSegue", @"disconnectedSegue", nil] forKeys:[NSArray arrayWithObjects:@"super", @"options", @"help", @"disconnect", nil]];
     
     for (NSString *keys in [self.commands allKeys]) {
         if ([string isEqualToString:keys]) {
@@ -138,8 +150,13 @@
     
 }
 
+- (void) autoEngaged {
+    
+}
+
 - (void) performSegue {
     self.commandLineLabel.text = @"";
+    [self autoEngaged];
     [self performSelector:@selector(welcomeBack) withObject:self afterDelay:0.3];
     [self performSegueWithIdentifier:self.segueIdentifier sender:self];
 }
@@ -151,6 +168,7 @@
 
 - (IBAction)autoActivateButtonPressed:(UIButton *)sender {
     NSLog(@"Auto activated");
+    [self autoEngaged];
     
 }
 - (IBAction)upButtonPressed:(UIButton *)sender {

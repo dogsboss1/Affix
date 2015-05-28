@@ -23,7 +23,7 @@
 
 - (id) initWithThumb:(SKSpriteNode *)aNode;
 + (id) throttleWithThumb:(SKSpriteNode *)aNode;
-- (id) initWithThumb:(SKSpriteNode *)backgroundNode andNode:(SKSpriteNode*)thumbNode;
-+ (id) throttleWithThumb:(SKSpriteNode *)backgroundNode andNode:(SKSpriteNode *)thumbNode;
+- (id) initWithThumb:(SKSpriteNode *)thumbNode andBackDrop:(SKSpriteNode*)backgroundNode;
++ (id) throttleWithThumb:(SKSpriteNode *)thumbNode andBackDrop:(SKSpriteNode *)backgroundNode;
 
 @end

@@ -52,16 +52,15 @@
 
 - (void) addThrottle {
     SKSpriteNode *thThumb = [SKSpriteNode spriteNodeWithImageNamed:@"Throttle nob"];
-    SKSpriteNode *thBackdrop = [SKSpriteNode spriteNodeWithImageNamed:@"Throttle"];
-    
-    self.throttle = [Throttle throttleWithThumb:thThumb andNode:thBackdrop];
+    SKSpriteNode *thBackdrop = [SKSpriteNode spriteNodeWithImageNamed:@"Throttle V2"];
+    self.throttle = [Throttle throttleWithThumb:thThumb andBackDrop:thBackdrop];
     self.throttle.position = CGPointMake(thBackdrop.size.width, thBackdrop.size.height);
     [self addChild:self.throttle];
 }
 
 - (void) throttleMovement {
     if (self.throttle.velocity.x !=0) {
-        self.carNode.position = CGPointMake(/*self.carNode.position.x + .1 * self.throttle.velocity.x*/ 0 , self.carNode.position.y + .1 * self.throttle.velocity.y);
+        self.carNode.position = CGPointMake(/*self.carNode.position.x + .1 * self.throttle.velocity.x*/ 50 , self.carNode.position.y + .1 * self.throttle.velocity.y);
         self.carNode.zRotation = self.throttle.angularVelocity;
     }
 }

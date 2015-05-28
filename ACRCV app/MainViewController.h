@@ -20,7 +20,6 @@
 - (IBAction)autoActivateButtonPressed:(UIButton *)sender;
 @property (weak, nonatomic) IBOutlet UILabel *commandLineLabel;
 @property (weak, nonatomic) IBOutlet UITextView *activityLogTextView;
-@property (weak, nonatomic) IBOutlet UIImageView *rightSideBarImage;
 @property (weak, nonatomic) IBOutlet UITextField *commandLineTextField;
 
 - (IBAction)upButtonPressed:(UIButton *)sender;
@@ -38,6 +37,8 @@
 - (IBAction)commandLineGoButtonPressed:(UIButton *)sender;
 - (IBAction)basicHelpButtonPressed:(UIButton *)sender;
 - (IBAction)gestureButtonPressed:(UIButton *)sender;
+@property (weak, nonatomic) IBOutlet UIButton *helpButtonPressed;
+
 @property (weak, nonatomic) IBOutlet UIButton *rightButtonLabel;
 @property (weak, nonatomic) IBOutlet UIButton *backButtonLabel;
 @property (weak, nonatomic) IBOutlet UIButton *leftButtonLabel;
@@ -45,6 +46,19 @@
 @property (weak, nonatomic) IBOutlet UIButton *downButtonLabel;
 @property (weak, nonatomic) IBOutlet UIButton *fdButtonLabel;
 
+@property (weak, nonatomic) IBOutlet UIButton *actionsButtonLabel;
+@property (weak, nonatomic) IBOutlet UIButton *basicHelpButtonLabel;
+@property (weak, nonatomic) IBOutlet UIButton *superMainButtonLabel;
+@property (weak, nonatomic) IBOutlet UIButton *gestureButtonLabel;
+@property (weak, nonatomic) IBOutlet UIButton *disconnectButtonLabel;
+@property (weak, nonatomic) IBOutlet UIButton *helpButtonLabel;
+
+@property (weak, nonatomic) IBOutlet UIImageView *rightWheelImage;
+@property (weak, nonatomic) IBOutlet UIImageView *leftWheelImage;
+@property (weak, nonatomic) IBOutlet UIImageView *rightIRSensorImage;
+@property (weak, nonatomic) IBOutlet UIImageView *middleIRSensorImage;
+@property (weak, nonatomic) IBOutlet UIImageView *leftIRSensorImage;
+@property (weak, nonatomic) IBOutlet UIImageView *carBodyImage;
 
 
 @property NSDictionary *commands;

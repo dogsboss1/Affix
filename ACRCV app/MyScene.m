@@ -61,7 +61,7 @@
 
 - (void) joystickMovement {
     if (self.joystick.velocity.x !=0 || self.joystick.velocity.y != 0) {
-        self.carNode.position = CGPointMake(self.carNode.position.x + .1 * self.joystick.velocity.x, self.carNode.position.y + .1 * self.joystick.velocity.y);
+        //self.carNode.position = CGPointMake(self.carNode.position.x + .1 * self.joystick.velocity.x, self.carNode.position.y + .1 * self.joystick.velocity.y);
         self.carNode.zRotation = self.joystick.angularVelocity;
     }
 }

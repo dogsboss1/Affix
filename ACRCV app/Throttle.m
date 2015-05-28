@@ -39,17 +39,17 @@
     return [[self alloc] initWithThumb:aNode];
 }
 
-- (id)initWithThumb:(SKSpriteNode *)backgroundNode andNode:(SKSpriteNode *)thumNode {
-    if (self = [self initWithThumb:backgroundNode]) {
-        [thumNode setPosition:self.anchorPointInPoints];
-        size = backgroundNode.size.width;
-        [self addChild:thumNode];
+- (id)initWithThumb:(SKSpriteNode *)aNode andBackDrop:(SKSpriteNode *)bgNode {
+    if (self = [self initWithThumb:aNode]) {
+        [bgNode setPosition:self.anchorPointInPoints];
+        size = bgNode.size.width;
+        [self addChild:bgNode];
     }
     return self;
 }
 
-+ (id)throttleWithThumb:(SKSpriteNode *)backgroundNode andNode:(SKSpriteNode *)thumNode {
-    return [[self alloc] initWithThumb:backgroundNode andNode:thumNode];
++ (id)throttleWithThumb:(SKSpriteNode *)thumbNode andBackDrop:(SKSpriteNode *)backgroundNode {
+    return [[self alloc] initWithThumb:thumbNode andBackDrop:backgroundNode];
 }
 
 - (void) touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
