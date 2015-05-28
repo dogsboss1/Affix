@@ -64,4 +64,8 @@
     NSLog(@"Going left");
     
 }
+
+- (IBAction)mainMenuButtonPressed:(UIButton *)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
 @end

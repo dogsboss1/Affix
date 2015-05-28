@@ -25,5 +25,7 @@
 - (IBAction)backButtonPressed:(UIButton *)sender;
 - (IBAction)leftButtonPressed:(UIButton *)sender;
 
+- (IBAction)mainMenuButtonPressed:(UIButton *)sender;
+
 
 @end

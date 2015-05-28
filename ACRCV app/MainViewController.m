@@ -31,7 +31,7 @@
     self.commandLineTextField.delegate = self;
     self.commandLineTextField.clearsOnBeginEditing = YES;
     
-    int size = (self.view.frame.size.height) / 3;
+    int size = (self.view.frame.size.height) / 2.5;
     
     SKView *spView = [[SKView alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(self.view.frame) - size, size, size)];
     [self.view addSubview:spView];
@@ -41,7 +41,6 @@
     spView.allowsTransparency = YES;
     
     [spView presentScene:scene];
-#warning This is where you can activate the joystick
 
     // Do any additional setup after loading the view.
 }
