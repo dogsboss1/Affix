@@ -25,4 +25,5 @@
 + (id) joystickWithThumb:(SKSpriteNode *)aNode;
 - (id) initWithThumb:(SKSpriteNode *)thumbNode andBackDrop:(SKSpriteNode*)backgroundNode;
 + (id) joystickWithThumb:(SKSpriteNode *)thumbNode andBackDrop:(SKSpriteNode *)backgroundNode;
+
 @end

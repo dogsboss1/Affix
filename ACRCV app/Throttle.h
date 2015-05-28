@@ -8,6 +8,22 @@
 
 #import <SpriteKit/SpriteKit.h>
 
-@interface Throttle : SKNode
+@interface Throttle : SKNode {
+    SKSpriteNode *thumbNode;
+    BOOL isTracking;
+    CGPoint velocity;
+    CGPoint travelLimit;
+    float angularVelocity;
+    float size;
+}
+
+@property (nonatomic, readonly) CGPoint velocity;
+@property (nonatomic, readonly) float angularVelocity;
+@property (nonatomic, readonly) float size;
+
+- (id) initWithThumb:(SKSpriteNode *)aNode;
++ (id) throttleWithThumb:(SKSpriteNode *)aNode;
+- (id) initWithThumb:(SKSpriteNode *)thumbNode andBackDrop:(SKSpriteNode*)backgroundNode;
++ (id) throttleWithThumb:(SKSpriteNode *)thumbNode andBackDrop:(SKSpriteNode *)backgroundNode;
 
 @end

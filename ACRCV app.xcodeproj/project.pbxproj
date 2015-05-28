@@ -20,6 +20,9 @@
 		A41B70F71B11960F00438250 /* GestureRecogniserTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A41B70F61B11960F00438250 /* GestureRecogniserTestViewController.m */; };
 		A4980DBB1B1761CC00068744 /* ThrottleScene.m in Sources */ = {isa = PBXBuildFile; fileRef = A4980DBA1B1761CC00068744 /* ThrottleScene.m */; };
 		A4980DBE1B1761EF00068744 /* Throttle.m in Sources */ = {isa = PBXBuildFile; fileRef = A4980DBD1B1761EF00068744 /* Throttle.m */; };
+		A4980DC11B1776D400068744 /* Throttle nob.png in Resources */ = {isa = PBXBuildFile; fileRef = A4980DBF1B1776D400068744 /* Throttle nob.png */; };
+		A4980DC21B1776D400068744 /* Throttle.png in Resources */ = {isa = PBXBuildFile; fileRef = A4980DC01B1776D400068744 /* Throttle.png */; };
+		A4980DC41B1776DD00068744 /* app Logos in Resources */ = {isa = PBXBuildFile; fileRef = A4980DC31B1776DD00068744 /* app Logos */; };
 		A4E184BD1B0F50A600E0F420 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E184BC1B0F50A600E0F420 /* main.m */; };
 		A4E184C01B0F50A600E0F420 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E184BF1B0F50A600E0F420 /* AppDelegate.m */; };
 		A4E184C31B0F50A600E0F420 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E184C21B0F50A600E0F420 /* ViewController.m */; };
@@ -82,6 +85,9 @@
 		A4980DBA1B1761CC00068744 /* ThrottleScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ThrottleScene.m; path = "ACRCV app/ThrottleScene.m"; sourceTree = "<group>"; };
 		A4980DBC1B1761EF00068744 /* Throttle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Throttle.h; path = "ACRCV app/Throttle.h"; sourceTree = "<group>"; };
 		A4980DBD1B1761EF00068744 /* Throttle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Throttle.m; path = "ACRCV app/Throttle.m"; sourceTree = "<group>"; };
+		A4980DBF1B1776D400068744 /* Throttle nob.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Throttle nob.png"; path = "Images/throttle/Throttle nob.png"; sourceTree = "<group>"; };
+		A4980DC01B1776D400068744 /* Throttle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Throttle.png; path = Images/throttle/Throttle.png; sourceTree = "<group>"; };
+		A4980DC31B1776DD00068744 /* app Logos */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "app Logos"; path = "Images/app Logos"; sourceTree = "<group>"; };
 		A4E184B71B0F50A600E0F420 /* ACRCV app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ACRCV app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4E184BB1B0F50A600E0F420 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A4E184BC1B0F50A600E0F420 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -379,6 +385,9 @@
 		A4E184E91B0F774600E0F420 /* Images/Music */ = {
 			isa = PBXGroup;
 			children = (
+				A4980DC31B1776DD00068744 /* app Logos */,
+				A4980DBF1B1776D400068744 /* Throttle nob.png */,
+				A4980DC01B1776D400068744 /* Throttle.png */,
 				A41B70D61B10CAD300438250 /* green-tick.png */,
 				A41B70D71B10CAD300438250 /* red-cross.png */,
 				A41B70D81B10CAD300438250 /* restart-256.png */,
@@ -521,10 +530,13 @@
 				A4E1852C1B10A38100E0F420 /* page4.png in Resources */,
 				A4E184C81B0F50A600E0F420 /* Images.xcassets in Resources */,
 				A4E185291B10A38100E0F420 /* page1.png in Resources */,
+				A4980DC21B1776D400068744 /* Throttle.png in Resources */,
 				A4E185101B0F852500E0F420 /* dpad.png in Resources */,
 				A41B70DD1B10CAD300438250 /* rodentia-icons_system-reboot.png in Resources */,
 				A4E185231B10A33A00E0F420 /* popsicle-640.png in Resources */,
 				A4E185111B0F852500E0F420 /* joystick.png in Resources */,
+				A4980DC41B1776DD00068744 /* app Logos in Resources */,
+				A4980DC11B1776D400068744 /* Throttle nob.png in Resources */,
 				A4E1852A1B10A38100E0F420 /* page2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -8,6 +8,7 @@
 
 #import "MainViewController.h"
 #import "MyScene.h"
+#import "ThrottleScene.h"
 
 @interface MainViewController ()
 
@@ -31,6 +32,8 @@
     self.commandLineTextField.delegate = self;
     self.commandLineTextField.clearsOnBeginEditing = YES;
     
+    // ----- Joystick
+    
     int size = (self.view.frame.size.height) / 2.5;
     
     SKView *spView = [[SKView alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(self.view.frame) - size, size, size)];
@@ -38,9 +41,21 @@
     
     SKScene *scene = [[MyScene alloc] initWithSize:CGSizeMake(spView.bounds.size.width, spView.bounds.size.height)];
     scene.scaleMode = SKSceneScaleModeAspectFill;
-    spView.allowsTransparency = YES;
+    spView.allowsTransparency = NO;
     
     [spView presentScene:scene];
+    
+    // ------ Throttle
+    
+    
+    SKView *tView = [[SKView alloc] initWithFrame:CGRectMake(CGRectGetMaxX(self.view.frame) - size, CGRectGetMaxY(self.view.frame) - size, size, size)];
+    [self.view addSubview:tView];
+    
+    SKScene *tScene = [[ThrottleScene alloc] initWithSize:CGSizeMake(tView.bounds.size.width, tView.bounds.size.height)];
+    tScene.scaleMode = SKSceneScaleModeAspectFill;
+    tView.allowsTransparency = NO;
+    
+    [tView presentScene:tScene];
 
     // Do any additional setup after loading the view.
 }
