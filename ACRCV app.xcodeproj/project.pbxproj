@@ -21,7 +21,6 @@
 		A4980DBB1B1761CC00068744 /* ThrottleScene.m in Sources */ = {isa = PBXBuildFile; fileRef = A4980DBA1B1761CC00068744 /* ThrottleScene.m */; };
 		A4980DBE1B1761EF00068744 /* Throttle.m in Sources */ = {isa = PBXBuildFile; fileRef = A4980DBD1B1761EF00068744 /* Throttle.m */; };
 		A4980DC11B1776D400068744 /* Throttle nob.png in Resources */ = {isa = PBXBuildFile; fileRef = A4980DBF1B1776D400068744 /* Throttle nob.png */; };
-		A4980DC41B1776DD00068744 /* app Logos in Resources */ = {isa = PBXBuildFile; fileRef = A4980DC31B1776DD00068744 /* app Logos */; };
 		A4980DC81B1787A500068744 /* Throttle V2.png in Resources */ = {isa = PBXBuildFile; fileRef = A4980DC71B1787A500068744 /* Throttle V2.png */; };
 		A4980DCC1B1791F500068744 /* carCartoon.png in Resources */ = {isa = PBXBuildFile; fileRef = A4980DC91B1791F500068744 /* carCartoon.png */; };
 		A4980DCD1B1791F500068744 /* IRSensor.png in Resources */ = {isa = PBXBuildFile; fileRef = A4980DCA1B1791F500068744 /* IRSensor.png */; };
@@ -94,7 +93,6 @@
 		A4980DBC1B1761EF00068744 /* Throttle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Throttle.h; path = "ACRCV app/Throttle.h"; sourceTree = "<group>"; };
 		A4980DBD1B1761EF00068744 /* Throttle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Throttle.m; path = "ACRCV app/Throttle.m"; sourceTree = "<group>"; };
 		A4980DBF1B1776D400068744 /* Throttle nob.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Throttle nob.png"; path = "Images/throttle/Throttle nob.png"; sourceTree = "<group>"; };
-		A4980DC31B1776DD00068744 /* app Logos */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "app Logos"; path = "Images/app Logos"; sourceTree = "<group>"; };
 		A4980DC71B1787A500068744 /* Throttle V2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Throttle V2.png"; path = "Images/Throttle V2.png"; sourceTree = "<group>"; };
 		A4980DC91B1791F500068744 /* carCartoon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = carCartoon.png; path = Images/carCartoon.png; sourceTree = "<group>"; };
 		A4980DCA1B1791F500068744 /* IRSensor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = IRSensor.png; path = Images/IRSensor.png; sourceTree = "<group>"; };
@@ -422,7 +420,6 @@
 				A4980DC91B1791F500068744 /* carCartoon.png */,
 				A4980DCA1B1791F500068744 /* IRSensor.png */,
 				A4980DCB1B1791F500068744 /* wheelCartoon.png */,
-				A4980DC31B1776DD00068744 /* app Logos */,
 				A4980DBF1B1776D400068744 /* Throttle nob.png */,
 				A4980DC71B1787A500068744 /* Throttle V2.png */,
 				A41B70D61B10CAD300438250 /* green-tick.png */,
@@ -568,7 +565,6 @@
 				A41B70DD1B10CAD300438250 /* rodentia-icons_system-reboot.png in Resources */,
 				A4E185231B10A33A00E0F420 /* popsicle-640.png in Resources */,
 				A4E185111B0F852500E0F420 /* joystick.png in Resources */,
-				A4980DC41B1776DD00068744 /* app Logos in Resources */,
 				A4980DC11B1776D400068744 /* Throttle nob.png in Resources */,
 				A4E1852A1B10A38100E0F420 /* page2.png in Resources */,
 			);

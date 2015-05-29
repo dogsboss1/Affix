@@ -38,6 +38,7 @@
     [self.superMainButtonLabel setTitle:@"" forState:UIControlStateNormal];
     [self.gestureButtonLabel setTitle:@"" forState:UIControlStateNormal];
     [self.disconnectButtonLabel setTitle:@"" forState:UIControlStateNormal];
+    [self.creditButtonLabel setTitle:@"" forState:UIControlStateNormal];
     
     /*
     self.rightWheelImage.image = [UIImage imageNamed:@"wheelCartoon"];
@@ -83,7 +84,7 @@
 }
 
 #pragma mark - Navigation
-
+/*
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([[segue identifier] isEqualToString:(@"superSegue")]) {
@@ -102,7 +103,7 @@
         BasicHelpViewController *basicHelpVC = [segue destinationViewController];
         // Pass the selected object to the new view controller.
     }
-}
+}*/
 
 - (NSString*) commandsAction:(NSString *)string {
     self.commandLineLabel.text = self.commandLineTextField.text;

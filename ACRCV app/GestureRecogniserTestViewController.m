@@ -22,13 +22,45 @@
     
     UIPanGestureRecognizer *panGestureRecognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(moveViewWithGestureRecognizer:)];
     [self.testView addGestureRecognizer:panGestureRecognizer];
+    /*
+    self.locationManager = [[CLLocationManager alloc] init];
+    self.locationManager.delegate = self;
+    self.locationManager.desiredAccuracy = kCLLocationAccuracyBest;
     
+    [self.locationManager requestWhenInUseAuthorization];*/
+    
+    
+    /*[self.locationController.locationManager requestWhenInUseAuthorization];
+
     self.locationController = [[CoreLocationController alloc] init];
     self.locationController.delegate = self;
-    [self.locationController.locationManager startUpdatingLocation];
+    [self.locationController.locationManager startUpdatingLocation];*/
+}
+/*
+- (void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error {
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" message:@"There was an error retrieving your location."delegate:self cancelButtonTitle:@"Ok" otherButtonTitles: nil];
+    [alert show];
 }
 
+- (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations {
+    CLLocation *crnLoc = [locations lastObject];
+    self.lblLongitude.text = [NSString stringWithFormat:@"Longitude: %.8f", crnLoc.coordinate.longitude];
+    self.lblLatitude.text = [NSString stringWithFormat:@"Latitude: %.8f", crnLoc.coordinate.latitude];
+}
 
+- (void)locationManager:(CLLocationManager *)manager didChangeAuthorizationStatus:(CLAuthorizationStatus)status {
+    if (status == kCLAuthorizationStatusAuthorizedAlways || status == kCLAuthorizationStatusAuthorizedWhenInUse) {
+        [self.locationManager startUpdatingLocation];
+    }
+}*/
+
+/*
+- (void) locationManager:(CLLocationManager *)manager didChangeAuthorizationStatus:(CLAuthorizationStatus)status {
+    if (status == kCLAuthorizationStatusAuthorizedAlways || status == kCLAuthorizationStatusAuthorizedWhenInUse) {
+        self.mapView.showsUserLocation = YES;
+    }
+}*/
+/*
 - (void)update:(CLLocation *)location {
     self.lblLatitude.text = [NSString stringWithFormat:@"Latitude: %f", [location coordinate].latitude];
     self.lblLongitude.text = [NSString stringWithFormat:@"Longitude: %f", [location coordinate].longitude];
@@ -37,7 +69,7 @@
 - (void)locationError:(NSError *)error {
     self.lblLatitude.text = [error description];
     self.lblLongitude.text = nil;
-}
+}*/
 
 -(void)moveViewWithGestureRecognizer:(UIPanGestureRecognizer *)panGestureRecognizer{
     CGPoint touchLocation = [panGestureRecognizer locationInView:self.view];

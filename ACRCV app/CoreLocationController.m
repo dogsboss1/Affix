@@ -9,7 +9,7 @@
 #import "CoreLocationController.h"
 
 @implementation CoreLocationController
-
+/*
 - (id)init {
     self = [super init];
     if (self != nil) {
@@ -24,11 +24,6 @@
 
 - (void) locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error {
     [self.delegate locationError:error];
-}
+}*/
 
-- (void) locationManager:(CLLocationManager *)manager didChangeAuthorizationStatus:(CLAuthorizationStatus)status {
-    if (status == kCLAuthorizationStatusAuthorizedAlways || status == kCLAuthorizationStatusAuthorizedWhenInUse) {
-        self.
-    }
-}
 @end

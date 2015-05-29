@@ -8,11 +8,13 @@
 
 #import <UIKit/UIKit.h>
 #import <MapKit/MapKit.h>
-#import "CoreLocationController.h"
+#import <CoreLocation/CoreLocation.h>
+//#import "CoreLocationController.h"
 
-@interface GestureRecogniserTestViewController : UIViewController <CoreLocationControllerDelegate, CLLocationManagerDelegate>
+@interface GestureRecogniserTestViewController : UIViewController /*<CoreLocationControllerDelegate, *///<CLLocationManagerDelegate>
 
-@property (nonatomic, retain) CoreLocationController *locationController;
+//@property (nonatomic, retain) CoreLocationController *locationController;
+//@property CLLocationManager *locationManager;
 
 @property (weak, nonatomic) IBOutlet UIView *testView;
 
