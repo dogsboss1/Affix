@@ -47,7 +47,18 @@
     self.leftIRSensorImage.image = [UIImage imageNamed:@"IRSensor"];
     self.carBodyImage.image = [UIImage imageNamed:@"carCartoon"];*/
     
-    self.activityLogTextView.text = @"Enjoy the world! \nYou have the ability to do incredible things, controlling this vehicle included. Ingoring the cheese, be you. \n \nNo inspirational quote needed, \nyou are You, that is truer than true. There is no one alive who is Youer than You. \n\n\nCheers Dr Seuss.";
+    NSString *log = @"Enjoy the world! \nYou have the ability to do incredible things, controlling this vehicle included. Ingoring the cheese, be you. \n \nNo inspirational quote needed, \nyou are You, that is truer than true. There is no one alive who is Youer than You. \n\n\nCheers Dr Seuss.";
+    
+    NSMutableAttributedString *attrString = [[NSMutableAttributedString alloc] initWithString:log];
+    NSUInteger _stringLength = [log length];
+    
+    UIColor *_black = [UIColor blackColor];
+    UIFont *font = [UIFont fontWithName:@"Helvetica" size:13.0];
+    [attrString addAttribute:NSFontAttributeName value:font range:NSMakeRange(0, _stringLength)];
+    [attrString addAttribute:NSForegroundColorAttributeName value:_black range:NSMakeRange(0, _stringLength)];
+    
+    self.commandLineLabel.text = @"Command line";
+    self.activityLogTextView.attributedText = attrString;
 
     self.commandLineTextField.delegate = self;
     self.commandLineTextField.clearsOnBeginEditing = YES;
@@ -75,13 +86,7 @@
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    
-    if ([[segue identifier] isEqualToString:(@"disconnectedSegue")]) {
-        // Get the new view controller using [segue destinationViewController].
-        NoLongerConnectedViewController *disconnectVC = [segue destinationViewController];
-        // Pass the selected object to the new view controller.
-    }
-    else if ([[segue identifier] isEqualToString:(@"superSegue")]) {
+    if ([[segue identifier] isEqualToString:(@"superSegue")]) {
         // Get the new view controller using [segue destinationViewController].
         SuperMainViewController *superVC = [segue destinationViewController];
         // Pass the selected object to the new view controller.
@@ -102,12 +107,16 @@
 - (NSString*) commandsAction:(NSString *)string {
     self.commandLineLabel.text = self.commandLineTextField.text;
     
-    self.commands = [[NSDictionary alloc] initWithObjects:[NSArray arrayWithObjects:@"superSegue", @"optionsSegue", @"BasicHelpSegue", @"disconnectedSegue", nil] forKeys:[NSArray arrayWithObjects:@"super", @"options", @"help", @"disconnect", nil]];
+    self.commands = [[NSDictionary alloc] initWithObjects:[NSArray arrayWithObjects:@"superSegue", @"optionsSegue", @"BasicHelpSegue", @"disconnected",@"testingSegue", @"creditSegue", nil] forKeys:[NSArray arrayWithObjects:@"super", @"options", @"help", @"disconnect", @"gesture", @"credit", nil]];
     
     for (NSString *keys in [self.commands allKeys]) {
         if ([string isEqualToString:keys]) {
             if ([string isEqualToString:@"super"]) {
                 [self superMainActivated];
+                return nil;
+            }
+            else if ([string isEqualToString:@"disconnect"]) {
+                [self didDisconnect];
                 return nil;
             }
             else {
@@ -117,14 +126,23 @@
             }
         }
     }
-    self.commandLineTextField.text = @"";
-    if ([self.segueIdentifier isEqualToString:@""]) {
-        return nil;
-    }
-    else {
-        return nil;
-    }
+    return nil;
+}
+
+- (void) didDisconnect {
     
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Disconnection!" message:@"You have been disconnected from bluetooth." delegate:self cancelButtonTitle:@"Why?" otherButtonTitles:@"Retry", nil];
+    
+    [alert show];
+}
+
+- (void) alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
+    if (buttonIndex == 1) {
+        [self dismissViewControllerAnimated:YES completion:nil];
+    }
+    else if (buttonIndex == 0) {
+        [self performSegueWithIdentifier:@"BasicHelpSegue" sender:self];
+    }
 }
 
 - (void) superMainActivated {
@@ -133,8 +151,8 @@
     //self.backgroundImage.alpha = 0.208367;
     self.backgroundImage.alpha = 0.0;
     
-    [UIView animateWithDuration:1.0 animations:^{self.backgroundImage.alpha = 0.208367;} completion:nil];
-    self.view.backgroundColor = [UIColor orangeColor];
+    [UIView animateWithDuration:1.0 animations:^{self.backgroundImage.alpha = 0.068027;} completion:nil];
+    self.view.backgroundColor = [UIColor colorWithRed:(245/255.0) green:(88/255.0) blue:(38/255.0) alpha:1.0];
     
     self.commandLineTextField.secureTextEntry = YES;
     
@@ -147,6 +165,7 @@
     
     [self presentControls:0];
 }
+
 
 - (void) presentControls:(NSInteger)type {
     if (type == 0) {
@@ -200,13 +219,8 @@
     }*/
 }
 
-- (void) autoEngaged {
-    
-}
-
 - (void) performSegue {
     self.commandLineLabel.text = @"";
-    [self autoEngaged];
     [self performSelector:@selector(welcomeBack) withObject:self afterDelay:0.3];
     [self performSegueWithIdentifier:self.segueIdentifier sender:self];
 }
@@ -218,7 +232,7 @@
 
 - (IBAction)autoActivateButtonPressed:(UIButton *)sender {
     NSLog(@"Auto activated");
-    [self autoEngaged];
+    [self didDisconnect];
     
 }
 - (IBAction)upButtonPressed:(UIButton *)sender {
@@ -280,4 +294,6 @@
 - (IBAction)gestureButtonPressed:(UIButton *)sender {
 }
 
+- (IBAction)creditButtonPressed:(UIButton *)sender {
+}
 @end

@@ -20,7 +20,7 @@
     self.backgroundImage.image = [UIImage imageNamed:@"gradient"];
     self.backgroundImage.alpha = 1.0;
     
-    self.view.backgroundColor = [UIColor orangeColor];
+    self.view.backgroundColor = [UIColor colorWithRed:(245/255.0) green:(88/255.0) blue:(38/255.0) alpha:1.0];
     // Do any additional setup after loading the view.
 }
 

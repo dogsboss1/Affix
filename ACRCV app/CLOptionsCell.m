@@ -12,7 +12,7 @@
 
 - (IBAction)activateActionButtonPressed:(UIButton *)sender {
     self.actiavteButtonLabel.enabled = NO;
-#warning Possibility of an attributed string
+//#warning Possibility of an attributed string
     /*
     UIColor *_redColour = [UIColor redColor];
     NSDictionary *attrsDic = [NSDictionary dictionaryWithObjects: forKeys:NSFontAttributeName];

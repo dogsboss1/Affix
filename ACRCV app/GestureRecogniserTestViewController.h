@@ -7,15 +7,23 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MapKit/MapKit.h>
+#import "CoreLocationController.h"
 
-@interface GestureRecogniserTestViewController : UIViewController
+@interface GestureRecogniserTestViewController : UIViewController <CoreLocationControllerDelegate, CLLocationManagerDelegate>
 
+@property (nonatomic, retain) CoreLocationController *locationController;
 
 @property (weak, nonatomic) IBOutlet UIView *testView;
 
 @property (weak, nonatomic) IBOutlet UILabel *horizontalVelocityLabel;
 
 @property (weak, nonatomic) IBOutlet UILabel *verticalVelocityLabel;
+
+@property (weak, nonatomic) IBOutlet MKMapView *mapView;
+@property (weak, nonatomic) IBOutlet UILabel *lblLongitude;
+@property (weak, nonatomic) IBOutlet UILabel *lblLatitude;
+
 
 
 - (IBAction)upButtonPressed:(UIButton *)sender;
@@ -26,6 +34,5 @@
 - (IBAction)leftButtonPressed:(UIButton *)sender;
 
 - (IBAction)mainMenuButtonPressed:(UIButton *)sender;
-
 
 @end

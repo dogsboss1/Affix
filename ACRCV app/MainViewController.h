@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "NoLongerConnectedViewController.h"
 #import "CLOptionsTableViewController.h"
 #import "SuperMainViewController.h"
 #import "BasicHelpViewController.h"
@@ -41,6 +40,7 @@
 - (IBAction)basicHelpButtonPressed:(UIButton *)sender;
 - (IBAction)gestureButtonPressed:(UIButton *)sender;
 @property (weak, nonatomic) IBOutlet UIButton *helpButtonPressed;
+- (IBAction)creditButtonPressed:(UIButton *)sender;
 
 @property (weak, nonatomic) IBOutlet UIButton *rightButtonLabel;
 @property (weak, nonatomic) IBOutlet UIButton *backButtonLabel;
@@ -55,6 +55,8 @@
 @property (weak, nonatomic) IBOutlet UIButton *gestureButtonLabel;
 @property (weak, nonatomic) IBOutlet UIButton *disconnectButtonLabel;
 @property (weak, nonatomic) IBOutlet UIButton *helpButtonLabel;
+@property (weak, nonatomic) IBOutlet UIButton *creditButtonLabel;
+
 
 @property (weak, nonatomic) IBOutlet UIImageView *rightWheelImage;
 @property (weak, nonatomic) IBOutlet UIImageView *leftWheelImage;

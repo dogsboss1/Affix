@@ -7,6 +7,8 @@
 //
 
 #import "GestureRecogniserTestViewController.h"
+#import <Foundation/Foundation.h>
+
 @interface GestureRecogniserTestViewController ()
 
 -(void)moveViewWithGestureRecognizer:(UIPanGestureRecognizer *)panGestureRecognizer;
@@ -21,8 +23,21 @@
     UIPanGestureRecognizer *panGestureRecognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(moveViewWithGestureRecognizer:)];
     [self.testView addGestureRecognizer:panGestureRecognizer];
     
+    self.locationController = [[CoreLocationController alloc] init];
+    self.locationController.delegate = self;
+    [self.locationController.locationManager startUpdatingLocation];
 }
 
+
+- (void)update:(CLLocation *)location {
+    self.lblLatitude.text = [NSString stringWithFormat:@"Latitude: %f", [location coordinate].latitude];
+    self.lblLongitude.text = [NSString stringWithFormat:@"Longitude: %f", [location coordinate].longitude];
+}
+
+- (void)locationError:(NSError *)error {
+    self.lblLatitude.text = [error description];
+    self.lblLongitude.text = nil;
+}
 
 -(void)moveViewWithGestureRecognizer:(UIPanGestureRecognizer *)panGestureRecognizer{
     CGPoint touchLocation = [panGestureRecognizer locationInView:self.view];

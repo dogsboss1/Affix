@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface SuperMainViewController : UIViewController
+
 - (IBAction)backButtonPressed:(UIButton *)sender;
 @property (weak, nonatomic) IBOutlet UIImageView *backgroundImage;
 - (IBAction)colourSliderChanged:(UISlider *)sender;

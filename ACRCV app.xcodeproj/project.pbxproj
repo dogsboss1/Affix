@@ -29,6 +29,11 @@
 		A4980DD01B182C4300068744 /* gradient.png in Resources */ = {isa = PBXBuildFile; fileRef = A4980DCF1B182C4300068744 /* gradient.png */; };
 		A4980DD41B183F0700068744 /* SuperThrottleScene.m in Sources */ = {isa = PBXBuildFile; fileRef = A4980DD31B183F0700068744 /* SuperThrottleScene.m */; };
 		A4980DD71B183F1B00068744 /* SuperJoystickScene.m in Sources */ = {isa = PBXBuildFile; fileRef = A4980DD61B183F1B00068744 /* SuperJoystickScene.m */; };
+		A4980DDA1B186A4B00068744 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4980DD81B186A1E00068744 /* CoreLocation.framework */; };
+		A4980DDD1B186CAC00068744 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4980DDB1B186C9F00068744 /* MapKit.framework */; };
+		A4980DE11B18722700068744 /* CoreLocationController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4980DE01B18722700068744 /* CoreLocationController.m */; };
+		A4980DE71B188C4400068744 /* CreditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4980DE61B188C4400068744 /* CreditViewController.m */; };
+		A4980DF11B18A13700068744 /* Finished.png in Resources */ = {isa = PBXBuildFile; fileRef = A4980DF01B18A13700068744 /* Finished.png */; };
 		A4E184BD1B0F50A600E0F420 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E184BC1B0F50A600E0F420 /* main.m */; };
 		A4E184C01B0F50A600E0F420 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E184BF1B0F50A600E0F420 /* AppDelegate.m */; };
 		A4E184C31B0F50A600E0F420 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E184C21B0F50A600E0F420 /* ViewController.m */; };
@@ -40,9 +45,6 @@
 		A4E184EF1B0F78B700E0F420 /* BluetoothConnectingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E184EE1B0F78B700E0F420 /* BluetoothConnectingViewController.m */; };
 		A4E184F21B0F78E500E0F420 /* CLOptionsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E184F11B0F78E500E0F420 /* CLOptionsTableViewController.m */; };
 		A4E184F51B0F790100E0F420 /* SuperMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E184F41B0F790100E0F420 /* SuperMainViewController.m */; };
-		A4E184F81B0F791000E0F420 /* GifViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E184F71B0F791000E0F420 /* GifViewController.m */; };
-		A4E184FB1B0F791F00E0F420 /* SimpleInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E184FA1B0F791F00E0F420 /* SimpleInfoViewController.m */; };
-		A4E184FF1B0F795700E0F420 /* NoLongerConnectedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E184FE1B0F795700E0F420 /* NoLongerConnectedViewController.m */; };
 		A4E185021B0F7CD400E0F420 /* PageContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E185011B0F7CD400E0F420 /* PageContentViewController.m */; };
 		A4E185101B0F852500E0F420 /* dpad.png in Resources */ = {isa = PBXBuildFile; fileRef = A4E1850E1B0F852500E0F420 /* dpad.png */; };
 		A4E185111B0F852500E0F420 /* joystick.png in Resources */ = {isa = PBXBuildFile; fileRef = A4E1850F1B0F852500E0F420 /* joystick.png */; };
@@ -102,6 +104,13 @@
 		A4980DD31B183F0700068744 /* SuperThrottleScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SuperThrottleScene.m; path = "ACRCV app/SuperThrottleScene.m"; sourceTree = "<group>"; };
 		A4980DD51B183F1B00068744 /* SuperJoystickScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SuperJoystickScene.h; path = "ACRCV app/SuperJoystickScene.h"; sourceTree = "<group>"; };
 		A4980DD61B183F1B00068744 /* SuperJoystickScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SuperJoystickScene.m; path = "ACRCV app/SuperJoystickScene.m"; sourceTree = "<group>"; };
+		A4980DD81B186A1E00068744 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		A4980DDB1B186C9F00068744 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		A4980DDF1B18722700068744 /* CoreLocationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreLocationController.h; sourceTree = "<group>"; };
+		A4980DE01B18722700068744 /* CoreLocationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreLocationController.m; sourceTree = "<group>"; };
+		A4980DE51B188C4400068744 /* CreditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreditViewController.h; sourceTree = "<group>"; };
+		A4980DE61B188C4400068744 /* CreditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreditViewController.m; sourceTree = "<group>"; };
+		A4980DF01B18A13700068744 /* Finished.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Finished.png; path = Images/Finished.png; sourceTree = "<group>"; };
 		A4E184B71B0F50A600E0F420 /* ACRCV app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ACRCV app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4E184BB1B0F50A600E0F420 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A4E184BC1B0F50A600E0F420 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -123,12 +132,6 @@
 		A4E184F11B0F78E500E0F420 /* CLOptionsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLOptionsTableViewController.m; sourceTree = "<group>"; };
 		A4E184F31B0F790100E0F420 /* SuperMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuperMainViewController.h; sourceTree = "<group>"; };
 		A4E184F41B0F790100E0F420 /* SuperMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuperMainViewController.m; sourceTree = "<group>"; };
-		A4E184F61B0F791000E0F420 /* GifViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GifViewController.h; sourceTree = "<group>"; };
-		A4E184F71B0F791000E0F420 /* GifViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GifViewController.m; sourceTree = "<group>"; };
-		A4E184F91B0F791F00E0F420 /* SimpleInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleInfoViewController.h; sourceTree = "<group>"; };
-		A4E184FA1B0F791F00E0F420 /* SimpleInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleInfoViewController.m; sourceTree = "<group>"; };
-		A4E184FD1B0F795700E0F420 /* NoLongerConnectedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoLongerConnectedViewController.h; sourceTree = "<group>"; };
-		A4E184FE1B0F795700E0F420 /* NoLongerConnectedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoLongerConnectedViewController.m; sourceTree = "<group>"; };
 		A4E185001B0F7CD400E0F420 /* PageContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageContentViewController.h; sourceTree = "<group>"; };
 		A4E185011B0F7CD400E0F420 /* PageContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageContentViewController.m; sourceTree = "<group>"; };
 		A4E1850E1B0F852500E0F420 /* dpad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = dpad.png; path = Images/dpad.png; sourceTree = "<group>"; };
@@ -159,6 +162,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4980DDD1B186CAC00068744 /* MapKit.framework in Frameworks */,
+				A4980DDA1B186A4B00068744 /* CoreLocation.framework in Frameworks */,
 				A41B70F21B10FBD400438250 /* Foundation.framework in Frameworks */,
 				A41B70F01B10FBCA00438250 /* UIKit.framework in Frameworks */,
 				A41B70EE1B10FBC000438250 /* CoreGraphics.framework in Frameworks */,
@@ -200,6 +205,8 @@
 		A41B70F31B10FBDF00438250 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A4980DDB1B186C9F00068744 /* MapKit.framework */,
+				A4980DD81B186A1E00068744 /* CoreLocation.framework */,
 				A41B70F11B10FBD400438250 /* Foundation.framework */,
 				A41B70EF1B10FBCA00438250 /* UIKit.framework */,
 				A41B70ED1B10FBC000438250 /* CoreGraphics.framework */,
@@ -246,6 +253,24 @@
 				A4980DD61B183F1B00068744 /* SuperJoystickScene.m */,
 			);
 			name = "Super scenes";
+			sourceTree = "<group>";
+		};
+		A4980DDE1B1871FF00068744 /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				A4980DDF1B18722700068744 /* CoreLocationController.h */,
+				A4980DE01B18722700068744 /* CoreLocationController.m */,
+			);
+			name = Location;
+			sourceTree = "<group>";
+		};
+		A4980DE41B188C1D00068744 /* Credit */ = {
+			isa = PBXGroup;
+			children = (
+				A4980DE51B188C4400068744 /* CreditViewController.h */,
+				A4980DE61B188C4400068744 /* CreditViewController.m */,
+			);
+			name = Credit;
 			sourceTree = "<group>";
 		};
 		A4E184AE1B0F50A500E0F420 = {
@@ -319,9 +344,7 @@
 		A4E184E01B0F769000E0F420 /* Extras */ = {
 			isa = PBXGroup;
 			children = (
-				A4E184FC1B0F794400E0F420 /* No Longer Connected */,
-				A4E184E81B0F772200E0F420 /* Info (baby) View */,
-				A4E184E71B0F770E00E0F420 /* Gif View */,
+				A4980DE41B188C1D00068744 /* Credit */,
 			);
 			name = Extras;
 			sourceTree = "<group>";
@@ -349,6 +372,7 @@
 		A4E184E31B0F76B000E0F420 /* Command Line */ = {
 			isa = PBXGroup;
 			children = (
+				A4980DDE1B1871FF00068744 /* Location */,
 				A4E1852D1B10B69800E0F420 /* Basic User Help */,
 				A4E184E61B0F76F600E0F420 /* New Main View */,
 				A4E184E51B0F76E900E0F420 /* Options */,
@@ -390,27 +414,10 @@
 			name = "New Main View";
 			sourceTree = "<group>";
 		};
-		A4E184E71B0F770E00E0F420 /* Gif View */ = {
-			isa = PBXGroup;
-			children = (
-				A4E184F61B0F791000E0F420 /* GifViewController.h */,
-				A4E184F71B0F791000E0F420 /* GifViewController.m */,
-			);
-			name = "Gif View";
-			sourceTree = "<group>";
-		};
-		A4E184E81B0F772200E0F420 /* Info (baby) View */ = {
-			isa = PBXGroup;
-			children = (
-				A4E184F91B0F791F00E0F420 /* SimpleInfoViewController.h */,
-				A4E184FA1B0F791F00E0F420 /* SimpleInfoViewController.m */,
-			);
-			name = "Info (baby) View";
-			sourceTree = "<group>";
-		};
 		A4E184E91B0F774600E0F420 /* Images/Music */ = {
 			isa = PBXGroup;
 			children = (
+				A4980DF01B18A13700068744 /* Finished.png */,
 				A4980DCF1B182C4300068744 /* gradient.png */,
 				A4980DC91B1791F500068744 /* carCartoon.png */,
 				A4980DCA1B1791F500068744 /* IRSensor.png */,
@@ -433,15 +440,6 @@
 				A4E185281B10A38100E0F420 /* page4.png */,
 			);
 			name = Images/Music;
-			sourceTree = "<group>";
-		};
-		A4E184FC1B0F794400E0F420 /* No Longer Connected */ = {
-			isa = PBXGroup;
-			children = (
-				A4E184FD1B0F795700E0F420 /* NoLongerConnectedViewController.h */,
-				A4E184FE1B0F795700E0F420 /* NoLongerConnectedViewController.m */,
-			);
-			name = "No Longer Connected";
 			sourceTree = "<group>";
 		};
 		A4E1850D1B0F839F00E0F420 /* Joystick */ = {
@@ -558,6 +556,7 @@
 				A4980DC81B1787A500068744 /* Throttle V2.png in Resources */,
 				A4980DCE1B1791F500068744 /* wheelCartoon.png in Resources */,
 				A41B70DC1B10CAD300438250 /* restart-256.png in Resources */,
+				A4980DF11B18A13700068744 /* Finished.png in Resources */,
 				A41B70DB1B10CAD300438250 /* red-cross.png in Resources */,
 				A4E185241B10A33A00E0F420 /* Red_button.png in Resources */,
 				A4E184CB1B0F50A600E0F420 /* LaunchScreen.xib in Resources */,
@@ -595,22 +594,21 @@
 				A4980DBB1B1761CC00068744 /* ThrottleScene.m in Sources */,
 				A4980DD71B183F1B00068744 /* SuperJoystickScene.m in Sources */,
 				A4E184C31B0F50A600E0F420 /* ViewController.m in Sources */,
+				A4980DE71B188C4400068744 /* CreditViewController.m in Sources */,
 				A4E185021B0F7CD400E0F420 /* PageContentViewController.m in Sources */,
 				A4E184F51B0F790100E0F420 /* SuperMainViewController.m in Sources */,
 				A4E185361B10B6FD00E0F420 /* BasicHelp.m in Sources */,
-				A4E184F81B0F791000E0F420 /* GifViewController.m in Sources */,
 				A4E184C01B0F50A600E0F420 /* AppDelegate.m in Sources */,
 				A4E184BD1B0F50A600E0F420 /* main.m in Sources */,
+				A4980DE11B18722700068744 /* CoreLocationController.m in Sources */,
 				A4E184EC1B0F789800E0F420 /* MainViewController.m in Sources */,
 				A4980DD41B183F0700068744 /* SuperThrottleScene.m in Sources */,
 				A4E185171B1023CE00E0F420 /* CLOption.m in Sources */,
 				A4E184F21B0F78E500E0F420 /* CLOptionsTableViewController.m in Sources */,
 				A4E185141B0F8B0600E0F420 /* CLOptionsCell.m in Sources */,
 				A4980DBE1B1761EF00068744 /* Throttle.m in Sources */,
-				A4E184FF1B0F795700E0F420 /* NoLongerConnectedViewController.m in Sources */,
 				A41B70EC1B10DA3400438250 /* MyScene.m in Sources */,
 				A4E185301B10B6CF00E0F420 /* BasicHelpViewController.m in Sources */,
-				A4E184FB1B0F791F00E0F420 /* SimpleInfoViewController.m in Sources */,
 				A41B70F71B11960F00438250 /* GestureRecogniserTestViewController.m in Sources */,
 				A4E185331B10B6EA00E0F420 /* BasicHelpCell.m in Sources */,
 			);
@@ -745,7 +743,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "ACRCV app/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "ACRCV app";
 				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
@@ -758,7 +756,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "ACRCV app/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "ACRCV app";
 				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
@@ -777,7 +775,7 @@
 				);
 				INFOPLIST_FILE = "ACRCV appTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "ACRCV appTests";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ACRCV app.app/ACRCV app";
 			};
 			name = Debug;
@@ -792,7 +790,7 @@
 				);
 				INFOPLIST_FILE = "ACRCV appTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "ACRCV appTests";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ACRCV app.app/ACRCV app";
 			};
 			name = Release;
