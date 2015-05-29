@@ -10,5 +10,9 @@
 
 @interface SuperMainViewController : UIViewController
 - (IBAction)backButtonPressed:(UIButton *)sender;
+@property (weak, nonatomic) IBOutlet UIImageView *backgroundImage;
+- (IBAction)colourSliderChanged:(UISlider *)sender;
+@property (weak, nonatomic) IBOutlet UISlider *slider;
+@property (weak, nonatomic) IBOutlet UILabel *gradientLabel;
 
 @end

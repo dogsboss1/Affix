@@ -1,15 +1,15 @@
 //
-//  ThrottleScene.m
+//  SuperThrottleScene.m
 //  ACRCV app
 //
-//  Created by felix king on 28/05/2015.
+//  Created by felix king on 29/05/2015.
 //  Copyright (c) 2015 Felix King. All rights reserved.
 //
 
-#import "ThrottleScene.h"
+#import "SuperThrottleScene.h"
 #import "Throttle.h"
 
-@interface ThrottleScene ()
+@interface SuperThrottleScene ()
 
 @property Throttle* throttle;
 
@@ -23,16 +23,30 @@
 
 @end
 
-@implementation ThrottleScene
+@implementation SuperThrottleScene
 
 - (instancetype)initWithSize:(CGSize)size {
     if (self = [super initWithSize:size]) {
         
         CADisplayLink *velocityTick = [CADisplayLink displayLinkWithTarget:self selector:@selector(throttleMovement)];
         [velocityTick addToRunLoop:[NSRunLoop currentRunLoop] forMode:NSRunLoopCommonModes];
+                
+        //   self.middlePoint = CGPointMake(CGRectGetMidX(self.frame), CGRectGetMidY(self.frame));
         
-        self.scene.backgroundColor = [UIColor clearColor];
+        /*  self.background = [SKSpriteNode spriteNodeWithImageNamed:@"red-cross.png"];
+         self.background.position = self.middlePoint;
+         self.background.size = CGSizeMake(CGRectGetWidth(self.frame), CGRectGetHeight(self.frame));
+         self.background.alpha = 0.1;
+         [self addChild:self.background];*/
         
+        self.scene.backgroundColor = [UIColor redColor];
+        
+        SKSpriteNode *background = [SKSpriteNode spriteNodeWithImageNamed:@"gradient"];
+        background.position = CGPointMake(self.scene.size.width, self.scene.size.height);
+        background.size = self.scene.size;
+        background.alpha = 0.406463;
+        
+        [self addChild:background];
         [self addThrottle];
         [self addNonCar];
         

@@ -21,6 +21,9 @@
 @property (weak, nonatomic) IBOutlet UILabel *commandLineLabel;
 @property (weak, nonatomic) IBOutlet UITextView *activityLogTextView;
 @property (weak, nonatomic) IBOutlet UITextField *commandLineTextField;
+@property (weak, nonatomic) IBOutlet UILabel *autoLabel;
+
+@property (weak, nonatomic) IBOutlet UIImageView *backgroundImage;
 
 - (IBAction)upButtonPressed:(UIButton *)sender;
 - (IBAction)downButtonPressed:(UIButton *)sender;

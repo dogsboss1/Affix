@@ -26,6 +26,9 @@
 		A4980DCC1B1791F500068744 /* carCartoon.png in Resources */ = {isa = PBXBuildFile; fileRef = A4980DC91B1791F500068744 /* carCartoon.png */; };
 		A4980DCD1B1791F500068744 /* IRSensor.png in Resources */ = {isa = PBXBuildFile; fileRef = A4980DCA1B1791F500068744 /* IRSensor.png */; };
 		A4980DCE1B1791F500068744 /* wheelCartoon.png in Resources */ = {isa = PBXBuildFile; fileRef = A4980DCB1B1791F500068744 /* wheelCartoon.png */; };
+		A4980DD01B182C4300068744 /* gradient.png in Resources */ = {isa = PBXBuildFile; fileRef = A4980DCF1B182C4300068744 /* gradient.png */; };
+		A4980DD41B183F0700068744 /* SuperThrottleScene.m in Sources */ = {isa = PBXBuildFile; fileRef = A4980DD31B183F0700068744 /* SuperThrottleScene.m */; };
+		A4980DD71B183F1B00068744 /* SuperJoystickScene.m in Sources */ = {isa = PBXBuildFile; fileRef = A4980DD61B183F1B00068744 /* SuperJoystickScene.m */; };
 		A4E184BD1B0F50A600E0F420 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E184BC1B0F50A600E0F420 /* main.m */; };
 		A4E184C01B0F50A600E0F420 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E184BF1B0F50A600E0F420 /* AppDelegate.m */; };
 		A4E184C31B0F50A600E0F420 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E184C21B0F50A600E0F420 /* ViewController.m */; };
@@ -94,6 +97,11 @@
 		A4980DC91B1791F500068744 /* carCartoon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = carCartoon.png; path = Images/carCartoon.png; sourceTree = "<group>"; };
 		A4980DCA1B1791F500068744 /* IRSensor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = IRSensor.png; path = Images/IRSensor.png; sourceTree = "<group>"; };
 		A4980DCB1B1791F500068744 /* wheelCartoon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = wheelCartoon.png; path = Images/wheelCartoon.png; sourceTree = "<group>"; };
+		A4980DCF1B182C4300068744 /* gradient.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gradient.png; path = Images/gradient.png; sourceTree = "<group>"; };
+		A4980DD21B183F0700068744 /* SuperThrottleScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SuperThrottleScene.h; path = "ACRCV app/SuperThrottleScene.h"; sourceTree = "<group>"; };
+		A4980DD31B183F0700068744 /* SuperThrottleScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SuperThrottleScene.m; path = "ACRCV app/SuperThrottleScene.m"; sourceTree = "<group>"; };
+		A4980DD51B183F1B00068744 /* SuperJoystickScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SuperJoystickScene.h; path = "ACRCV app/SuperJoystickScene.h"; sourceTree = "<group>"; };
+		A4980DD61B183F1B00068744 /* SuperJoystickScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SuperJoystickScene.m; path = "ACRCV app/SuperJoystickScene.m"; sourceTree = "<group>"; };
 		A4E184B71B0F50A600E0F420 /* ACRCV app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ACRCV app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4E184BB1B0F50A600E0F420 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A4E184BC1B0F50A600E0F420 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -171,6 +179,7 @@
 		A41B70E51B10D9E400438250 /* SpriteKit */ = {
 			isa = PBXGroup;
 			children = (
+				A4980DD11B183ED900068744 /* Super scenes */,
 				A4980DB41B17617300068744 /* Throttle */,
 				A4E1850D1B0F839F00E0F420 /* Joystick */,
 			);
@@ -226,6 +235,17 @@
 				A4980DBA1B1761CC00068744 /* ThrottleScene.m */,
 			);
 			name = "Throttle Scene";
+			sourceTree = "<group>";
+		};
+		A4980DD11B183ED900068744 /* Super scenes */ = {
+			isa = PBXGroup;
+			children = (
+				A4980DD21B183F0700068744 /* SuperThrottleScene.h */,
+				A4980DD31B183F0700068744 /* SuperThrottleScene.m */,
+				A4980DD51B183F1B00068744 /* SuperJoystickScene.h */,
+				A4980DD61B183F1B00068744 /* SuperJoystickScene.m */,
+			);
+			name = "Super scenes";
 			sourceTree = "<group>";
 		};
 		A4E184AE1B0F50A500E0F420 = {
@@ -391,6 +411,7 @@
 		A4E184E91B0F774600E0F420 /* Images/Music */ = {
 			isa = PBXGroup;
 			children = (
+				A4980DCF1B182C4300068744 /* gradient.png */,
 				A4980DC91B1791F500068744 /* carCartoon.png */,
 				A4980DCA1B1791F500068744 /* IRSensor.png */,
 				A4980DCB1B1791F500068744 /* wheelCartoon.png */,
@@ -533,6 +554,7 @@
 				A4E1852B1B10A38100E0F420 /* page3.png in Resources */,
 				A41B70DA1B10CAD300438250 /* green-tick.png in Resources */,
 				A4E185221B10A33A00E0F420 /* chocolate-640.jpg in Resources */,
+				A4980DD01B182C4300068744 /* gradient.png in Resources */,
 				A4980DC81B1787A500068744 /* Throttle V2.png in Resources */,
 				A4980DCE1B1791F500068744 /* wheelCartoon.png in Resources */,
 				A41B70DC1B10CAD300438250 /* restart-256.png in Resources */,
@@ -571,6 +593,7 @@
 				A4E184EF1B0F78B700E0F420 /* BluetoothConnectingViewController.m in Sources */,
 				A4E1851A1B1023DA00E0F420 /* CLOptions.m in Sources */,
 				A4980DBB1B1761CC00068744 /* ThrottleScene.m in Sources */,
+				A4980DD71B183F1B00068744 /* SuperJoystickScene.m in Sources */,
 				A4E184C31B0F50A600E0F420 /* ViewController.m in Sources */,
 				A4E185021B0F7CD400E0F420 /* PageContentViewController.m in Sources */,
 				A4E184F51B0F790100E0F420 /* SuperMainViewController.m in Sources */,
@@ -579,6 +602,7 @@
 				A4E184C01B0F50A600E0F420 /* AppDelegate.m in Sources */,
 				A4E184BD1B0F50A600E0F420 /* main.m in Sources */,
 				A4E184EC1B0F789800E0F420 /* MainViewController.m in Sources */,
+				A4980DD41B183F0700068744 /* SuperThrottleScene.m in Sources */,
 				A4E185171B1023CE00E0F420 /* CLOption.m in Sources */,
 				A4E184F21B0F78E500E0F420 /* CLOptionsTableViewController.m in Sources */,
 				A4E185141B0F8B0600E0F420 /* CLOptionsCell.m in Sources */,

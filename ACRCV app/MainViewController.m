@@ -9,10 +9,15 @@
 #import "MainViewController.h"
 #import "MyScene.h"
 #import "ThrottleScene.h"
+#import "SuperJoystickScene.h"
+#import "SuperThrottleScene.h"
 
 @interface MainViewController ()
 
 @property (nonatomic) commmands *command;
+
+@property SKView *tView;
+@property SKView *spView;
 
 @end
 
@@ -34,41 +39,21 @@
     [self.gestureButtonLabel setTitle:@"" forState:UIControlStateNormal];
     [self.disconnectButtonLabel setTitle:@"" forState:UIControlStateNormal];
     
+    /*
     self.rightWheelImage.image = [UIImage imageNamed:@"wheelCartoon"];
     self.leftWheelImage.image = [UIImage imageNamed:@"wheelCartoon"];
     self.rightIRSensorImage.image = [UIImage imageNamed:@"IRSensor"];
     self.middleIRSensorImage.image = [UIImage imageNamed:@"IRSensor"];
     self.leftIRSensorImage.image = [UIImage imageNamed:@"IRSensor"];
-    self.carBodyImage.image = [UIImage imageNamed:@"carCartoon"];
+    self.carBodyImage.image = [UIImage imageNamed:@"carCartoon"];*/
+    
+    self.activityLogTextView.text = @"Enjoy the world! \nYou have the ability to do incredible things, controlling this vehicle included. Ingoring the cheese, be you. \n \nNo inspirational quote needed, \nyou are You, that is truer than true. There is no one alive who is Youer than You. \n\n\nCheers Dr Seuss.";
 
     self.commandLineTextField.delegate = self;
     self.commandLineTextField.clearsOnBeginEditing = YES;
     
-    // ----- Joystick
+    [self presentControls:0];
     
-    int size = (self.view.frame.size.height) / 2.5;
-    
-    SKView *spView = [[SKView alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(self.view.frame) - size, size, size)];
-    [self.view addSubview:spView];
-    
-    SKScene *scene = [[MyScene alloc] initWithSize:CGSizeMake(spView.bounds.size.width, spView.bounds.size.height)];
-    scene.scaleMode = SKSceneScaleModeAspectFill;
-    spView.allowsTransparency = YES;
-    
-    [spView presentScene:scene];
-    
-    // ------ Throttle
-    
-    
-    SKView *tView = [[SKView alloc] initWithFrame:CGRectMake(CGRectGetMaxX(self.view.frame) - size, CGRectGetMaxY(self.view.frame) - size, size, size)];
-    [self.view addSubview:tView];
-    
-    SKScene *tScene = [[ThrottleScene alloc] initWithSize:CGSizeMake(tView.bounds.size.width, tView.bounds.size.height)];
-    tScene.scaleMode = SKSceneScaleModeAspectFill;
-    tView.allowsTransparency = YES;
-    
-    [tView presentScene:tScene];
-
     // Do any additional setup after loading the view.
 }
 
@@ -85,19 +70,6 @@
     }
     return YES;
 }
-/*
-- (BOOL)textView:(UITextView *)textView shouldChangeTextInRange:(NSRange)range replacementText:(NSString *)text {
-    if ([text isEqualToString:@"\n"]) {
-        //NSString *commandText = [components lastObject];
-        NSLog(@"return pressed");
-#warning check for what command was pressed
-
-        //textView.text = @"";
-        [textView resignFirstResponder];
-        return NO;
-    }
-    return YES;
-}*/
 
 #pragma mark - Navigation
 
@@ -127,7 +99,6 @@
     }
 }
 
-
 - (NSString*) commandsAction:(NSString *)string {
     self.commandLineLabel.text = self.commandLineTextField.text;
     
@@ -135,9 +106,15 @@
     
     for (NSString *keys in [self.commands allKeys]) {
         if ([string isEqualToString:keys]) {
-            self.segueIdentifier = [self.commands valueForKey:keys];
-            [self performSegue];
-            return self.segueIdentifier;
+            if ([string isEqualToString:@"super"]) {
+                [self superMainActivated];
+                return nil;
+            }
+            else {
+                self.segueIdentifier = [self.commands valueForKey:keys];
+                [self performSegue];
+                return self.segueIdentifier;
+            }
         }
     }
     self.commandLineTextField.text = @"";
@@ -148,6 +125,79 @@
         return nil;
     }
     
+}
+
+- (void) superMainActivated {
+    
+    self.backgroundImage.image = [UIImage imageNamed:@"gradient"];
+    //self.backgroundImage.alpha = 0.208367;
+    self.backgroundImage.alpha = 0.0;
+    
+    [UIView animateWithDuration:1.0 animations:^{self.backgroundImage.alpha = 0.208367;} completion:nil];
+    self.view.backgroundColor = [UIColor orangeColor];
+    
+    self.commandLineTextField.secureTextEntry = YES;
+    
+    self.commandLineLabel.text = @"";
+    self.autoLabel.text = @"";
+    [self.helpButtonLabel setTitle:@"" forState:UIControlStateNormal];
+    
+    [self.tView removeFromSuperview];
+    [self.spView removeFromSuperview];
+    
+    [self presentControls:0];
+}
+
+- (void) presentControls:(NSInteger)type {
+    if (type == 0) {
+        // ----- Joystick
+        
+        int size = (self.view.frame.size.height) / 2.5;
+        
+        self.spView = [[SKView alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(self.view.frame) - size, size, size)];
+        [self.view addSubview:self.spView];
+        
+        SKScene *scene = [[MyScene alloc] initWithSize:CGSizeMake(self.spView.bounds.size.width, self.spView.bounds.size.height)];
+        scene.scaleMode = SKSceneScaleModeAspectFill;
+        self.spView.allowsTransparency = YES;
+        
+        [self.spView presentScene:scene];
+        
+        // ------ Throttle
+        
+        self.tView = [[SKView alloc] initWithFrame:CGRectMake(CGRectGetMaxX(self.view.frame) - size, CGRectGetMaxY(self.view.frame) - size, size, size)];
+        [self.view addSubview:self.tView];
+        
+        SKScene *tScene = [[ThrottleScene alloc] initWithSize:CGSizeMake(self.tView.bounds.size.width, self.tView.bounds.size.height)];
+        tScene.scaleMode = SKSceneScaleModeAspectFill;
+        self.tView.allowsTransparency = YES;
+        
+        [self.tView presentScene:tScene];
+    }/*
+    else if (type == 1) {
+        // ----- Joystick
+        
+        int size = (self.view.frame.size.height) / 2.5;
+        
+        self.spView = [[SKView alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(self.view.frame) - size, size, size)];
+        [self.view addSubview:self.spView];
+        
+        SKScene *scene = [[SuperJoystickScene alloc] initWithSize:CGSizeMake(self.spView.bounds.size.width, self.spView.bounds.size.height)];
+        scene.scaleMode = SKSceneScaleModeAspectFill;
+        
+        [self.spView presentScene:scene];
+        
+        // ------ Throttle
+        
+        self.tView = [[SKView alloc] initWithFrame:CGRectMake(CGRectGetMaxX(self.view.frame) - size, CGRectGetMaxY(self.view.frame) - size, size, size)];
+        [self.view addSubview:self.tView];
+        
+        SKScene *tScene = [[SuperThrottleScene alloc] initWithSize:CGSizeMake(self.tView.bounds.size.width, self.tView.bounds.size.height)];
+        tScene.scaleMode = SKSceneScaleModeAspectFill;
+        self.tView.allowsTransparency = YES;
+        
+        [self.tView presentScene:tScene];
+    }*/
 }
 
 - (void) autoEngaged {

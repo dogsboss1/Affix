@@ -16,6 +16,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.backgroundImage.image = [UIImage imageNamed:@"gradient"];
+    self.backgroundImage.alpha = 1.0;
+    
+    self.view.backgroundColor = [UIColor orangeColor];
     // Do any additional setup after loading the view.
 }
 
@@ -35,8 +40,11 @@
 */
 
 
-
 - (IBAction)backButtonPressed:(UIButton *)sender {
     [self dismissViewControllerAnimated:YES completion:nil];
+}
+- (IBAction)colourSliderChanged:(UISlider *)sender {
+    self.backgroundImage.alpha = self.slider.value;
+    self.gradientLabel.text = [NSString stringWithFormat:@"Alpha: %f", self.slider.value];
 }
 @end
