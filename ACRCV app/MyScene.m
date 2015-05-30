@@ -18,6 +18,7 @@
 @property CGFloat zRoation;
 
 @property SKSpriteNode* carNode;
+@property SKSpriteNode *bgNode;
 @property SKSpriteNode* background;
 
 @property CGPoint middlePoint;
@@ -35,18 +36,18 @@
         self.scene.backgroundColor = [UIColor clearColor];
         
         [self addJoystick];
-        [self addCar];
+        //[self addCar];
+        [self addbackgroundWheel];
         
     }
     return self;
 }
 
 - (void) addJoystick {
-    SKSpriteNode *jsThumb = [SKSpriteNode spriteNodeWithImageNamed:@"joystick"];
-    //SKSpriteNode *jsThumb = [SKSpriteNode spriteNodeWithImageNamed:@"Wheel"];
-    //SKSpriteNode *jsBackdrop = [SKSpriteNode spriteNodeWithImageNamed:@"1x1 black pixle"];
-    SKSpriteNode *jsBackdrop = [SKSpriteNode spriteNodeWithImageNamed:@"Wheel"];
+    SKSpriteNode *jsThumb = [SKSpriteNode spriteNodeWithImageNamed:@"200x200 box"];
+    SKSpriteNode *jsBackdrop = [SKSpriteNode spriteNodeWithImageNamed:@"200x200 box"];
     jsBackdrop.size = CGSizeMake(150, 150);
+    jsThumb.size = CGSizeMake(80, 80);
     self.joystick = [Joystick joystickWithThumb:jsThumb andBackDrop:jsBackdrop];
     self.joystick.position = CGPointMake(jsBackdrop.size.width, jsBackdrop.size.height);
     [self addChild:self.joystick];
@@ -56,8 +57,8 @@
     if (self.joystick.velocity.x !=0 || self.joystick.velocity.y != 0) {
         //self.carNode.position = CGPointMake(self.carNode.position.x + .1 * self.joystick.velocity.x, self.carNode.position.y + .1 * self.joystick.velocity.y);
         self.carNode.zRotation = self.joystick.angularVelocity;
+        self.bgNode.zRotation = self.joystick.angularVelocity;
     }
-    //self.joystick.zRotation = self.joystick.angularVelocity;
 }
 
 - (void) addCar {
@@ -66,6 +67,14 @@
     self.carNode.size = CGSizeMake(128, 32);
     self.carNode.name = @"carNode";
     [self addChild:self.carNode];
+}
+
+- (void) addbackgroundWheel {
+    self.bgNode = [SKSpriteNode spriteNodeWithImageNamed:@"Wheel"];
+    self.bgNode.position = CGPointMake(150, 150);
+    self.bgNode.size = CGSizeMake(150, 150);
+    self.bgNode.name = @"bgNode";
+    [self addChild:self.bgNode];
 }
 
 @end

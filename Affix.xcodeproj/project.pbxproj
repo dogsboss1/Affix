@@ -73,6 +73,13 @@
 		A4E185331B10B6EA00E0F420 /* BasicHelpCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E185321B10B6EA00E0F420 /* BasicHelpCell.m */; };
 		A4E185361B10B6FD00E0F420 /* BasicHelp.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E185351B10B6FD00E0F420 /* BasicHelp.m */; };
 		A4F00E2E1B1A15EA0051E3F1 /* 1x1 black pixle.png in Resources */ = {isa = PBXBuildFile; fileRef = A4F00E2D1B1A15EA0051E3F1 /* 1x1 black pixle.png */; };
+		A4F00E301B1A248D0051E3F1 /* 200x200 box.png in Resources */ = {isa = PBXBuildFile; fileRef = A4F00E2F1B1A248D0051E3F1 /* 200x200 box.png */; };
+		A4F00E371B1A31140051E3F1 /* Background.png in Resources */ = {isa = PBXBuildFile; fileRef = A4F00E311B1A31140051E3F1 /* Background.png */; };
+		A4F00E381B1A31140051E3F1 /* Black Thing.png in Resources */ = {isa = PBXBuildFile; fileRef = A4F00E321B1A31140051E3F1 /* Black Thing.png */; };
+		A4F00E391B1A31140051E3F1 /* Code Window.png in Resources */ = {isa = PBXBuildFile; fileRef = A4F00E331B1A31140051E3F1 /* Code Window.png */; };
+		A4F00E3A1B1A31140051E3F1 /* Command.png in Resources */ = {isa = PBXBuildFile; fileRef = A4F00E341B1A31140051E3F1 /* Command.png */; };
+		A4F00E3B1B1A31140051E3F1 /* Exit.png in Resources */ = {isa = PBXBuildFile; fileRef = A4F00E351B1A31140051E3F1 /* Exit.png */; };
+		A4F00E3C1B1A31140051E3F1 /* TV screen.png in Resources */ = {isa = PBXBuildFile; fileRef = A4F00E361B1A31140051E3F1 /* TV screen.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -182,6 +189,13 @@
 		A4E185341B10B6FD00E0F420 /* BasicHelp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicHelp.h; sourceTree = "<group>"; };
 		A4E185351B10B6FD00E0F420 /* BasicHelp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicHelp.m; sourceTree = "<group>"; };
 		A4F00E2D1B1A15EA0051E3F1 /* 1x1 black pixle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "1x1 black pixle.png"; path = "Images/1x1 black pixle.png"; sourceTree = "<group>"; };
+		A4F00E2F1B1A248D0051E3F1 /* 200x200 box.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "200x200 box.png"; path = "Images/200x200 box.png"; sourceTree = "<group>"; };
+		A4F00E311B1A31140051E3F1 /* Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Background.png; path = Images/Affix/Background.png; sourceTree = "<group>"; };
+		A4F00E321B1A31140051E3F1 /* Black Thing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Black Thing.png"; path = "Images/Affix/Black Thing.png"; sourceTree = "<group>"; };
+		A4F00E331B1A31140051E3F1 /* Code Window.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Code Window.png"; path = "Images/Affix/Code Window.png"; sourceTree = "<group>"; };
+		A4F00E341B1A31140051E3F1 /* Command.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Command.png; path = Images/Affix/Command.png; sourceTree = "<group>"; };
+		A4F00E351B1A31140051E3F1 /* Exit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Exit.png; path = Images/Affix/Exit.png; sourceTree = "<group>"; };
+		A4F00E361B1A31140051E3F1 /* TV screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "TV screen.png"; path = "Images/Affix/TV screen.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -305,6 +319,13 @@
 		A4A4B7B11B19EF99005D2B17 /* Using */ = {
 			isa = PBXGroup;
 			children = (
+				A4F00E311B1A31140051E3F1 /* Background.png */,
+				A4F00E321B1A31140051E3F1 /* Black Thing.png */,
+				A4F00E331B1A31140051E3F1 /* Code Window.png */,
+				A4F00E341B1A31140051E3F1 /* Command.png */,
+				A4F00E351B1A31140051E3F1 /* Exit.png */,
+				A4F00E361B1A31140051E3F1 /* TV screen.png */,
+				A4F00E2F1B1A248D0051E3F1 /* 200x200 box.png */,
 				A4F00E2D1B1A15EA0051E3F1 /* 1x1 black pixle.png */,
 				A4A4B7C41B19F164005D2B17 /* Button pushed down.png */,
 				A4A4B7C51B19F164005D2B17 /* Button.png */,
@@ -598,6 +619,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4F00E3B1B1A31140051E3F1 /* Exit.png in Resources */,
 				A4A4B7CE1B19F164005D2B17 /* Button.png in Resources */,
 				A4980DCD1B1791F500068744 /* IRSensor.png in Resources */,
 				A4A4B7D21B19F164005D2B17 /* REV.png in Resources */,
@@ -607,6 +629,9 @@
 				A41B70DA1B10CAD300438250 /* green-tick.png in Resources */,
 				A4A4B7CF1B19F164005D2B17 /* FWD.png in Resources */,
 				A4E185221B10A33A00E0F420 /* chocolate-640.jpg in Resources */,
+				A4F00E3C1B1A31140051E3F1 /* TV screen.png in Resources */,
+				A4F00E3A1B1A31140051E3F1 /* Command.png in Resources */,
+				A4F00E381B1A31140051E3F1 /* Black Thing.png in Resources */,
 				A4980DD01B182C4300068744 /* gradient.png in Resources */,
 				A4A4B7D11B19F164005D2B17 /* Loading Image.png in Resources */,
 				A4A4B7CD1B19F164005D2B17 /* Button pushed down.png in Resources */,
@@ -615,6 +640,7 @@
 				A4F00E2E1B1A15EA0051E3F1 /* 1x1 black pixle.png in Resources */,
 				A41B70DC1B10CAD300438250 /* restart-256.png in Resources */,
 				A4980DF11B18A13700068744 /* Finished.png in Resources */,
+				A4F00E371B1A31140051E3F1 /* Background.png in Resources */,
 				A41B70DB1B10CAD300438250 /* red-cross.png in Resources */,
 				A4A4B7D51B19F164005D2B17 /* Wheel.png in Resources */,
 				A4E185241B10A33A00E0F420 /* Red_button.png in Resources */,
@@ -623,6 +649,8 @@
 				A4E1852C1B10A38100E0F420 /* page4.png in Resources */,
 				A4E184C81B0F50A600E0F420 /* Images.xcassets in Resources */,
 				A4E185291B10A38100E0F420 /* page1.png in Resources */,
+				A4F00E301B1A248D0051E3F1 /* 200x200 box.png in Resources */,
+				A4F00E391B1A31140051E3F1 /* Code Window.png in Resources */,
 				A4E185101B0F852500E0F420 /* dpad.png in Resources */,
 				A4980DCC1B1791F500068744 /* carCartoon.png in Resources */,
 				A41B70DD1B10CAD300438250 /* rodentia-icons_system-reboot.png in Resources */,

@@ -22,6 +22,7 @@
 
 @property (weak, nonatomic) IBOutlet UIImageView *backgroundImage;
 @property (unsafe_unretained, nonatomic) IBOutlet UIImageView *cameraImage;
+@property (weak, nonatomic) IBOutlet UITextView *textViewBgImage;
 
 
 - (IBAction)upButtonPressed:(UIButton *)sender;

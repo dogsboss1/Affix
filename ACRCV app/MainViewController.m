@@ -29,9 +29,6 @@
     self.isGoingFd = YES;
     [self updateImages];
     
-    self.backgroundImage.image = [UIImage imageNamed:@"Loading Image"];
-    
-    
     [self.actionsButtonLabel setTitle:@"" forState:UIControlStateNormal];
     [self.basicHelpButtonLabel setTitle:@"" forState:UIControlStateNormal];
     [self.superMainButtonLabel setTitle:@"" forState:UIControlStateNormal];
