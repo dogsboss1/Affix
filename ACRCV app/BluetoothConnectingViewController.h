@@ -12,5 +12,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *pairDevicesTitleLabel;
 
 - (IBAction)mainVCButtonPressed:(UIButton *)sender;
+- (IBAction)centralManagerVC:(UIButton *)sender;
+- (IBAction)PeripheralVC:(UIButton *)sender;
 
 @end

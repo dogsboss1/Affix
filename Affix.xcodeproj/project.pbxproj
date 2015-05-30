@@ -33,6 +33,18 @@
 		A4980DE11B18722700068744 /* CoreLocationController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4980DE01B18722700068744 /* CoreLocationController.m */; };
 		A4980DE71B188C4400068744 /* CreditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4980DE61B188C4400068744 /* CreditViewController.m */; };
 		A4980DF11B18A13700068744 /* Finished.png in Resources */ = {isa = PBXBuildFile; fileRef = A4980DF01B18A13700068744 /* Finished.png */; };
+		A4A4B7A91B197D18005D2B17 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4A4B7A71B197D08005D2B17 /* AVFoundation.framework */; };
+		A4A4B7AD1B19ECC6005D2B17 /* CBCentralManagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4A4B7AC1B19ECC6005D2B17 /* CBCentralManagerViewController.m */; };
+		A4A4B7B01B19ECD9005D2B17 /* CBPeripheralViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4A4B7AF1B19ECD9005D2B17 /* CBPeripheralViewController.m */; };
+		A4A4B7CD1B19F164005D2B17 /* Button pushed down.png in Resources */ = {isa = PBXBuildFile; fileRef = A4A4B7C41B19F164005D2B17 /* Button pushed down.png */; };
+		A4A4B7CE1B19F164005D2B17 /* Button.png in Resources */ = {isa = PBXBuildFile; fileRef = A4A4B7C51B19F164005D2B17 /* Button.png */; };
+		A4A4B7CF1B19F164005D2B17 /* FWD.png in Resources */ = {isa = PBXBuildFile; fileRef = A4A4B7C61B19F164005D2B17 /* FWD.png */; };
+		A4A4B7D01B19F164005D2B17 /* Go Back.png in Resources */ = {isa = PBXBuildFile; fileRef = A4A4B7C71B19F164005D2B17 /* Go Back.png */; };
+		A4A4B7D11B19F164005D2B17 /* Loading Image.png in Resources */ = {isa = PBXBuildFile; fileRef = A4A4B7C81B19F164005D2B17 /* Loading Image.png */; };
+		A4A4B7D21B19F164005D2B17 /* REV.png in Resources */ = {isa = PBXBuildFile; fileRef = A4A4B7C91B19F164005D2B17 /* REV.png */; };
+		A4A4B7D31B19F164005D2B17 /* Speed down.png in Resources */ = {isa = PBXBuildFile; fileRef = A4A4B7CA1B19F164005D2B17 /* Speed down.png */; };
+		A4A4B7D41B19F164005D2B17 /* Speed UP.png in Resources */ = {isa = PBXBuildFile; fileRef = A4A4B7CB1B19F164005D2B17 /* Speed UP.png */; };
+		A4A4B7D51B19F164005D2B17 /* Wheel.png in Resources */ = {isa = PBXBuildFile; fileRef = A4A4B7CC1B19F164005D2B17 /* Wheel.png */; };
 		A4E184BD1B0F50A600E0F420 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E184BC1B0F50A600E0F420 /* main.m */; };
 		A4E184C01B0F50A600E0F420 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E184BF1B0F50A600E0F420 /* AppDelegate.m */; };
 		A4E184C31B0F50A600E0F420 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E184C21B0F50A600E0F420 /* ViewController.m */; };
@@ -109,7 +121,22 @@
 		A4980DE51B188C4400068744 /* CreditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreditViewController.h; sourceTree = "<group>"; };
 		A4980DE61B188C4400068744 /* CreditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreditViewController.m; sourceTree = "<group>"; };
 		A4980DF01B18A13700068744 /* Finished.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Finished.png; path = Images/Finished.png; sourceTree = "<group>"; };
-		A4E184B71B0F50A600E0F420 /* ACRCV app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ACRCV app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4A4B7A71B197D08005D2B17 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		A4A4B7AA1B19EC92005D2B17 /* SERVICES.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SERVICES.h; sourceTree = "<group>"; };
+		A4A4B7AB1B19ECC6005D2B17 /* CBCentralManagerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBCentralManagerViewController.h; sourceTree = "<group>"; };
+		A4A4B7AC1B19ECC6005D2B17 /* CBCentralManagerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBCentralManagerViewController.m; sourceTree = "<group>"; };
+		A4A4B7AE1B19ECD9005D2B17 /* CBPeripheralViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBPeripheralViewController.h; sourceTree = "<group>"; };
+		A4A4B7AF1B19ECD9005D2B17 /* CBPeripheralViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBPeripheralViewController.m; sourceTree = "<group>"; };
+		A4A4B7C41B19F164005D2B17 /* Button pushed down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Button pushed down.png"; path = "Images/Button pushed down.png"; sourceTree = "<group>"; };
+		A4A4B7C51B19F164005D2B17 /* Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Button.png; path = Images/Button.png; sourceTree = "<group>"; };
+		A4A4B7C61B19F164005D2B17 /* FWD.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = FWD.png; path = Images/FWD.png; sourceTree = "<group>"; };
+		A4A4B7C71B19F164005D2B17 /* Go Back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Go Back.png"; path = "Images/Go Back.png"; sourceTree = "<group>"; };
+		A4A4B7C81B19F164005D2B17 /* Loading Image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Loading Image.png"; path = "Images/Loading Image.png"; sourceTree = "<group>"; };
+		A4A4B7C91B19F164005D2B17 /* REV.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = REV.png; path = Images/REV.png; sourceTree = "<group>"; };
+		A4A4B7CA1B19F164005D2B17 /* Speed down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Speed down.png"; path = "Images/Speed down.png"; sourceTree = "<group>"; };
+		A4A4B7CB1B19F164005D2B17 /* Speed UP.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Speed UP.png"; path = "Images/Speed UP.png"; sourceTree = "<group>"; };
+		A4A4B7CC1B19F164005D2B17 /* Wheel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Wheel.png; path = Images/Wheel.png; sourceTree = "<group>"; };
+		A4E184B71B0F50A600E0F420 /* Affix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Affix.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4E184BB1B0F50A600E0F420 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A4E184BC1B0F50A600E0F420 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A4E184BE1B0F50A600E0F420 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -119,7 +146,7 @@
 		A4E184C51B0F50A600E0F420 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A4E184C71B0F50A600E0F420 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = "../ACRCV app/Images.xcassets"; sourceTree = "<group>"; };
 		A4E184CA1B0F50A600E0F420 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		A4E184D01B0F50A600E0F420 /* ACRCV appTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ACRCV appTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4E184D01B0F50A600E0F420 /* AffixTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AffixTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4E184D51B0F50A600E0F420 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A4E184D61B0F50A600E0F420 /* ACRCV_appTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ACRCV_appTests.m; sourceTree = "<group>"; };
 		A4E184EA1B0F789800E0F420 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
@@ -160,6 +187,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4A4B7A91B197D18005D2B17 /* AVFoundation.framework in Frameworks */,
 				A4980DDD1B186CAC00068744 /* MapKit.framework in Frameworks */,
 				A4980DDA1B186A4B00068744 /* CoreLocation.framework in Frameworks */,
 				A41B70F21B10FBD400438250 /* Foundation.framework in Frameworks */,
@@ -203,6 +231,7 @@
 		A41B70F31B10FBDF00438250 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A4A4B7A71B197D08005D2B17 /* AVFoundation.framework */,
 				A4980DDB1B186C9F00068744 /* MapKit.framework */,
 				A4980DD81B186A1E00068744 /* CoreLocation.framework */,
 				A41B70F11B10FBD400438250 /* Foundation.framework */,
@@ -271,6 +300,22 @@
 			name = Credit;
 			sourceTree = "<group>";
 		};
+		A4A4B7B11B19EF99005D2B17 /* Using */ = {
+			isa = PBXGroup;
+			children = (
+				A4A4B7C41B19F164005D2B17 /* Button pushed down.png */,
+				A4A4B7C51B19F164005D2B17 /* Button.png */,
+				A4A4B7C61B19F164005D2B17 /* FWD.png */,
+				A4A4B7C71B19F164005D2B17 /* Go Back.png */,
+				A4A4B7C81B19F164005D2B17 /* Loading Image.png */,
+				A4A4B7C91B19F164005D2B17 /* REV.png */,
+				A4A4B7CA1B19F164005D2B17 /* Speed down.png */,
+				A4A4B7CB1B19F164005D2B17 /* Speed UP.png */,
+				A4A4B7CC1B19F164005D2B17 /* Wheel.png */,
+			);
+			name = Using;
+			sourceTree = "<group>";
+		};
 		A4E184AE1B0F50A500E0F420 = {
 			isa = PBXGroup;
 			children = (
@@ -281,8 +326,8 @@
 		A4E184B81B0F50A600E0F420 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A4E184B71B0F50A600E0F420 /* ACRCV app.app */,
-				A4E184D01B0F50A600E0F420 /* ACRCV appTests.xctest */,
+				A4E184B71B0F50A600E0F420 /* Affix.app */,
+				A4E184D01B0F50A600E0F420 /* AffixTests.xctest */,
 			);
 			name = Products;
 			path = ..;
@@ -363,6 +408,11 @@
 			children = (
 				A4E184ED1B0F78B700E0F420 /* BluetoothConnectingViewController.h */,
 				A4E184EE1B0F78B700E0F420 /* BluetoothConnectingViewController.m */,
+				A4A4B7AA1B19EC92005D2B17 /* SERVICES.h */,
+				A4A4B7AB1B19ECC6005D2B17 /* CBCentralManagerViewController.h */,
+				A4A4B7AC1B19ECC6005D2B17 /* CBCentralManagerViewController.m */,
+				A4A4B7AE1B19ECD9005D2B17 /* CBPeripheralViewController.h */,
+				A4A4B7AF1B19ECD9005D2B17 /* CBPeripheralViewController.m */,
 			);
 			name = Bluetooth;
 			sourceTree = "<group>";
@@ -415,6 +465,7 @@
 		A4E184E91B0F774600E0F420 /* Images/Music */ = {
 			isa = PBXGroup;
 			children = (
+				A4A4B7B11B19EF99005D2B17 /* Using */,
 				A4980DF01B18A13700068744 /* Finished.png */,
 				A4980DCF1B182C4300068744 /* gradient.png */,
 				A4980DC91B1791F500068744 /* carCartoon.png */,
@@ -466,9 +517,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A4E184B61B0F50A500E0F420 /* ACRCV app */ = {
+		A4E184B61B0F50A500E0F420 /* Affix */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A4E184DA1B0F50A600E0F420 /* Build configuration list for PBXNativeTarget "ACRCV app" */;
+			buildConfigurationList = A4E184DA1B0F50A600E0F420 /* Build configuration list for PBXNativeTarget "Affix" */;
 			buildPhases = (
 				A4E184B31B0F50A500E0F420 /* Sources */,
 				A4E184B41B0F50A500E0F420 /* Frameworks */,
@@ -478,14 +529,14 @@
 			);
 			dependencies = (
 			);
-			name = "ACRCV app";
+			name = Affix;
 			productName = "ACRCV app";
-			productReference = A4E184B71B0F50A600E0F420 /* ACRCV app.app */;
+			productReference = A4E184B71B0F50A600E0F420 /* Affix.app */;
 			productType = "com.apple.product-type.application";
 		};
-		A4E184CF1B0F50A600E0F420 /* ACRCV appTests */ = {
+		A4E184CF1B0F50A600E0F420 /* AffixTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A4E184DD1B0F50A600E0F420 /* Build configuration list for PBXNativeTarget "ACRCV appTests" */;
+			buildConfigurationList = A4E184DD1B0F50A600E0F420 /* Build configuration list for PBXNativeTarget "AffixTests" */;
 			buildPhases = (
 				A4E184CC1B0F50A600E0F420 /* Sources */,
 				A4E184CD1B0F50A600E0F420 /* Frameworks */,
@@ -496,9 +547,9 @@
 			dependencies = (
 				A4E184D21B0F50A600E0F420 /* PBXTargetDependency */,
 			);
-			name = "ACRCV appTests";
+			name = AffixTests;
 			productName = "ACRCV appTests";
-			productReference = A4E184D01B0F50A600E0F420 /* ACRCV appTests.xctest */;
+			productReference = A4E184D01B0F50A600E0F420 /* AffixTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -520,7 +571,7 @@
 					};
 				};
 			};
-			buildConfigurationList = A4E184B21B0F50A500E0F420 /* Build configuration list for PBXProject "ACRCV app" */;
+			buildConfigurationList = A4E184B21B0F50A500E0F420 /* Build configuration list for PBXProject "Affix" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -533,8 +584,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A4E184B61B0F50A500E0F420 /* ACRCV app */,
-				A4E184CF1B0F50A600E0F420 /* ACRCV appTests */,
+				A4E184B61B0F50A500E0F420 /* Affix */,
+				A4E184CF1B0F50A600E0F420 /* AffixTests */,
 			);
 		};
 /* End PBXProject section */
@@ -544,18 +595,26 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4A4B7CE1B19F164005D2B17 /* Button.png in Resources */,
 				A4980DCD1B1791F500068744 /* IRSensor.png in Resources */,
+				A4A4B7D21B19F164005D2B17 /* REV.png in Resources */,
 				A4E184C61B0F50A600E0F420 /* Main.storyboard in Resources */,
 				A4E1852B1B10A38100E0F420 /* page3.png in Resources */,
+				A4A4B7D01B19F164005D2B17 /* Go Back.png in Resources */,
 				A41B70DA1B10CAD300438250 /* green-tick.png in Resources */,
+				A4A4B7CF1B19F164005D2B17 /* FWD.png in Resources */,
 				A4E185221B10A33A00E0F420 /* chocolate-640.jpg in Resources */,
 				A4980DD01B182C4300068744 /* gradient.png in Resources */,
+				A4A4B7D11B19F164005D2B17 /* Loading Image.png in Resources */,
+				A4A4B7CD1B19F164005D2B17 /* Button pushed down.png in Resources */,
 				A4980DC81B1787A500068744 /* Throttle V2.png in Resources */,
 				A4980DCE1B1791F500068744 /* wheelCartoon.png in Resources */,
 				A41B70DC1B10CAD300438250 /* restart-256.png in Resources */,
 				A4980DF11B18A13700068744 /* Finished.png in Resources */,
 				A41B70DB1B10CAD300438250 /* red-cross.png in Resources */,
+				A4A4B7D51B19F164005D2B17 /* Wheel.png in Resources */,
 				A4E185241B10A33A00E0F420 /* Red_button.png in Resources */,
+				A4A4B7D31B19F164005D2B17 /* Speed down.png in Resources */,
 				A4E184CB1B0F50A600E0F420 /* LaunchScreen.xib in Resources */,
 				A4E1852C1B10A38100E0F420 /* page4.png in Resources */,
 				A4E184C81B0F50A600E0F420 /* Images.xcassets in Resources */,
@@ -566,6 +625,7 @@
 				A4E185231B10A33A00E0F420 /* popsicle-640.png in Resources */,
 				A4E185111B0F852500E0F420 /* joystick.png in Resources */,
 				A4980DC11B1776D400068744 /* Throttle nob.png in Resources */,
+				A4A4B7D41B19F164005D2B17 /* Speed UP.png in Resources */,
 				A4E1852A1B10A38100E0F420 /* page2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -590,6 +650,7 @@
 				A4980DBB1B1761CC00068744 /* ThrottleScene.m in Sources */,
 				A4980DD71B183F1B00068744 /* SuperJoystickScene.m in Sources */,
 				A4E184C31B0F50A600E0F420 /* ViewController.m in Sources */,
+				A4A4B7B01B19ECD9005D2B17 /* CBPeripheralViewController.m in Sources */,
 				A4980DE71B188C4400068744 /* CreditViewController.m in Sources */,
 				A4E185021B0F7CD400E0F420 /* PageContentViewController.m in Sources */,
 				A4E184F51B0F790100E0F420 /* SuperMainViewController.m in Sources */,
@@ -606,6 +667,7 @@
 				A41B70EC1B10DA3400438250 /* MyScene.m in Sources */,
 				A4E185301B10B6CF00E0F420 /* BasicHelpViewController.m in Sources */,
 				A41B70F71B11960F00438250 /* GestureRecogniserTestViewController.m in Sources */,
+				A4A4B7AD1B19ECC6005D2B17 /* CBCentralManagerViewController.m in Sources */,
 				A4E185331B10B6EA00E0F420 /* BasicHelpCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -623,7 +685,7 @@
 /* Begin PBXTargetDependency section */
 		A4E184D21B0F50A600E0F420 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A4E184B61B0F50A500E0F420 /* ACRCV app */;
+			target = A4E184B61B0F50A500E0F420 /* Affix */;
 			targetProxy = A4E184D11B0F50A600E0F420 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -739,7 +801,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "ACRCV app/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "ACRCV app";
+				PRODUCT_NAME = Affix;
 				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
@@ -752,7 +814,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "ACRCV app/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "ACRCV app";
+				PRODUCT_NAME = Affix;
 				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
@@ -771,7 +833,7 @@
 				);
 				INFOPLIST_FILE = "ACRCV appTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "ACRCV appTests";
+				PRODUCT_NAME = AffixTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ACRCV app.app/ACRCV app";
 			};
 			name = Debug;
@@ -786,7 +848,7 @@
 				);
 				INFOPLIST_FILE = "ACRCV appTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "ACRCV appTests";
+				PRODUCT_NAME = AffixTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ACRCV app.app/ACRCV app";
 			};
 			name = Release;
@@ -794,7 +856,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A4E184B21B0F50A500E0F420 /* Build configuration list for PBXProject "ACRCV app" */ = {
+		A4E184B21B0F50A500E0F420 /* Build configuration list for PBXProject "Affix" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A4E184D81B0F50A600E0F420 /* Debug */,
@@ -803,7 +865,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A4E184DA1B0F50A600E0F420 /* Build configuration list for PBXNativeTarget "ACRCV app" */ = {
+		A4E184DA1B0F50A600E0F420 /* Build configuration list for PBXNativeTarget "Affix" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A4E184DB1B0F50A600E0F420 /* Debug */,
@@ -812,7 +874,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A4E184DD1B0F50A600E0F420 /* Build configuration list for PBXNativeTarget "ACRCV appTests" */ = {
+		A4E184DD1B0F50A600E0F420 /* Build configuration list for PBXNativeTarget "AffixTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A4E184DE1B0F50A600E0F420 /* Debug */,

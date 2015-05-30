@@ -11,7 +11,7 @@
 #import <CoreLocation/CoreLocation.h>
 //#import "CoreLocationController.h"
 
-@interface GestureRecogniserTestViewController : UIViewController /*<CoreLocationControllerDelegate, *///<CLLocationManagerDelegate>
+@interface GestureRecogniserTestViewController : UIViewController //<UIImagePickerControllerDelegate>/*<CoreLocationControllerDelegate, *///<CLLocationManagerDelegate>
 
 //@property (nonatomic, retain) CoreLocationController *locationController;
 //@property CLLocationManager *locationManager;
@@ -25,6 +25,7 @@
 @property (weak, nonatomic) IBOutlet MKMapView *mapView;
 @property (weak, nonatomic) IBOutlet UILabel *lblLongitude;
 @property (weak, nonatomic) IBOutlet UILabel *lblLatitude;
+@property (weak, nonatomic) IBOutlet UIImageView *cameraFeedImage;
 
 
 

@@ -26,11 +26,19 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.isGoingFd = YES;
+    [self updateImages];
+    
+    self.backgroundImage.image = [UIImage imageNamed:@"Loading Image"];
+    
+    [self.fdButtonLabel setImage:[UIImage imageNamed:@"Speed UP"] forState:UIControlStateNormal];
+    [self.breakButtonLabel setImage:[UIImage imageNamed:@"Speed down"] forState:UIControlStateNormal];
+    
     [self.rightButtonLabel setTitle:@"" forState:UIControlStateNormal];
     [self.backButtonLabel setTitle:@"" forState:UIControlStateNormal];
     [self.leftButtonLabel setTitle:@"" forState:UIControlStateNormal];
     [self.upButtonLabel setTitle:@"" forState:UIControlStateNormal];
-    [self.downButtonLabel setTitle:@"" forState:UIControlStateNormal];
+    [self.breakButtonLabel setTitle:@"" forState:UIControlStateNormal];
     [self.fdButtonLabel setTitle:@"" forState:UIControlStateNormal];
     
     [self.actionsButtonLabel setTitle:@"" forState:UIControlStateNormal];
@@ -40,33 +48,31 @@
     [self.disconnectButtonLabel setTitle:@"" forState:UIControlStateNormal];
     [self.creditButtonLabel setTitle:@"" forState:UIControlStateNormal];
     
-    /*
-    self.rightWheelImage.image = [UIImage imageNamed:@"wheelCartoon"];
-    self.leftWheelImage.image = [UIImage imageNamed:@"wheelCartoon"];
-    self.rightIRSensorImage.image = [UIImage imageNamed:@"IRSensor"];
-    self.middleIRSensorImage.image = [UIImage imageNamed:@"IRSensor"];
-    self.leftIRSensorImage.image = [UIImage imageNamed:@"IRSensor"];
-    self.carBodyImage.image = [UIImage imageNamed:@"carCartoon"];*/
-    
     NSString *log = @"Enjoy the world! \nYou have the ability to do incredible things, controlling this vehicle included. Ingoring the cheese, be you. \n \nNo inspirational quote needed, \nyou are You, that is truer than true. There is no one alive who is Youer than You. \n\n\nCheers Dr Seuss.";
     
     NSMutableAttributedString *attrString = [[NSMutableAttributedString alloc] initWithString:log];
     NSUInteger _stringLength = [log length];
     
-    UIColor *_black = [UIColor blackColor];
+    UIColor *green = [UIColor greenColor];
     UIFont *font = [UIFont fontWithName:@"Helvetica" size:13.0];
     [attrString addAttribute:NSFontAttributeName value:font range:NSMakeRange(0, _stringLength)];
-    [attrString addAttribute:NSForegroundColorAttributeName value:_black range:NSMakeRange(0, _stringLength)];
+    [attrString addAttribute:NSForegroundColorAttributeName value:green range:NSMakeRange(0, _stringLength)];
     
-    self.commandLineLabel.text = @"Command line";
     self.activityLogTextView.attributedText = attrString;
 
     self.commandLineTextField.delegate = self;
     self.commandLineTextField.clearsOnBeginEditing = YES;
     
     [self presentControls:0];
-    
-    // Do any additional setup after loading the view.
+}
+
+- (void) updateImages {
+    if (self.isGoingFd == NO) {
+        [self.speedSwitchButtonLabel setImage:[UIImage imageNamed:@"REV"]forState:UIControlStateNormal];
+    }
+    else {
+        [self.speedSwitchButtonLabel setImage:[UIImage imageNamed:@"FWD"]forState:UIControlStateNormal];
+    }
 }
 
 - (void)didReceiveMemoryWarning {
@@ -83,7 +89,6 @@
     return YES;
 }
 
-#pragma mark - Navigation
 /*
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
@@ -106,8 +111,6 @@
 }*/
 
 - (NSString*) commandsAction:(NSString *)string {
-    self.commandLineLabel.text = self.commandLineTextField.text;
-    
     self.commands = [[NSDictionary alloc] initWithObjects:[NSArray arrayWithObjects:@"superSegue", @"optionsSegue", @"BasicHelpSegue", @"disconnected",@"testingSegue", @"creditSegue", nil] forKeys:[NSArray arrayWithObjects:@"super", @"options", @"help", @"disconnect", @"gesture", @"credit", nil]];
     
     for (NSString *keys in [self.commands allKeys]) {
@@ -157,8 +160,6 @@
     
     self.commandLineTextField.secureTextEntry = YES;
     
-    self.commandLineLabel.text = @"";
-    self.autoLabel.text = @"";
     [self.helpButtonLabel setTitle:@"" forState:UIControlStateNormal];
     
     [self.tView removeFromSuperview];
@@ -184,7 +185,7 @@
         [self.spView presentScene:scene];
         
         // ------ Throttle
-        
+        /*
         self.tView = [[SKView alloc] initWithFrame:CGRectMake(CGRectGetMaxX(self.view.frame) - size, CGRectGetMaxY(self.view.frame) - size, size, size)];
         [self.view addSubview:self.tView];
         
@@ -192,91 +193,74 @@
         tScene.scaleMode = SKSceneScaleModeAspectFill;
         self.tView.allowsTransparency = YES;
         
-        [self.tView presentScene:tScene];
-    }/*
-    else if (type == 1) {
-        // ----- Joystick
-        
-        int size = (self.view.frame.size.height) / 2.5;
-        
-        self.spView = [[SKView alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(self.view.frame) - size, size, size)];
-        [self.view addSubview:self.spView];
-        
-        SKScene *scene = [[SuperJoystickScene alloc] initWithSize:CGSizeMake(self.spView.bounds.size.width, self.spView.bounds.size.height)];
-        scene.scaleMode = SKSceneScaleModeAspectFill;
-        
-        [self.spView presentScene:scene];
-        
-        // ------ Throttle
-        
-        self.tView = [[SKView alloc] initWithFrame:CGRectMake(CGRectGetMaxX(self.view.frame) - size, CGRectGetMaxY(self.view.frame) - size, size, size)];
-        [self.view addSubview:self.tView];
-        
-        SKScene *tScene = [[SuperThrottleScene alloc] initWithSize:CGSizeMake(self.tView.bounds.size.width, self.tView.bounds.size.height)];
-        tScene.scaleMode = SKSceneScaleModeAspectFill;
-        self.tView.allowsTransparency = YES;
-        
-        [self.tView presentScene:tScene];
-    }*/
+        [self.tView presentScene:tScene];*/
+    }
+}
+
+- (void) changeBool:(BOOL)abool {
+    if (abool == YES) {
+        abool = NO;
+    }
+    else {
+        abool = YES;
+    }
 }
 
 - (void) performSegue {
-    self.commandLineLabel.text = @"";
     [self performSelector:@selector(welcomeBack) withObject:self afterDelay:0.3];
     [self performSegueWithIdentifier:self.segueIdentifier sender:self];
 }
 
 - (void) welcomeBack {
-    self.commandLineLabel.text = @"Welcome Back!";
     self.commandLineTextField.text = @"";
 }
+
+// ========================================================================= //
+#pragma mark Buttons
+// ========================================================================= //
 
 - (IBAction)autoActivateButtonPressed:(UIButton *)sender {
     NSLog(@"Auto activated");
     [self didDisconnect];
-    
 }
+
 - (IBAction)upButtonPressed:(UIButton *)sender {
     NSLog(@"Going up");
 }
 
-- (IBAction)downButtonPressed:(UIButton *)sender {
+- (IBAction)BreakButtonPressed:(UIButton *)sender {
     NSLog(@"Going down");
-
 }
 
 - (IBAction)fdButtonPressed:(UIButton *)sender {
     NSLog(@"Going forward");
-
 }
 
 - (IBAction)rightButtonPressed:(UIButton *)sender {
     NSLog(@"Going right");
-
 }
 
 - (IBAction)backButtonPressed:(UIButton *)sender {
     NSLog(@"Going back");
-
 }
 - (IBAction)leftButtonPressed:(UIButton *)sender {
     NSLog(@"Going left");
+}
 
+- (IBAction)speedSwitchButtonPressed:(UIButton *)sender {
+    [self changeBool:self.isGoingFd];
 }
 
 - (IBAction)actionsButtonPressed:(UIButton *)sender {
     [self performSegueWithIdentifier:@"optionsSegue" sender:self];
-
 }
 
 - (IBAction)superMainButtonPressed:(UIButton *)sender {
     [self performSegueWithIdentifier:@"superSegue" sender:self];
-
 }
 
 - (IBAction)disconnectButtonPressed:(UIButton *)sender {
     [self performSegueWithIdentifier:@"disconnectedSegue" sender:self];
-
 }
 
 - (IBAction)commandLinePressed:(UITextField *)sender {

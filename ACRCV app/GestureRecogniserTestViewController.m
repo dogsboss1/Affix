@@ -8,6 +8,7 @@
 
 #import "GestureRecogniserTestViewController.h"
 #import <Foundation/Foundation.h>
+//#import <AVFoundation/AVFoundation.h>
 
 @interface GestureRecogniserTestViewController ()
 
@@ -36,6 +37,25 @@
     self.locationController.delegate = self;
     [self.locationController.locationManager startUpdatingLocation];*/
 }
+/*
+- (void) setupCaptureSession {
+    NSError * error = nil;
+    
+    AVCaptureSession *captureSession;
+    captureSession = [[AVCaptureSession alloc] init];
+    captureSession.sessionPreset = AVCaptureSessionPresetMedium;
+    AVCaptureDevice *device = [AVCaptureDevice defaultDeviceWithMediaType:AVMediaTypeVideo];
+    
+    AVCaptureDeviceInput *input = [AVCaptureDeviceInput deviceInputWithDevice:device error:&error];
+    
+    [captureSession addInput:input];
+    AVCaptureVideoDataOutput *output = [[AVCaptureVideoDataOutput alloc] init];
+    [captureSession addOutput:output];
+    
+    dispatch_queue_t queue = dispatch_queue_create("myCameraOutputQueue", NULL);
+    [output setSampleBufferDelegate:self queue:queue];
+}
+*/
 /*
 - (void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error {
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" message:@"There was an error retrieving your location."delegate:self cancelButtonTitle:@"Ok" otherButtonTitles: nil];
