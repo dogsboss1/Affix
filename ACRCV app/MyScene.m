@@ -23,6 +23,8 @@
 
 @property CGPoint middlePoint;
 
+@property NSInteger wheelSize;
+
 @end
 
 @implementation MyScene
@@ -35,6 +37,8 @@
         
         self.scene.backgroundColor = [UIColor clearColor];
         
+        self.wheelSize = 100;
+        
         [self addJoystick];
         //[self addCar];
         [self addbackgroundWheel];
@@ -46,7 +50,7 @@
 - (void) addJoystick {
     SKSpriteNode *jsThumb = [SKSpriteNode spriteNodeWithImageNamed:@"200x200 box"];
     SKSpriteNode *jsBackdrop = [SKSpriteNode spriteNodeWithImageNamed:@"200x200 box"];
-    jsBackdrop.size = CGSizeMake(150, 150);
+    jsBackdrop.size = CGSizeMake(self.wheelSize, self.wheelSize);
     jsThumb.size = CGSizeMake(80, 80);
     self.joystick = [Joystick joystickWithThumb:jsThumb andBackDrop:jsBackdrop];
     self.joystick.position = CGPointMake(jsBackdrop.size.width, jsBackdrop.size.height);
@@ -71,7 +75,7 @@
 
 - (void) addbackgroundWheel {
     self.bgNode = [SKSpriteNode spriteNodeWithImageNamed:@"Wheel"];
-    self.bgNode.position = CGPointMake(150, 150);
+    self.bgNode.position = CGPointMake(self.wheelSize, self.wheelSize);
     self.bgNode.size = CGSizeMake(150, 150);
     self.bgNode.name = @"bgNode";
     [self addChild:self.bgNode];

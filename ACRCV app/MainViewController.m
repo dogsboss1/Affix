@@ -225,7 +225,7 @@
 - (IBAction)speedSwitchButtonPressed:(UIButton *)sender {
     self.isGoingFd = [self changeBool:self.isGoingFd];
     [self updateImages];
-    //NSLog(self.isGoingFd ? @"Yes" : @"No");
+    NSLog(self.isGoingFd ? @"Yes" : @"No");
 }
 
 - (IBAction)actionsButtonPressed:(UIButton *)sender {
