@@ -26,10 +26,6 @@
 
 - (IBAction)upButtonPressed:(UIButton *)sender;
 - (IBAction)BreakButtonPressed:(UIButton *)sender;
-- (IBAction)fdButtonPressed:(UIButton *)sender;
-- (IBAction)rightButtonPressed:(UIButton *)sender;
-- (IBAction)backButtonPressed:(UIButton *)sender;
-- (IBAction)leftButtonPressed:(UIButton *)sender;
 - (IBAction)speedSwitchButtonPressed:(UIButton *)sender;
 
 - (IBAction)actionsButtonPressed:(UIButton *)sender;
@@ -42,13 +38,10 @@
 @property (weak, nonatomic) IBOutlet UIButton *helpButtonPressed;
 - (IBAction)creditButtonPressed:(UIButton *)sender;
 
-@property (weak, nonatomic) IBOutlet UIButton *rightButtonLabel;
-@property (weak, nonatomic) IBOutlet UIButton *backButtonLabel;
-@property (weak, nonatomic) IBOutlet UIButton *leftButtonLabel;
 @property (weak, nonatomic) IBOutlet UIButton *upButtonLabel;
 @property (weak, nonatomic) IBOutlet UIButton *breakButtonLabel;
-@property (weak, nonatomic) IBOutlet UIButton *fdButtonLabel;
 @property (unsafe_unretained, nonatomic) IBOutlet UIButton *speedSwitchButtonLabel;
+@property (weak, nonatomic) IBOutlet UIButton *autoActivatedButtonLabel;
 
 @property (weak, nonatomic) IBOutlet UIButton *actionsButtonLabel;
 @property (weak, nonatomic) IBOutlet UIButton *basicHelpButtonLabel;

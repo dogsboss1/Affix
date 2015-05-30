@@ -31,15 +31,6 @@
     
     self.backgroundImage.image = [UIImage imageNamed:@"Loading Image"];
     
-    [self.fdButtonLabel setImage:[UIImage imageNamed:@"Speed UP"] forState:UIControlStateNormal];
-    [self.breakButtonLabel setImage:[UIImage imageNamed:@"Speed down"] forState:UIControlStateNormal];
-    
-    [self.rightButtonLabel setTitle:@"" forState:UIControlStateNormal];
-    [self.backButtonLabel setTitle:@"" forState:UIControlStateNormal];
-    [self.leftButtonLabel setTitle:@"" forState:UIControlStateNormal];
-    [self.upButtonLabel setTitle:@"" forState:UIControlStateNormal];
-    [self.breakButtonLabel setTitle:@"" forState:UIControlStateNormal];
-    [self.fdButtonLabel setTitle:@"" forState:UIControlStateNormal];
     
     [self.actionsButtonLabel setTitle:@"" forState:UIControlStateNormal];
     [self.basicHelpButtonLabel setTitle:@"" forState:UIControlStateNormal];
@@ -73,6 +64,8 @@
     else {
         [self.speedSwitchButtonLabel setImage:[UIImage imageNamed:@"FWD"]forState:UIControlStateNormal];
     }
+    [self.autoActivatedButtonLabel setImage:[UIImage imageNamed:@"Button"] forState:UIControlStateNormal];
+    [self.autoActivatedButtonLabel setImage:[UIImage imageNamed:@"Button pushed down"] forState:UIControlStateHighlighted];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -197,12 +190,12 @@
     }
 }
 
-- (void) changeBool:(BOOL)abool {
+- (BOOL) changeBool:(BOOL)abool {
     if (abool == YES) {
-        abool = NO;
+        return NO;
     }
     else {
-        abool = YES;
+        return YES;
     }
 }
 
@@ -232,23 +225,10 @@
     NSLog(@"Going down");
 }
 
-- (IBAction)fdButtonPressed:(UIButton *)sender {
-    NSLog(@"Going forward");
-}
-
-- (IBAction)rightButtonPressed:(UIButton *)sender {
-    NSLog(@"Going right");
-}
-
-- (IBAction)backButtonPressed:(UIButton *)sender {
-    NSLog(@"Going back");
-}
-- (IBAction)leftButtonPressed:(UIButton *)sender {
-    NSLog(@"Going left");
-}
-
 - (IBAction)speedSwitchButtonPressed:(UIButton *)sender {
-    [self changeBool:self.isGoingFd];
+    self.isGoingFd = [self changeBool:self.isGoingFd];
+    [self updateImages];
+    //NSLog(self.isGoingFd ? @"Yes" : @"No");
 }
 
 - (IBAction)actionsButtonPressed:(UIButton *)sender {
@@ -265,11 +245,6 @@
 
 - (IBAction)commandLinePressed:(UITextField *)sender {
     NSLog(@"command line actovity");
-}
-
-- (IBAction)commandLineGoButtonPressed:(UIButton *)sender {
-    [self commandsAction:self.commandLineTextField.text];
-    [self.commandLineTextField resignFirstResponder];
 }
 
 - (IBAction)basicHelpButtonPressed:(UIButton *)sender {

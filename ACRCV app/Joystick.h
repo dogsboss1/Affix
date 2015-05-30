@@ -10,6 +10,7 @@
 
 @interface Joystick : SKNode {
     SKSpriteNode *thumbNode;
+    SKSpriteNode *backgroundNode;
     BOOL isTracking;
     CGPoint velocity;
     CGPoint travelLimit;

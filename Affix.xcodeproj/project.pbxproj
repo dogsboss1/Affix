@@ -72,6 +72,7 @@
 		A4E185301B10B6CF00E0F420 /* BasicHelpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E1852F1B10B6CF00E0F420 /* BasicHelpViewController.m */; };
 		A4E185331B10B6EA00E0F420 /* BasicHelpCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E185321B10B6EA00E0F420 /* BasicHelpCell.m */; };
 		A4E185361B10B6FD00E0F420 /* BasicHelp.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E185351B10B6FD00E0F420 /* BasicHelp.m */; };
+		A4F00E2E1B1A15EA0051E3F1 /* 1x1 black pixle.png in Resources */ = {isa = PBXBuildFile; fileRef = A4F00E2D1B1A15EA0051E3F1 /* 1x1 black pixle.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -180,6 +181,7 @@
 		A4E185321B10B6EA00E0F420 /* BasicHelpCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicHelpCell.m; sourceTree = "<group>"; };
 		A4E185341B10B6FD00E0F420 /* BasicHelp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicHelp.h; sourceTree = "<group>"; };
 		A4E185351B10B6FD00E0F420 /* BasicHelp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicHelp.m; sourceTree = "<group>"; };
+		A4F00E2D1B1A15EA0051E3F1 /* 1x1 black pixle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "1x1 black pixle.png"; path = "Images/1x1 black pixle.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -303,6 +305,7 @@
 		A4A4B7B11B19EF99005D2B17 /* Using */ = {
 			isa = PBXGroup;
 			children = (
+				A4F00E2D1B1A15EA0051E3F1 /* 1x1 black pixle.png */,
 				A4A4B7C41B19F164005D2B17 /* Button pushed down.png */,
 				A4A4B7C51B19F164005D2B17 /* Button.png */,
 				A4A4B7C61B19F164005D2B17 /* FWD.png */,
@@ -609,6 +612,7 @@
 				A4A4B7CD1B19F164005D2B17 /* Button pushed down.png in Resources */,
 				A4980DC81B1787A500068744 /* Throttle V2.png in Resources */,
 				A4980DCE1B1791F500068744 /* wheelCartoon.png in Resources */,
+				A4F00E2E1B1A15EA0051E3F1 /* 1x1 black pixle.png in Resources */,
 				A41B70DC1B10CAD300438250 /* restart-256.png in Resources */,
 				A4980DF11B18A13700068744 /* Finished.png in Resources */,
 				A41B70DB1B10CAD300438250 /* red-cross.png in Resources */,
@@ -834,7 +838,6 @@
 				INFOPLIST_FILE = "ACRCV appTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = AffixTests;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ACRCV app.app/ACRCV app";
 			};
 			name = Debug;
 		};
@@ -849,7 +852,6 @@
 				INFOPLIST_FILE = "ACRCV appTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = AffixTests;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ACRCV app.app/ACRCV app";
 			};
 			name = Release;
 		};

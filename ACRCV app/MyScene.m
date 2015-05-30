@@ -29,8 +29,6 @@
 - (instancetype)initWithSize:(CGSize)size {
     if (self = [super initWithSize:size]) {
         
-
-        
         CADisplayLink *velocityTick = [CADisplayLink displayLinkWithTarget:self selector:@selector(joystickMovement)];
         [velocityTick addToRunLoop:[NSRunLoop currentRunLoop] forMode:NSRunLoopCommonModes];
         
@@ -45,7 +43,10 @@
 
 - (void) addJoystick {
     SKSpriteNode *jsThumb = [SKSpriteNode spriteNodeWithImageNamed:@"joystick"];
-    SKSpriteNode *jsBackdrop = [SKSpriteNode spriteNodeWithImageNamed:@"dpad"];
+    //SKSpriteNode *jsThumb = [SKSpriteNode spriteNodeWithImageNamed:@"Wheel"];
+    //SKSpriteNode *jsBackdrop = [SKSpriteNode spriteNodeWithImageNamed:@"1x1 black pixle"];
+    SKSpriteNode *jsBackdrop = [SKSpriteNode spriteNodeWithImageNamed:@"Wheel"];
+    jsBackdrop.size = CGSizeMake(150, 150);
     self.joystick = [Joystick joystickWithThumb:jsThumb andBackDrop:jsBackdrop];
     self.joystick.position = CGPointMake(jsBackdrop.size.width, jsBackdrop.size.height);
     [self addChild:self.joystick];
@@ -56,6 +57,7 @@
         //self.carNode.position = CGPointMake(self.carNode.position.x + .1 * self.joystick.velocity.x, self.carNode.position.y + .1 * self.joystick.velocity.y);
         self.carNode.zRotation = self.joystick.angularVelocity;
     }
+    //self.joystick.zRotation = self.joystick.angularVelocity;
 }
 
 - (void) addCar {
