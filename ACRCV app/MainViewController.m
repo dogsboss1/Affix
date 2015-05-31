@@ -11,10 +11,12 @@
 #import "ThrottleScene.h"
 #import "SuperJoystickScene.h"
 #import "SuperThrottleScene.h"
+#import "Joystick.h"
 
 @interface MainViewController ()
 
 @property (nonatomic) commmands *command;
+@property (nonatomic) Joystick *joystick;
 
 @property SKView *tView;
 @property SKView *spView;
@@ -29,12 +31,7 @@
     self.isGoingFd = YES;
     [self updateImages];
     
-    [self.actionsButtonLabel setTitle:@"" forState:UIControlStateNormal];
-    [self.basicHelpButtonLabel setTitle:@"" forState:UIControlStateNormal];
-    [self.superMainButtonLabel setTitle:@"" forState:UIControlStateNormal];
-    [self.gestureButtonLabel setTitle:@"" forState:UIControlStateNormal];
-    [self.disconnectButtonLabel setTitle:@"" forState:UIControlStateNormal];
-    [self.creditButtonLabel setTitle:@"" forState:UIControlStateNormal];
+    [self noWords];
     
     NSString *log = @"Enjoy the world! \nYou have the ability to do incredible things, controlling this vehicle included. Ingoring the cheese, be you. \n \nNo inspirational quote needed, \nyou are You, that is truer than true. There is no one alive who is Youer than You. \n\n\nCheers Dr Seuss.";
     
@@ -63,6 +60,21 @@
     }
     [self.autoActivatedButtonLabel setImage:[UIImage imageNamed:@"Button"] forState:UIControlStateNormal];
     [self.autoActivatedButtonLabel setImage:[UIImage imageNamed:@"Button pushed down"] forState:UIControlStateHighlighted];
+}
+
+- (void) noWords {
+    [self.actionsButtonLabel setTitle:@"" forState:UIControlStateNormal];
+    [self.basicHelpButtonLabel setTitle:@"" forState:UIControlStateNormal];
+    [self.superMainButtonLabel setTitle:@"" forState:UIControlStateNormal];
+    [self.gestureButtonLabel setTitle:@"" forState:UIControlStateNormal];
+    [self.disconnectButtonLabel setTitle:@"" forState:UIControlStateNormal];
+    [self.creditButtonLabel setTitle:@"" forState:UIControlStateNormal];
+    
+    self.fdLabel.text = @"";
+    self.breakLabel.text = @"";
+    self.speedlabel.text = @"";
+    self.autoLabel.text = @"";
+    self.degreesLabel.text = @"";
 }
 
 - (void)didReceiveMemoryWarning {
@@ -163,7 +175,7 @@
     if (type == 0) {
         // ----- Joystick
         
-        int size = (self.view.frame.size.height) / 2.5;
+        int size = (self.view.frame.size.height) / 3.15;
         
         self.spView = [[SKView alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(self.view.frame) - size, size, size)];
         [self.view addSubview:self.spView];
@@ -171,6 +183,8 @@
         SKScene *scene = [[MyScene alloc] initWithSize:CGSizeMake(self.spView.bounds.size.width, self.spView.bounds.size.height)];
         scene.scaleMode = SKSceneScaleModeAspectFill;
         self.spView.allowsTransparency = YES;
+        
+        //self.degreesLabel.text = [NSString stringWithFormat:@"%f", self.joystick.angularVelocity];
         
         [self.spView presentScene:scene];
         
@@ -196,6 +210,27 @@
     }
 }
 
+- (void) moving {
+    if (self.isGoingFd == NO) {
+        self.fdLabel.text = @"REV";
+    }
+    else {
+        self.fdLabel.text = @"FD";
+    }
+}
+
+- (void) notMoving {
+    self.fdLabel.text = @"";
+}
+
+- (void) breaking {
+    self.breakLabel.text = @"Break";
+}
+
+- (void) notBreaking {
+    self.breakLabel.text = @"";
+}
+
 - (void) performSegue {
     [self performSelector:@selector(welcomeBack) withObject:self afterDelay:0.3];
     [self performSegueWithIdentifier:self.segueIdentifier sender:self];
@@ -215,11 +250,13 @@
 }
 
 - (IBAction)upButtonPressed:(UIButton *)sender {
-    NSLog(@"Going up");
+    [self moving];
+    //NSLog(@"Going up");
 }
 
 - (IBAction)BreakButtonPressed:(UIButton *)sender {
-    NSLog(@"Going down");
+    //NSLog(@"Going down");
+    [self breaking];
 }
 
 - (IBAction)speedSwitchButtonPressed:(UIButton *)sender {
@@ -253,4 +290,16 @@
 
 - (IBAction)creditButtonPressed:(UIButton *)sender {
 }
+
+- (IBAction)upButtonUnPressed:(UIButton *)sender {
+    NSLog(@"Button unpressed");
+    [self notMoving];
+}
+
+- (IBAction)breakButtonUnPressed:(UIButton *)sender {
+    NSLog(@"Button break Unpresed");
+    [self notBreaking];
+}
+
+
 @end

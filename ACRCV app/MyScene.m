@@ -13,6 +13,7 @@
 @interface MyScene ()
 
 @property Joystick* joystick;
+@property (nonatomic) MainViewController * mainMenu;
 
 @property CGPoint joystickPosition;
 @property CGFloat zRoation;
@@ -62,6 +63,9 @@
         //self.carNode.position = CGPointMake(self.carNode.position.x + .1 * self.joystick.velocity.x, self.carNode.position.y + .1 * self.joystick.velocity.y);
         self.carNode.zRotation = self.joystick.angularVelocity;
         self.bgNode.zRotation = self.joystick.angularVelocity;
+        //self.mainMenu.degreesLabel.text = [NSString stringWithFormat:@"%f", self.joystick.angularVelocity];
+        //self.mainMenu.degreesLabel.text = @"--";
+        NSLog(@"%f", self.joystick.angularVelocity);
     }
 }
 

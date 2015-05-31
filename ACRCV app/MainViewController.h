@@ -53,6 +53,15 @@
 @property (weak, nonatomic) IBOutlet UIButton *helpButtonLabel;
 @property (weak, nonatomic) IBOutlet UIButton *creditButtonLabel;
 
+- (IBAction)upButtonUnPressed:(UIButton *)sender;
+- (IBAction)breakButtonUnPressed:(UIButton *)sender;
+
+@property (weak, nonatomic) IBOutlet UILabel *fdLabel;
+@property (weak, nonatomic) IBOutlet UILabel *breakLabel;
+@property (weak, nonatomic) IBOutlet UILabel *speedlabel;
+@property (weak, nonatomic) IBOutlet UILabel *autoLabel;
+@property (weak, nonatomic) IBOutlet UILabel *degreesLabel;
+
 @property NSDictionary *commands;
 @property NSString *segueIdentifier;
 - (NSString*)commandsAction:(NSString *)string;
