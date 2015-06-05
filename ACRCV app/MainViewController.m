@@ -33,7 +33,7 @@
     
     [self noWords];
     
-    NSString *log = @"Enjoy the world! \nYou have the ability to do incredible things, controlling this vehicle included. Ingoring the cheese, be you. \n \nNo inspirational quote needed, \nyou are You, that is truer than true. There is no one alive who is Youer than You. \n\n\nCheers Dr Seuss.";
+    NSString *log = @"Enjoy the world! \nYou have the ability to do incredible things, controlling this vehicle included. Ingoring the cheese, be you. \n \nNo inspirational quote needed, \nyou are You, that is truer than true. There is no one alive who is Youer than You. \n\n\nCheers Dr Seuss.\n\n"/* +"="*20 +*/"==============================""\nThe different commands are as follows:\n\ncredit - Takes you to credits page.\nhelp - Takes you to the basic help\noptoins - Takes you to all the pre-made optoins.\ndisconnect - This disconnects you from bluetooth.\ngesture - Takes you to the testing page.\nsuper - Makes it colourful.";
     
     NSMutableAttributedString *attrString = [[NSMutableAttributedString alloc] initWithString:log];
     NSUInteger _stringLength = [log length];

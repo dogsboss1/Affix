@@ -7,10 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A41B70DA1B10CAD300438250 /* green-tick.png in Resources */ = {isa = PBXBuildFile; fileRef = A41B70D61B10CAD300438250 /* green-tick.png */; };
-		A41B70DB1B10CAD300438250 /* red-cross.png in Resources */ = {isa = PBXBuildFile; fileRef = A41B70D71B10CAD300438250 /* red-cross.png */; };
-		A41B70DC1B10CAD300438250 /* restart-256.png in Resources */ = {isa = PBXBuildFile; fileRef = A41B70D81B10CAD300438250 /* restart-256.png */; };
-		A41B70DD1B10CAD300438250 /* rodentia-icons_system-reboot.png in Resources */ = {isa = PBXBuildFile; fileRef = A41B70D91B10CAD300438250 /* rodentia-icons_system-reboot.png */; };
 		A41B70DF1B10CED900438250 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A41B70DE1B10CED900438250 /* SpriteKit.framework */; };
 		A41B70E41B10D15E00438250 /* Joystick.m in Sources */ = {isa = PBXBuildFile; fileRef = A41B70E31B10D15D00438250 /* Joystick.m */; };
 		A41B70EC1B10DA3400438250 /* MyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = A41B70EB1B10DA3400438250 /* MyScene.m */; };
@@ -20,11 +16,6 @@
 		A41B70F71B11960F00438250 /* GestureRecogniserTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A41B70F61B11960F00438250 /* GestureRecogniserTestViewController.m */; };
 		A4980DBB1B1761CC00068744 /* ThrottleScene.m in Sources */ = {isa = PBXBuildFile; fileRef = A4980DBA1B1761CC00068744 /* ThrottleScene.m */; };
 		A4980DBE1B1761EF00068744 /* Throttle.m in Sources */ = {isa = PBXBuildFile; fileRef = A4980DBD1B1761EF00068744 /* Throttle.m */; };
-		A4980DC11B1776D400068744 /* Throttle nob.png in Resources */ = {isa = PBXBuildFile; fileRef = A4980DBF1B1776D400068744 /* Throttle nob.png */; };
-		A4980DC81B1787A500068744 /* Throttle V2.png in Resources */ = {isa = PBXBuildFile; fileRef = A4980DC71B1787A500068744 /* Throttle V2.png */; };
-		A4980DCC1B1791F500068744 /* carCartoon.png in Resources */ = {isa = PBXBuildFile; fileRef = A4980DC91B1791F500068744 /* carCartoon.png */; };
-		A4980DCD1B1791F500068744 /* IRSensor.png in Resources */ = {isa = PBXBuildFile; fileRef = A4980DCA1B1791F500068744 /* IRSensor.png */; };
-		A4980DCE1B1791F500068744 /* wheelCartoon.png in Resources */ = {isa = PBXBuildFile; fileRef = A4980DCB1B1791F500068744 /* wheelCartoon.png */; };
 		A4980DD01B182C4300068744 /* gradient.png in Resources */ = {isa = PBXBuildFile; fileRef = A4980DCF1B182C4300068744 /* gradient.png */; };
 		A4980DD41B183F0700068744 /* SuperThrottleScene.m in Sources */ = {isa = PBXBuildFile; fileRef = A4980DD31B183F0700068744 /* SuperThrottleScene.m */; };
 		A4980DD71B183F1B00068744 /* SuperJoystickScene.m in Sources */ = {isa = PBXBuildFile; fileRef = A4980DD61B183F1B00068744 /* SuperJoystickScene.m */; };
@@ -57,14 +48,9 @@
 		A4E184F21B0F78E500E0F420 /* CLOptionsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E184F11B0F78E500E0F420 /* CLOptionsTableViewController.m */; };
 		A4E184F51B0F790100E0F420 /* SuperMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E184F41B0F790100E0F420 /* SuperMainViewController.m */; };
 		A4E185021B0F7CD400E0F420 /* PageContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E185011B0F7CD400E0F420 /* PageContentViewController.m */; };
-		A4E185101B0F852500E0F420 /* dpad.png in Resources */ = {isa = PBXBuildFile; fileRef = A4E1850E1B0F852500E0F420 /* dpad.png */; };
-		A4E185111B0F852500E0F420 /* joystick.png in Resources */ = {isa = PBXBuildFile; fileRef = A4E1850F1B0F852500E0F420 /* joystick.png */; };
 		A4E185141B0F8B0600E0F420 /* CLOptionsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E185131B0F8B0600E0F420 /* CLOptionsCell.m */; };
 		A4E185171B1023CE00E0F420 /* CLOption.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E185161B1023CE00E0F420 /* CLOption.m */; };
 		A4E1851A1B1023DA00E0F420 /* CLOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E185191B1023DA00E0F420 /* CLOptions.m */; };
-		A4E185221B10A33A00E0F420 /* chocolate-640.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A4E1851F1B10A33A00E0F420 /* chocolate-640.jpg */; };
-		A4E185231B10A33A00E0F420 /* popsicle-640.png in Resources */ = {isa = PBXBuildFile; fileRef = A4E185201B10A33A00E0F420 /* popsicle-640.png */; };
-		A4E185241B10A33A00E0F420 /* Red_button.png in Resources */ = {isa = PBXBuildFile; fileRef = A4E185211B10A33A00E0F420 /* Red_button.png */; };
 		A4E185291B10A38100E0F420 /* page1.png in Resources */ = {isa = PBXBuildFile; fileRef = A4E185251B10A38100E0F420 /* page1.png */; };
 		A4E1852A1B10A38100E0F420 /* page2.png in Resources */ = {isa = PBXBuildFile; fileRef = A4E185261B10A38100E0F420 /* page2.png */; };
 		A4E1852B1B10A38100E0F420 /* page3.png in Resources */ = {isa = PBXBuildFile; fileRef = A4E185271B10A38100E0F420 /* page3.png */; };
@@ -93,10 +79,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		A41B70D61B10CAD300438250 /* green-tick.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "green-tick.png"; path = "Images/green-tick.png"; sourceTree = "<group>"; };
-		A41B70D71B10CAD300438250 /* red-cross.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "red-cross.png"; path = "Images/red-cross.png"; sourceTree = "<group>"; };
-		A41B70D81B10CAD300438250 /* restart-256.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "restart-256.png"; path = "Images/restart-256.png"; sourceTree = "<group>"; };
-		A41B70D91B10CAD300438250 /* rodentia-icons_system-reboot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "rodentia-icons_system-reboot.png"; path = "Images/rodentia-icons_system-reboot.png"; sourceTree = "<group>"; };
 		A41B70DE1B10CED900438250 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
 		A41B70E01B10CEE500438250 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 		A41B70E21B10D15D00438250 /* Joystick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Joystick.h; sourceTree = "<group>"; };
@@ -112,11 +94,6 @@
 		A4980DBA1B1761CC00068744 /* ThrottleScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ThrottleScene.m; path = "ACRCV app/ThrottleScene.m"; sourceTree = "<group>"; };
 		A4980DBC1B1761EF00068744 /* Throttle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Throttle.h; path = "ACRCV app/Throttle.h"; sourceTree = "<group>"; };
 		A4980DBD1B1761EF00068744 /* Throttle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Throttle.m; path = "ACRCV app/Throttle.m"; sourceTree = "<group>"; };
-		A4980DBF1B1776D400068744 /* Throttle nob.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Throttle nob.png"; path = "Images/throttle/Throttle nob.png"; sourceTree = "<group>"; };
-		A4980DC71B1787A500068744 /* Throttle V2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Throttle V2.png"; path = "Images/Throttle V2.png"; sourceTree = "<group>"; };
-		A4980DC91B1791F500068744 /* carCartoon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = carCartoon.png; path = Images/carCartoon.png; sourceTree = "<group>"; };
-		A4980DCA1B1791F500068744 /* IRSensor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = IRSensor.png; path = Images/IRSensor.png; sourceTree = "<group>"; };
-		A4980DCB1B1791F500068744 /* wheelCartoon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = wheelCartoon.png; path = Images/wheelCartoon.png; sourceTree = "<group>"; };
 		A4980DCF1B182C4300068744 /* gradient.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gradient.png; path = Images/gradient.png; sourceTree = "<group>"; };
 		A4980DD21B183F0700068744 /* SuperThrottleScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SuperThrottleScene.h; path = "ACRCV app/SuperThrottleScene.h"; sourceTree = "<group>"; };
 		A4980DD31B183F0700068744 /* SuperThrottleScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SuperThrottleScene.m; path = "ACRCV app/SuperThrottleScene.m"; sourceTree = "<group>"; };
@@ -167,17 +144,12 @@
 		A4E184F41B0F790100E0F420 /* SuperMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuperMainViewController.m; sourceTree = "<group>"; };
 		A4E185001B0F7CD400E0F420 /* PageContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageContentViewController.h; sourceTree = "<group>"; };
 		A4E185011B0F7CD400E0F420 /* PageContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageContentViewController.m; sourceTree = "<group>"; };
-		A4E1850E1B0F852500E0F420 /* dpad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = dpad.png; path = Images/dpad.png; sourceTree = "<group>"; };
-		A4E1850F1B0F852500E0F420 /* joystick.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = joystick.png; path = Images/joystick.png; sourceTree = "<group>"; };
 		A4E185121B0F8B0600E0F420 /* CLOptionsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLOptionsCell.h; sourceTree = "<group>"; };
 		A4E185131B0F8B0600E0F420 /* CLOptionsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLOptionsCell.m; sourceTree = "<group>"; };
 		A4E185151B1023CE00E0F420 /* CLOption.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLOption.h; sourceTree = "<group>"; };
 		A4E185161B1023CE00E0F420 /* CLOption.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLOption.m; sourceTree = "<group>"; };
 		A4E185181B1023DA00E0F420 /* CLOptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLOptions.h; sourceTree = "<group>"; };
 		A4E185191B1023DA00E0F420 /* CLOptions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLOptions.m; sourceTree = "<group>"; };
-		A4E1851F1B10A33A00E0F420 /* chocolate-640.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "chocolate-640.jpg"; path = "Images/chocolate-640.jpg"; sourceTree = "<group>"; };
-		A4E185201B10A33A00E0F420 /* popsicle-640.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "popsicle-640.png"; path = "Images/popsicle-640.png"; sourceTree = "<group>"; };
-		A4E185211B10A33A00E0F420 /* Red_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Red_button.png; path = Images/Red_button.png; sourceTree = "<group>"; };
 		A4E185251B10A38100E0F420 /* page1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = page1.png; path = Images/PageViewDemoImages/page1.png; sourceTree = "<group>"; };
 		A4E185261B10A38100E0F420 /* page2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = page2.png; path = Images/PageViewDemoImages/page2.png; sourceTree = "<group>"; };
 		A4E185271B10A38100E0F420 /* page3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = page3.png; path = Images/PageViewDemoImages/page3.png; sourceTree = "<group>"; };
@@ -492,20 +464,6 @@
 				A4A4B7B11B19EF99005D2B17 /* Using */,
 				A4980DF01B18A13700068744 /* Finished.png */,
 				A4980DCF1B182C4300068744 /* gradient.png */,
-				A4980DC91B1791F500068744 /* carCartoon.png */,
-				A4980DCA1B1791F500068744 /* IRSensor.png */,
-				A4980DCB1B1791F500068744 /* wheelCartoon.png */,
-				A4980DBF1B1776D400068744 /* Throttle nob.png */,
-				A4980DC71B1787A500068744 /* Throttle V2.png */,
-				A41B70D61B10CAD300438250 /* green-tick.png */,
-				A41B70D71B10CAD300438250 /* red-cross.png */,
-				A41B70D81B10CAD300438250 /* restart-256.png */,
-				A41B70D91B10CAD300438250 /* rodentia-icons_system-reboot.png */,
-				A4E1851F1B10A33A00E0F420 /* chocolate-640.jpg */,
-				A4E185201B10A33A00E0F420 /* popsicle-640.png */,
-				A4E185211B10A33A00E0F420 /* Red_button.png */,
-				A4E1850E1B0F852500E0F420 /* dpad.png */,
-				A4E1850F1B0F852500E0F420 /* joystick.png */,
 				A4E185251B10A38100E0F420 /* page1.png */,
 				A4E185261B10A38100E0F420 /* page2.png */,
 				A4E185271B10A38100E0F420 /* page3.png */,
@@ -621,29 +579,21 @@
 			files = (
 				A4F00E3B1B1A31140051E3F1 /* Exit.png in Resources */,
 				A4A4B7CE1B19F164005D2B17 /* Button.png in Resources */,
-				A4980DCD1B1791F500068744 /* IRSensor.png in Resources */,
 				A4A4B7D21B19F164005D2B17 /* REV.png in Resources */,
 				A4E184C61B0F50A600E0F420 /* Main.storyboard in Resources */,
 				A4E1852B1B10A38100E0F420 /* page3.png in Resources */,
 				A4A4B7D01B19F164005D2B17 /* Go Back.png in Resources */,
-				A41B70DA1B10CAD300438250 /* green-tick.png in Resources */,
 				A4A4B7CF1B19F164005D2B17 /* FWD.png in Resources */,
-				A4E185221B10A33A00E0F420 /* chocolate-640.jpg in Resources */,
 				A4F00E3C1B1A31140051E3F1 /* TV screen.png in Resources */,
 				A4F00E3A1B1A31140051E3F1 /* Command.png in Resources */,
 				A4F00E381B1A31140051E3F1 /* Black Thing.png in Resources */,
 				A4980DD01B182C4300068744 /* gradient.png in Resources */,
 				A4A4B7D11B19F164005D2B17 /* Loading Image.png in Resources */,
 				A4A4B7CD1B19F164005D2B17 /* Button pushed down.png in Resources */,
-				A4980DC81B1787A500068744 /* Throttle V2.png in Resources */,
-				A4980DCE1B1791F500068744 /* wheelCartoon.png in Resources */,
 				A4F00E2E1B1A15EA0051E3F1 /* 1x1 black pixle.png in Resources */,
-				A41B70DC1B10CAD300438250 /* restart-256.png in Resources */,
 				A4980DF11B18A13700068744 /* Finished.png in Resources */,
 				A4F00E371B1A31140051E3F1 /* Background.png in Resources */,
-				A41B70DB1B10CAD300438250 /* red-cross.png in Resources */,
 				A4A4B7D51B19F164005D2B17 /* Wheel.png in Resources */,
-				A4E185241B10A33A00E0F420 /* Red_button.png in Resources */,
 				A4A4B7D31B19F164005D2B17 /* Speed down.png in Resources */,
 				A4E184CB1B0F50A600E0F420 /* LaunchScreen.xib in Resources */,
 				A4E1852C1B10A38100E0F420 /* page4.png in Resources */,
@@ -651,12 +601,6 @@
 				A4E185291B10A38100E0F420 /* page1.png in Resources */,
 				A4F00E301B1A248D0051E3F1 /* 200x200 box.png in Resources */,
 				A4F00E391B1A31140051E3F1 /* Code Window.png in Resources */,
-				A4E185101B0F852500E0F420 /* dpad.png in Resources */,
-				A4980DCC1B1791F500068744 /* carCartoon.png in Resources */,
-				A41B70DD1B10CAD300438250 /* rodentia-icons_system-reboot.png in Resources */,
-				A4E185231B10A33A00E0F420 /* popsicle-640.png in Resources */,
-				A4E185111B0F852500E0F420 /* joystick.png in Resources */,
-				A4980DC11B1776D400068744 /* Throttle nob.png in Resources */,
 				A4A4B7D41B19F164005D2B17 /* Speed UP.png in Resources */,
 				A4E1852A1B10A38100E0F420 /* page2.png in Resources */,
 			);
