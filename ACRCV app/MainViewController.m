@@ -41,9 +41,18 @@
     [attrString addAttribute:NSForegroundColorAttributeName value:green range:NSMakeRange(0, _stringLength)];
     
     self.activityLogTextView.attributedText = attrString;
-
+    
+    UIView *paddingView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 25,65)];
+    self.commandLineTextField.leftView = paddingView;
+    self.commandLineTextField.leftViewMode = UITextFieldViewModeAlways;
+    
+    self.commandLineTextField.rightView = paddingView;
+    self.commandLineTextField.rightViewMode = UITextFieldViewModeAlways;
+    
     self.commandLineTextField.delegate = self;
     self.commandLineTextField.clearsOnBeginEditing = YES;
+    self.commandLineTextField.clearButtonMode = UITextFieldViewModeWhileEditing;
+    self.commandLineTextField.text = @"";
     
     [self presentControls:0];
 }

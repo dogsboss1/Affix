@@ -18,8 +18,30 @@
 {
     [super viewDidLoad];
     
-    self.backgroundImageView.image = [UIImage imageNamed:self.imageFile];
+    self.backgroundImageView.image = [UIImage imageNamed:self.backgroundimages];
+    self.midCentreImage.image = [UIImage imageNamed:self.midCentreImages];
+    
+    self.leftTopImage.image = [UIImage imageNamed:self.leftTopImages];
+    self.leftMidImage.image = [UIImage imageNamed:self.leftMidImages];
+    self.leftBottomImage.image = [UIImage imageNamed:self.leftBottomImages];
+
     self.titleLabel.text = self.titleText;
+    self.subTitleLabel.text = self.subTitleText;
+    
+    self.p1Label.text = self.p1;
+    self.p2Label.text = self.p2;
+    self.p3Label.text = self.p3;
+    self.p4Label.text = self.p4;
+    self.p5Label.text = self.p5;
+    self.p6Label.text = self.p6;
+    self.p7Label.text = self.p7;
+    self.p8Label.text = self.p8;
+    self.p9Label.text = self.p9;
+    self.p10Label.text = self.p10;
+    self.p11Label.text = self.p11;
+    self.p12Label.text = self.p12;
+    self.p13Label.text = self.p13;
+    self.p14Label.text = self.p14;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -38,6 +60,7 @@
 */
 
 - (IBAction)bluetoothButtonPressed:(UIButton *)sender {
+    [self performSegueWithIdentifier:@"homeSegue" sender:self];
 }
 
 @end

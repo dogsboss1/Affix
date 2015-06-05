@@ -19,7 +19,8 @@
     [super viewDidLoad];
     // Create the data model
     _pageTitles = @[@"Over 200 Tips and Tricks", @"Discover Hidden Features", @"Bookmark Favorite Tip", @"Free Regular Update"];
-    _pageImages = @[@"page1.png", @"page2.png", @"page3.png", @"page4.png"];
+    _pageBackgroundImages = @[@"page1.png", @"page2.png", @"page3.png", @"page4.png"];
+    
     
     // Create page view controller
     self.pageViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"PageViewController"];
@@ -80,7 +81,7 @@
     
     // Create a new view controller and pass suitable data.
     PageContentViewController *pageContentViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"PageContentViewController"];
-    pageContentViewController.imageFile = self.pageImages[index];
+    pageContentViewController.backgroundimages = self.pageBackgroundImages[index];
     pageContentViewController.titleText = self.pageTitles[index];
     pageContentViewController.pageIndex = index;
     
