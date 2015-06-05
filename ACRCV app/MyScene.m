@@ -10,6 +10,8 @@
 #import "Joystick.h"
 #import "MainViewController.h"
 
+#define RADIANS_TO_DEGREES(radians) ((radians) * (180.0 / M_PI))
+
 @interface MyScene ()
 
 @property Joystick* joystick;
@@ -65,7 +67,7 @@
         self.bgNode.zRotation = self.joystick.angularVelocity;
         //self.mainMenu.degreesLabel.text = [NSString stringWithFormat:@"%f", self.joystick.angularVelocity];
         //self.mainMenu.degreesLabel.text = @"--";
-        NSLog(@"%f", self.joystick.angularVelocity);
+        NSLog(@"Steering wheel degrees: %f", RADIANS_TO_DEGREES(self.joystick.angularVelocity));
     }
 }
 

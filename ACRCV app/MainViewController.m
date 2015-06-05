@@ -46,9 +46,6 @@
     self.commandLineTextField.leftView = paddingView;
     self.commandLineTextField.leftViewMode = UITextFieldViewModeAlways;
     
-    self.commandLineTextField.rightView = paddingView;
-    self.commandLineTextField.rightViewMode = UITextFieldViewModeAlways;
-    
     self.commandLineTextField.delegate = self;
     self.commandLineTextField.clearsOnBeginEditing = YES;
     self.commandLineTextField.clearButtonMode = UITextFieldViewModeWhileEditing;

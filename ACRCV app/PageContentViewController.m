@@ -18,7 +18,9 @@
 {
     [super viewDidLoad];
     
-    self.backgroundImageView.image = [UIImage imageNamed:self.backgroundimages];
+    self.view.backgroundColor = [UIColor colorWithRed:(245/255.0) green:(88/225.0) blue:(38/225.0) alpha:1.0];
+    self.backgroundImageView.image = [UIImage imageNamed:@"gradient"];//[UIImage imageNamed:self.backgroundimages];
+    self.backgroundImageView.alpha = 0.068027;
     self.midCentreImage.image = [UIImage imageNamed:self.midCentreImages];
     
     self.leftTopImage.image = [UIImage imageNamed:self.leftTopImages];
@@ -42,6 +44,8 @@
     self.p12Label.text = self.p12;
     self.p13Label.text = self.p13;
     self.p14Label.text = self.p14;
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
