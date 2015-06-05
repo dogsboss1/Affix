@@ -8,9 +8,6 @@
 
 #import "MainViewController.h"
 #import "MyScene.h"
-#import "ThrottleScene.h"
-#import "SuperJoystickScene.h"
-#import "SuperThrottleScene.h"
 #import "Joystick.h"
 
 @interface MainViewController ()
@@ -187,17 +184,6 @@
         //self.degreesLabel.text = [NSString stringWithFormat:@"%f", self.joystick.angularVelocity];
         
         [self.spView presentScene:scene];
-        
-        // ------ Throttle
-        /*
-        self.tView = [[SKView alloc] initWithFrame:CGRectMake(CGRectGetMaxX(self.view.frame) - size, CGRectGetMaxY(self.view.frame) - size, size, size)];
-        [self.view addSubview:self.tView];
-        
-        SKScene *tScene = [[ThrottleScene alloc] initWithSize:CGSizeMake(self.tView.bounds.size.width, self.tView.bounds.size.height)];
-        tScene.scaleMode = SKSceneScaleModeAspectFill;
-        self.tView.allowsTransparency = YES;
-        
-        [self.tView presentScene:tScene];*/
     }
 }
 
@@ -215,7 +201,7 @@
         self.fdLabel.text = @"REV";
     }
     else {
-        self.fdLabel.text = @"FD";
+        self.fdLabel.text = @"FWD";
     }
 }
 

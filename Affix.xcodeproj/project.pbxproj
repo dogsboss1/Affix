@@ -14,17 +14,12 @@
 		A41B70F01B10FBCA00438250 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A41B70EF1B10FBCA00438250 /* UIKit.framework */; };
 		A41B70F21B10FBD400438250 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A41B70F11B10FBD400438250 /* Foundation.framework */; };
 		A41B70F71B11960F00438250 /* GestureRecogniserTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A41B70F61B11960F00438250 /* GestureRecogniserTestViewController.m */; };
-		A4980DBB1B1761CC00068744 /* ThrottleScene.m in Sources */ = {isa = PBXBuildFile; fileRef = A4980DBA1B1761CC00068744 /* ThrottleScene.m */; };
-		A4980DBE1B1761EF00068744 /* Throttle.m in Sources */ = {isa = PBXBuildFile; fileRef = A4980DBD1B1761EF00068744 /* Throttle.m */; };
 		A4980DD01B182C4300068744 /* gradient.png in Resources */ = {isa = PBXBuildFile; fileRef = A4980DCF1B182C4300068744 /* gradient.png */; };
-		A4980DD41B183F0700068744 /* SuperThrottleScene.m in Sources */ = {isa = PBXBuildFile; fileRef = A4980DD31B183F0700068744 /* SuperThrottleScene.m */; };
-		A4980DD71B183F1B00068744 /* SuperJoystickScene.m in Sources */ = {isa = PBXBuildFile; fileRef = A4980DD61B183F1B00068744 /* SuperJoystickScene.m */; };
 		A4980DDA1B186A4B00068744 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4980DD81B186A1E00068744 /* CoreLocation.framework */; };
 		A4980DDD1B186CAC00068744 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4980DDB1B186C9F00068744 /* MapKit.framework */; };
 		A4980DE11B18722700068744 /* CoreLocationController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4980DE01B18722700068744 /* CoreLocationController.m */; };
 		A4980DE71B188C4400068744 /* CreditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4980DE61B188C4400068744 /* CreditViewController.m */; };
 		A4980DF11B18A13700068744 /* Finished.png in Resources */ = {isa = PBXBuildFile; fileRef = A4980DF01B18A13700068744 /* Finished.png */; };
-		A4A4B7A91B197D18005D2B17 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4A4B7A71B197D08005D2B17 /* AVFoundation.framework */; };
 		A4A4B7AD1B19ECC6005D2B17 /* CBCentralManagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4A4B7AC1B19ECC6005D2B17 /* CBCentralManagerViewController.m */; };
 		A4A4B7B01B19ECD9005D2B17 /* CBPeripheralViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4A4B7AF1B19ECD9005D2B17 /* CBPeripheralViewController.m */; };
 		A4A4B7CD1B19F164005D2B17 /* Button pushed down.png in Resources */ = {isa = PBXBuildFile; fileRef = A4A4B7C41B19F164005D2B17 /* Button pushed down.png */; };
@@ -90,15 +85,7 @@
 		A41B70F11B10FBD400438250 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A41B70F51B11960F00438250 /* GestureRecogniserTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GestureRecogniserTestViewController.h; sourceTree = "<group>"; };
 		A41B70F61B11960F00438250 /* GestureRecogniserTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GestureRecogniserTestViewController.m; sourceTree = "<group>"; };
-		A4980DB91B1761CC00068744 /* ThrottleScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ThrottleScene.h; path = "ACRCV app/ThrottleScene.h"; sourceTree = "<group>"; };
-		A4980DBA1B1761CC00068744 /* ThrottleScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ThrottleScene.m; path = "ACRCV app/ThrottleScene.m"; sourceTree = "<group>"; };
-		A4980DBC1B1761EF00068744 /* Throttle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Throttle.h; path = "ACRCV app/Throttle.h"; sourceTree = "<group>"; };
-		A4980DBD1B1761EF00068744 /* Throttle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Throttle.m; path = "ACRCV app/Throttle.m"; sourceTree = "<group>"; };
 		A4980DCF1B182C4300068744 /* gradient.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gradient.png; path = Images/gradient.png; sourceTree = "<group>"; };
-		A4980DD21B183F0700068744 /* SuperThrottleScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SuperThrottleScene.h; path = "ACRCV app/SuperThrottleScene.h"; sourceTree = "<group>"; };
-		A4980DD31B183F0700068744 /* SuperThrottleScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SuperThrottleScene.m; path = "ACRCV app/SuperThrottleScene.m"; sourceTree = "<group>"; };
-		A4980DD51B183F1B00068744 /* SuperJoystickScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SuperJoystickScene.h; path = "ACRCV app/SuperJoystickScene.h"; sourceTree = "<group>"; };
-		A4980DD61B183F1B00068744 /* SuperJoystickScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SuperJoystickScene.m; path = "ACRCV app/SuperJoystickScene.m"; sourceTree = "<group>"; };
 		A4980DD81B186A1E00068744 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		A4980DDB1B186C9F00068744 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		A4980DDF1B18722700068744 /* CoreLocationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreLocationController.h; sourceTree = "<group>"; };
@@ -106,7 +93,6 @@
 		A4980DE51B188C4400068744 /* CreditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreditViewController.h; sourceTree = "<group>"; };
 		A4980DE61B188C4400068744 /* CreditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreditViewController.m; sourceTree = "<group>"; };
 		A4980DF01B18A13700068744 /* Finished.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Finished.png; path = Images/Finished.png; sourceTree = "<group>"; };
-		A4A4B7A71B197D08005D2B17 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		A4A4B7AA1B19EC92005D2B17 /* SERVICES.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SERVICES.h; sourceTree = "<group>"; };
 		A4A4B7AB1B19ECC6005D2B17 /* CBCentralManagerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBCentralManagerViewController.h; sourceTree = "<group>"; };
 		A4A4B7AC1B19ECC6005D2B17 /* CBCentralManagerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBCentralManagerViewController.m; sourceTree = "<group>"; };
@@ -175,7 +161,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A4A4B7A91B197D18005D2B17 /* AVFoundation.framework in Frameworks */,
 				A4980DDD1B186CAC00068744 /* MapKit.framework in Frameworks */,
 				A4980DDA1B186A4B00068744 /* CoreLocation.framework in Frameworks */,
 				A41B70F21B10FBD400438250 /* Foundation.framework in Frameworks */,
@@ -198,8 +183,6 @@
 		A41B70E51B10D9E400438250 /* SpriteKit */ = {
 			isa = PBXGroup;
 			children = (
-				A4980DD11B183ED900068744 /* Super scenes */,
-				A4980DB41B17617300068744 /* Throttle */,
 				A4E1850D1B0F839F00E0F420 /* Joystick */,
 			);
 			name = SpriteKit;
@@ -219,7 +202,6 @@
 		A41B70F31B10FBDF00438250 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A4A4B7A71B197D08005D2B17 /* AVFoundation.framework */,
 				A4980DDB1B186C9F00068744 /* MapKit.framework */,
 				A4980DD81B186A1E00068744 /* CoreLocation.framework */,
 				A41B70F11B10FBD400438250 /* Foundation.framework */,
@@ -238,36 +220,6 @@
 				A41B70F61B11960F00438250 /* GestureRecogniserTestViewController.m */,
 			);
 			name = "Testing out controls";
-			sourceTree = "<group>";
-		};
-		A4980DB41B17617300068744 /* Throttle */ = {
-			isa = PBXGroup;
-			children = (
-				A4980DB51B17619100068744 /* Throttle Scene */,
-				A4980DBC1B1761EF00068744 /* Throttle.h */,
-				A4980DBD1B1761EF00068744 /* Throttle.m */,
-			);
-			name = Throttle;
-			sourceTree = "<group>";
-		};
-		A4980DB51B17619100068744 /* Throttle Scene */ = {
-			isa = PBXGroup;
-			children = (
-				A4980DB91B1761CC00068744 /* ThrottleScene.h */,
-				A4980DBA1B1761CC00068744 /* ThrottleScene.m */,
-			);
-			name = "Throttle Scene";
-			sourceTree = "<group>";
-		};
-		A4980DD11B183ED900068744 /* Super scenes */ = {
-			isa = PBXGroup;
-			children = (
-				A4980DD21B183F0700068744 /* SuperThrottleScene.h */,
-				A4980DD31B183F0700068744 /* SuperThrottleScene.m */,
-				A4980DD51B183F1B00068744 /* SuperJoystickScene.h */,
-				A4980DD61B183F1B00068744 /* SuperJoystickScene.m */,
-			);
-			name = "Super scenes";
 			sourceTree = "<group>";
 		};
 		A4980DDE1B1871FF00068744 /* Location */ = {
@@ -623,8 +575,6 @@
 				A41B70E41B10D15E00438250 /* Joystick.m in Sources */,
 				A4E184EF1B0F78B700E0F420 /* BluetoothConnectingViewController.m in Sources */,
 				A4E1851A1B1023DA00E0F420 /* CLOptions.m in Sources */,
-				A4980DBB1B1761CC00068744 /* ThrottleScene.m in Sources */,
-				A4980DD71B183F1B00068744 /* SuperJoystickScene.m in Sources */,
 				A4E184C31B0F50A600E0F420 /* ViewController.m in Sources */,
 				A4A4B7B01B19ECD9005D2B17 /* CBPeripheralViewController.m in Sources */,
 				A4980DE71B188C4400068744 /* CreditViewController.m in Sources */,
@@ -635,11 +585,9 @@
 				A4E184BD1B0F50A600E0F420 /* main.m in Sources */,
 				A4980DE11B18722700068744 /* CoreLocationController.m in Sources */,
 				A4E184EC1B0F789800E0F420 /* MainViewController.m in Sources */,
-				A4980DD41B183F0700068744 /* SuperThrottleScene.m in Sources */,
 				A4E185171B1023CE00E0F420 /* CLOption.m in Sources */,
 				A4E184F21B0F78E500E0F420 /* CLOptionsTableViewController.m in Sources */,
 				A4E185141B0F8B0600E0F420 /* CLOptionsCell.m in Sources */,
-				A4980DBE1B1761EF00068744 /* Throttle.m in Sources */,
 				A41B70EC1B10DA3400438250 /* MyScene.m in Sources */,
 				A4E185301B10B6CF00E0F420 /* BasicHelpViewController.m in Sources */,
 				A41B70F71B11960F00438250 /* GestureRecogniserTestViewController.m in Sources */,
