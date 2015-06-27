@@ -14,6 +14,7 @@
 		A41B70F01B10FBCA00438250 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A41B70EF1B10FBCA00438250 /* UIKit.framework */; };
 		A41B70F21B10FBD400438250 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A41B70F11B10FBD400438250 /* Foundation.framework */; };
 		A41B70F71B11960F00438250 /* GestureRecogniserTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A41B70F61B11960F00438250 /* GestureRecogniserTestViewController.m */; };
+		A465845F1B3EEEBC002807BF /* aluminium-432524_1280.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A465845E1B3EEEBC002807BF /* aluminium-432524_1280.jpg */; };
 		A4980DD01B182C4300068744 /* gradient.png in Resources */ = {isa = PBXBuildFile; fileRef = A4980DCF1B182C4300068744 /* gradient.png */; };
 		A4980DDA1B186A4B00068744 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4980DD81B186A1E00068744 /* CoreLocation.framework */; };
 		A4980DDD1B186CAC00068744 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4980DDB1B186C9F00068744 /* MapKit.framework */; };
@@ -85,6 +86,7 @@
 		A41B70F11B10FBD400438250 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A41B70F51B11960F00438250 /* GestureRecogniserTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GestureRecogniserTestViewController.h; sourceTree = "<group>"; };
 		A41B70F61B11960F00438250 /* GestureRecogniserTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GestureRecogniserTestViewController.m; sourceTree = "<group>"; };
+		A465845E1B3EEEBC002807BF /* aluminium-432524_1280.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "aluminium-432524_1280.jpg"; path = "Images/aluminium-432524_1280.jpg"; sourceTree = "<group>"; };
 		A4980DCF1B182C4300068744 /* gradient.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gradient.png; path = Images/gradient.png; sourceTree = "<group>"; };
 		A4980DD81B186A1E00068744 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		A4980DDB1B186C9F00068744 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
@@ -243,6 +245,7 @@
 		A4A4B7B11B19EF99005D2B17 /* Using */ = {
 			isa = PBXGroup;
 			children = (
+				A465845E1B3EEEBC002807BF /* aluminium-432524_1280.jpg */,
 				A4F00E311B1A31140051E3F1 /* Background.png */,
 				A4F00E321B1A31140051E3F1 /* Black Thing.png */,
 				A4F00E331B1A31140051E3F1 /* Code Window.png */,
@@ -546,6 +549,7 @@
 				A4980DF11B18A13700068744 /* Finished.png in Resources */,
 				A4F00E371B1A31140051E3F1 /* Background.png in Resources */,
 				A4A4B7D51B19F164005D2B17 /* Wheel.png in Resources */,
+				A465845F1B3EEEBC002807BF /* aluminium-432524_1280.jpg in Resources */,
 				A4A4B7D31B19F164005D2B17 /* Speed down.png in Resources */,
 				A4E184CB1B0F50A600E0F420 /* LaunchScreen.xib in Resources */,
 				A4E1852C1B10A38100E0F420 /* page4.png in Resources */,

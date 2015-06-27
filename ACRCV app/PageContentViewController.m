@@ -44,8 +44,6 @@
     self.p12Label.text = self.p12;
     self.p13Label.text = self.p13;
     self.p14Label.text = self.p14;
-    
-    
 }
 
 - (void)didReceiveMemoryWarning {

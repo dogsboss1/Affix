@@ -22,7 +22,7 @@
 
     
     // Create the data model
-    _pageTitles = @[@"Over 200 Tips and Tricks", @"Discover Hidden Features", @"Bookmark Favorite Tip", @"Free Regular Update"];
+    _pageTitles = @[@"Why?", @"What features", @"bluetooth", @"Possible Issues"];
     _pageSubTitles = @[@"", @"", @"", @""];
     //_pageBackgroundImages = @[@"page1.png", @"page2.png", @"page3.png", @"page4.png"];
     
